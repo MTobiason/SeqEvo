@@ -1,0 +1,12 @@
+//	Example Domains File, MT, 2019-04-02
+// 	Device is the autocatalytic network published by Zhang et al. (2007)
+//	Domain Number  -tab-  Domain Name  -tab-  Domaint Type (v or f)  -tab-  Bases in domain (A/T/C/G listed 5' to 3') 
+//	Domain names must be a single word, may contain numbers or "-", and must start with a letter.
+// 	Domain types: v = varible (program will manipulate sequence), f = fixed (sequence remains unchanged).
+//	Lines preceded by a double slash "//" are recognized as comment statements and ignored by the program.	
+1	z2b	v	TCTCCA
+2	z2c	v	ACTAACTTACGG
+3	z3	v	CCCT
+4	z4a	v	CATTCAATAC
+5	z4b	v	CCTACG
+6	z6	v	CCACATACATCATATT

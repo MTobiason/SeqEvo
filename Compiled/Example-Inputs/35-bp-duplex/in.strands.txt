@@ -1,0 +1,9 @@
+//	Example Strands File, MT, 2019-04-02
+// 	Device is a single 35 base-pair DNA duplex
+//	Strand Number  -tab-  Strand Name  -tab-  Domain names listed 5' to 3' and seperated by spaces.
+//	Strand names must be a single word, may contain numbers or "-", and must start with a letter.
+//	The binding complement of a domain can be denoted by listing "c." and the domain name.
+//	Lines preceded by a double slash "//" are recognized as comment statements and ignored by the program.	
+//
+1	Strand-1	A
+2	Strand-2	c.A	

@@ -1,0 +1,6 @@
+***************
+SeqEvo & DevPro
+MT : 2019-04-02
+***************
+
+This version of SeqEvo and DevPro are provided free of charge for academic, non-commercial use with no guarantees.

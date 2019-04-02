@@ -1,0 +1,13 @@
+//	Example Strands File, MT, 2019-04-02
+// 	Device is the autocatalytic network published by Zhang et al. (2007)
+//	Strand Number  -tab-  Strand Name  -tab-  Domain names listed 5' to 3' and seperated by spaces.
+//	Strand names must be a single word, may contain numbers or "-", and must start with a letter.
+//	The binding complement of a domain can be denoted by listing "c." and the domain name.
+//	Lines preceded by a double slash "//" are recognized as comment statements and ignored by the program.	
+//
+1	Catalyst	z4a z4b z2b z2c
+2	Signal		z6 z3 z4a z4b
+3	Backbone	c.z2b c.z4b c.z4a c.z3 c.z2c c.z2b c.z4b 
+4	Fuel		z4b z2b z2c z3 z4a z4b
+5	Dye		z6 z3
+6	Quencher 	c.z4b c.z4a c.z3 c.z6

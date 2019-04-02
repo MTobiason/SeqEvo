@@ -1,0 +1,39 @@
+**********************
+Instruction File
+SeqEvo version 1.6
+MT : 2019-04-02
+**********************
+
+SequenceEvolver (SeqEvo) is a program written to generate high-quality sequences for DNA devices.
+DeviceProfiler (DevPro) is a program written to provide detailed information regarding the structures in a DNA device.
+
+Both programs require three text files to operate:
+Strands File: The design of a device is specified by an input file containing a list of strands described at the domain level. (in.strands.txt by default)
+Domains File: Initial sequences for each domain are specified in a domains file. (in.domains.txt by default)
+Parameters File: A third file specifies settings for the program. (se.parameters.txt or dp.parameters.txt by default) 
+
+*******************
+System Requirements
+*******************
+
+These programs require that Java be installed (version 1.6 or newer required). Java can be downloaded at https://java.com/en/download
+
+**************
+Running SeqEvo
+**************
+
+To run the SeqEvo program, open a command line in the folder containing the SeqEvo.jar file and excecute the command <java -jar SeqEvo.jar> excluding the <>.
+SeqEvo will require a Parameters file, domains file, and strand file to run.
+
+A different filepath for the parameters file name can be provided by calling the file with the option <-p> followed by the filename. 
+For example the command to run SeqEvo.jar using the parameter file "newInput.txt" input file would be : <java -jar SeqEvo.jar -p "newInput.txt">
+A different filepath for the domain or strand information can be specified in the parameters file.
+
+If the program runs properly, there should be a text output to the command line, and several output files produced. 
+By default, all these files begin with the phrase "se.out.", but new names or paths can be specified for them using the parameters file.
+
+**************
+Running DevPro
+**************
+
+DevPro can be run by following the same process above, except replacing "SeqEvo.jar" with "DevPro.jar" where applicable.
