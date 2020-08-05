@@ -1,0 +1,20 @@
+Strand Domains:
+--------------------------
+name	domains (5' to 3')
+--------------------------
+Top-Strand	A 
+Bottom-Strand	c.A 
+
+Domain Sequences: 
+------------------------
+name	bases (5' to 3')
+------------------------
+A	GCACAAATAACGACTACCCTCCA
+
+Strand Sequences: 
+------------------------
+name	bases (5' to 3')
+------------------------
+Top-Strand	GCACAAATAACGACTACCCTCCA
+Bottom-Strand	TGGAGGGTAGTCGTTATTTGTGC
+

@@ -1,0 +1,52 @@
+//Sample input file - MT 2018/09/18
+// All lines begining with a "//" are noted as comments, and ignored by the program
+
+// ***************************
+// File Paths of Default files
+// ***************************
+
+//Nomenculture for output files: A-> Intramolecular E-> Intermolecular, B-> Baseline, I-> Interference, S -> All Structures(Both int & baseline), .structures, .profile
+      
+DIFilePath = in.domains.txt	// Input file containing the domain information
+SIFilePath = in.strands.txt	// Input file containing the strand information
+ReportFilePath = dp.out.report.txt	// File to create which will contain the program's full report
+
+pathACI = ACI.profile.txt // File to create containing the profile-summary of interference intramolecular structures.
+pathECI = ECI.profile.txt // File to create containing the profile-summary of interference intermolecular structures.
+
+pathAUI = AUI.profile.txt //File to create containing the profile-summary of unique interference intramolecular structures.
+pathEUI = EUI.profile.txt //File to create containing the profile-summary of unique interference intermolecular structures.
+
+pathAUIstruct = AUI.structures.txt //File to create containing the sequence and location of unique interference intramolecular structures.
+pathEUIstruct = EUI.structures.txt //File to create containing the sequence and location of unique interference intermolecular structures.
+
+//*****************************
+// File Paths of optional files
+//*****************************
+
+pathACS = ACS.profile.txt // File to create containing the profile-summary of intramolecular structures.
+pathECS = ECS.profile.txt // File to create containing the profile-summary of intermolecular structures.
+
+pathAUS = AUS.profile.txt // File to create containing the profile-summary of unique intramolecular structures.
+pathEUS = EUS.profile.txt // File to create containing the profile-summary of unique intermolecular structures.
+
+pathAUSstruct= AUS.structures.txt // File to create containing the sequence and location of unique intramolecular structures 
+pathEUSstruct= EUS.structures.txt // File to create containing the sequence and location of unique intermolecular structures 
+
+pathACB = ACB.profile.txt //File to create containing the profile-summary of baseline intramolecular structures.
+pathECB = ECB.profile.txt //File to create containing the profile-summary of baseline intermolecular structures.
+
+pathAUB= AUB.profile.txt //File to create containing the profile-summary of unique baseline intramolecular structures.
+pathEUB= EUB.profile.txt //File to create containing the profile-summary of unique baseline intermolecular structures.
+
+pathAUBstruct = AUB.structures.txt //File to create containing the sequence and location of unique baseline intramolecular structures.
+pathEUBstruct = EUB.structures.txt //File to create containing the sequence and location of unique baseline intermolecular structures.
+
+// ******************
+// Scoring Parameters
+// ******************
+
+IntramolecularW = 10000	// integer > 0 :: weighting factor for compliments within a strand
+IntermolecularW = 1	// integer > 0 :: weighting factor for compliments between two strands
+//IntramolecularSLC = 1	// integer >= 1 :: Complements within a single strand with length greather than or equal to this SLC contribute to a design's score.
+//IntermolecularSLC = 1	// integer >= 1 :: Complements between 2 strands with length greather than or equal to this SLC contribute to a design's score.

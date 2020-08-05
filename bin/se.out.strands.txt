@@ -1,0 +1,9 @@
+// Strand Recipe's used by Sequence Evolver: 1.8; run time: Tue Aug 04 23:53:47 EDT 2020
+//
+// File Format:
+// ------------------------------------------------------
+// Number	Strand Name	Constituent Domains(5'-3')
+// ------------------------------------------------------
+1	Top-Strand	A 
+2	Bottom-Strand	c.A 
+

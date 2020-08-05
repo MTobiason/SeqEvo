@@ -1,0 +1,4 @@
+1	INC	Spacer Domain 
+2	INV	Spacer Domain Toehold 
+3	SUB	c.Toehold c.Domain c.Spacer 
+

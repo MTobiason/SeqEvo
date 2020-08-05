@@ -1,0 +1,12 @@
+To set the path for the java compiler, Type ( without "$:" ):
+$: set path=%path%;C:\Program Files\Java\jdk1.8.0_31\bin
+
+To compile the code for the current version of java:
+$: javac <targetfile.java> -d ../bin
+
+To compile the code for a legacy version of java:
+$: javac -target 1.6 -source 1.6 <target file .java> -d ../bin
+
+To merge the .class files into a .jar file:
+1) 	Enter directory containing the target .class file.
+2)	$: jar cfe SeqEvo.jar build4 build4* BoiseState

@@ -1,0 +1,19 @@
+// Profile of interference structures found in fittest generation. Produced by SequenceEvolver Version: 1.7; run on  Mon Feb 24 00:24:52 EST 2020
+
+**************************************
+Intramolecular Interference Structures
+**************************************
+
+Complement Length (Base-Pairs), Number of Complements
+-----------------------------------------------------
+2, 119
+
+
+**************************************
+Intermolecular Interference Structures
+**************************************
+
+Complement Length (Base-Pairs), Number of Complements
+-----------------------------------------------------
+2, 609
+3, 54

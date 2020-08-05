@@ -1,0 +1,24 @@
+Strand Domains:
+--------------------------
+name	domains (5' to 3')
+--------------------------
+INC	Spacer Domain 
+INV	Spacer Domain Toehold 
+SUB	c.Toehold c.Domain c.Spacer 
+
+Domain Sequences: 
+------------------------
+name	bases (5' to 3')
+------------------------
+Domain	ATTCAGCACAGTTAGTATCGTTCCTCGGTCAAAGCGGGCA
+Toehold	TCTCCATG
+Spacer	T
+
+Strand Sequences: 
+------------------------
+name	bases (5' to 3')
+------------------------
+INC	TATTCAGCACAGTTAGTATCGTTCCTCGGTCAAAGCGGGCA
+INV	TATTCAGCACAGTTAGTATCGTTCCTCGGTCAAAGCGGGCATCTCCATG
+SUB	CATGGAGATGCCCGCTTTGACCGAGGAACGATACTAACTGTGCTGAATA
+

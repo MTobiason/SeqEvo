@@ -1,0 +1,8 @@
+//	Structure for each line:
+//	Number	-tab-	Name	-tab-	"Recipe"
+//	Strand names will be strings, but are not allowed to contain spaces. Strand names must start with a letter.
+// "Recipe" will be a space separated list of domains which compose a given strand. All recipes should be entered 5' to 3'. The notation "c." can be used to represent the compliment of a given domain.	
+1	Scaffold m13mp18
+1	Scaffold2 c.m13mp18
+1	Scaffold3 m13mp18
+1	Scaffold4 c.m13mp18

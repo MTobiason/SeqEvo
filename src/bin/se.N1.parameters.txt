@@ -1,0 +1,81 @@
+//Sample input file - MT 2015/03/26
+// All lines begining with a "//" are noted as comments, and ignored by the program
+
+// ****************
+// Input File Paths
+// ****************
+
+DIFilePath = in.domains.txt	// Input file containing the domain information
+SIFilePath = in.strands.txt	// Input file containing the strand information
+
+// ******************************
+// Evolutionary Search Parameters
+// ******************************
+
+// ------------------
+// Algorithm Duration 
+// ------------------
+
+cpl = 2000000	// integer > 0 :: Cycles-Per-Lineage :: Number of Sub-Cycles to include in each Lineage.
+nl = 2		// integer > 0 :: Number of 1st generation Mothers to spawn from generation 0.
+nt = auto	// integer > 0 -or- "auto" :: Number of Threads. Number of computing threads used durring computations. 
+
+// -------------------
+// Aglorithm Structure
+// -------------------
+
+sflm = false	// true or false :: Shuffle-First-Lineage-Mother :: False -> Lineage #1 starts as a clone of Gen 0. True -> Lineage #1 is randomly shuffled.
+solm = true 	// true or false :: Shuffle-Other-Lineage-Mothers :: False -> All lineages other than #1 start as a clone of generation 0. True -> All lineages other than #1 are radomly shuffled.
+gpc = 1		// integer > 0 :: Generations-Per-Cycle :: Generations per each "Cycle"
+nmpc = 2	// integer > 0 :: Mother-Per-Cycle :: Number of mothers in each Cycle.
+mpm = 1		// integer > 0 :: Mutations-Per-Mother :: Number of times the first generation in a cycle is mutated.
+ndpm = 	1	// integer > 0 :: Daughters-Per-Mother :: Number of daughters spawned from each mother.
+mpd = 1		// integer > 0 :: Mutations-Per-Daughter :: Number of times a mother is mutated to make a daughter.
+
+// ------------------
+// Scoring Parameters
+// ------------------
+
+ScoringFunction = WCI	// LongestWCI -or- WCP -or- WCI :: Scoring Function to use for determining design fitness.
+ProfileCompleteness = Longest // Longest -or- Complete :: Complement Profiles either contain either the longest complement and all sub complements (option: Complete) or only the longest complement.
+IntramolecularSLC = 3 	// integer >= 1 :: Complements within a single strand with length greather than or equal to this SLC contribute to a design's score.
+IntermolecularSLC = 5	// integer >= 1 :: Complements between 2 strands with length greather than or equal to this SLC contribute to a design's score.
+IntramolecularW = 1000000	// integer > 0 :: weighting factor for compliments between a given strand and itself
+IntermolecularW = 1	// integer > 0 :: weighting factor for compliments between two given strands
+AASLC = 6	// integer >= 1 :: Any stretch of consecutive A's greater than AASLC will flag a design/mutation as invalid. 
+CCSLC = 3 	// integer >= 1 :: Any stretch of consecutive C's greater than CCSLC will flag a design/mutation as invalid. 
+GGSLC = 3	// integer >= 1 :: Any stretch of consecutive G's greater than GGSLC will flag a design/mutation as invalid. 
+TTSLC = 6	// integer >= 1 :: Any stretch of consecutive T's greater than TTSLC will flag a design/mutation as invalid. 
+//MaxShuffleAttempts = 1000 	// integer > 0 :: Maximum number of failed (invalid) attempts to shuffle the first lineage mothers before terminating the algorithm.
+//MaxTranspositionAttempts = 1000 // integer > 0 :: Maximum number of failed (invalid) attempts to Transpose a mother design before printing a warning and continueing.
+//MaxMutationAttempts = 1000 	// integer > 0 :: Maximum number of failed (invalid) attempts to mutate a daughter design before printing a warning and continueing.
+
+// *****************
+// Output File Paths
+// *****************
+
+// ----------------
+// Report Exporting
+// ----------------
+ROFilePath = se.out.report.txt	// File to create which will contain the program's full report
+
+// ----------------
+// Design Exporting
+// ----------------
+DOFilePath = se.out.domains.txt	// File to create which will contain the output domain information
+IOFilePath = se.out.interference.txt // File to create which will contain the # of WCI occurences found in the best/final design.
+//NOFilePath = se.out.network.txt	// File to create which will contain just the strand and domain sequence information.
+SOFilePath = se.out.strands.txt	// File to create which will contain the output strand information
+//eilm = true	// true|false :: Report-Initial-Lineage-Mothers :: Export sequences from "first generation" mothers to the screen and report file
+//eflm = true	// true|false :: Report-Final-Lineage-Mothers ::Export sequences from "final generation" mothers to the screen and report file
+
+// --------------------
+// Trajectory Exporting
+// --------------------
+//ReportingFrequency = 1000		// integer > 0 :: Record the cycle or generation score every ReportingFrequency cycles or generations
+CycleReporting = true			// true|false :: Create a file to store score as a function of cyles?
+//CTOFilePath = se.out.cycle-trajectories.csv	// File to create which will store score as a function of cycles.
+LogCycleReporting = true			// true|false :: Create a file to store score as a function of cycles distributed logarithmically?
+LCTOFilePath =se.out.log-cycle-trajectories.csv // File to create which will store score as a function of cycle for logarithmically distributed values
+//GenerationReporting = true			// true|false :: Create a file to store score as a function of generation?
+//GTOFilePath = se.out.gen-trajectories.csv	// File to create which will store score as a function of generation.

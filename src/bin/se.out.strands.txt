@@ -1,0 +1,10 @@
+// Strand Recipe's used by Sequence Evolver: 1.7; run time: Mon Feb 24 00:24:52 EST 2020
+//
+// File Format:
+// ------------------------------------------------------
+// Number	Strand Name	Constituent Domains(5'-3')
+// ------------------------------------------------------
+1	INC	Spacer Domain 
+2	INV	Spacer Domain Toehold 
+3	SUB	c.Toehold c.Domain c.Spacer 
+

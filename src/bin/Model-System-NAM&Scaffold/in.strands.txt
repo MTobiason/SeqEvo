@@ -1,0 +1,250 @@
+//	Structure for each line:
+//	Number	-tab-	Name	-tab-	"Recipe"
+//	Strand names will be strings, but are not allowed to contain spaces. Strand names must start with a letter.
+// "Recipe" will be a space separated list of domains which compose a given strand. All recipes should be entered 5' to 3'. The notation "c." can be used to represent the compliment of a given domain.	
+1	Scaffold m13mp18
+1	S-dNAM03-1d-LL-17	   d-dNAM03-1d-LL-17
+2	S-dNAM03-1d-S18	   d-dNAM03-1d-S18
+3	S-dNAM03-1d-S19	   d-dNAM03-1d-S19
+4	S-dNAM03-1d-S20	   d-dNAM03-1d-S20
+5	S-dNAM03-1d-S21	   d-dNAM03-1d-S21
+6	S-dNAM03-1d-S22	   d-dNAM03-1d-S22
+7	S-dNAM03-1d-S23	   d-dNAM03-1d-S23
+8	S-dNAM03-1d-S24	   d-dNAM03-1d-S24
+9	S-dNAM03-1d-S25	   d-dNAM03-1d-S25
+10	S-dNAM03-1-LL-01	   d-dNAM03-1-LL-01
+11	S-dNAM03-1-LL-02	   d-dNAM03-1-LL-02
+12	S-dNAM03-1-LL-03	   d-dNAM03-1-LL-03
+13	S-dNAM03-1-LL-04	   d-dNAM03-1-LL-04
+14	S-dNAM03-1-LL-05	   d-dNAM03-1-LL-05
+15	S-dNAM03-1-LL-06	   d-dNAM03-1-LL-06
+16	S-dNAM03-1-LL-07	   d-dNAM03-1-LL-07
+17	S-dNAM03-1-LL-08	   d-dNAM03-1-LL-08
+18	S-dNAM03-1-LL-09	   d-dNAM03-1-LL-09
+19	S-dNAM03-1-LL-10	   d-dNAM03-1-LL-10
+20	S-dNAM03-1-LL-11	   d-dNAM03-1-LL-11
+21	S-dNAM03-1-LL-12	   d-dNAM03-1-LL-12
+22	S-dNAM03-1-LR-01	   d-dNAM03-1-LR-01
+23	S-dNAM03-1-LR-02	   d-dNAM03-1-LR-02
+24	S-dNAM03-1-LR-03	   d-dNAM03-1-LR-03
+25	S-dNAM03-1-LR-04	   d-dNAM03-1-LR-04
+26	S-dNAM03-1-LR-05	   d-dNAM03-1-LR-05
+27	S-dNAM03-1-LR-06	   d-dNAM03-1-LR-06
+28	S-dNAM03-1-LR-07	   d-dNAM03-1-LR-07
+29	S-dNAM03-1-LR-08	   d-dNAM03-1-LR-08
+30	S-dNAM03-1-LR-09	   d-dNAM03-1-LR-09
+31	S-dNAM03-1-LR-10	   d-dNAM03-1-LR-10
+32	S-dNAM03-1-LR-11	   d-dNAM03-1-LR-11
+33	S-dNAM03-1-LR-12	   d-dNAM03-1-LR-12
+34	S-dNAM03-1-LR-13	   d-dNAM03-1-LR-13
+35	S-dNAM03-1-LR-14	   d-dNAM03-1-LR-14
+36	S-dNAM03-1-S01	   d-dNAM03-1-S01
+37	S-dNAM03-1-S02	   d-dNAM03-1-S02
+38	S-dNAM03-1-S03	   d-dNAM03-1-S03
+39	S-dNAM03-1-S04	   d-dNAM03-1-S04
+40	S-dNAM03-1-S05	   d-dNAM03-1-S05
+41	S-dNAM03-1-S06	   d-dNAM03-1-S06
+42	S-dNAM03-1-S07	   d-dNAM03-1-S07
+43	S-dNAM03-1-S08	   d-dNAM03-1-S08
+44	S-dNAM03-1-S09	   d-dNAM03-1-S09
+45	S-dNAM03-1-S10	   d-dNAM03-1-S10
+46	S-dNAM03-1-S11	   d-dNAM03-1-S11
+47	S-dNAM03-1-S12	   d-dNAM03-1-S12
+48	S-dNAM03-1-S13	   d-dNAM03-1-S13
+49	S-dNAM03-1-S14	   d-dNAM03-1-S14
+50	S-dNAM03-1d-W-A01	c.ProbeAvar c.T TT d-dNAM03-1d-W-A01
+51	S-dNAM03-1d-W-A02	c.ProbeAvar c.T TT d-dNAM03-1d-W-A02
+52	S-dNAM03-1d-W-A03	c.ProbeAvar c.T TT d-dNAM03-1d-W-A03
+53	S-dNAM03-1d-W-A04	c.ProbeAvar c.T TT d-dNAM03-1d-W-A04
+54	S-dNAM03-1d-W-A05	c.ProbeAvar c.T TT d-dNAM03-1d-W-A05
+55	S-dNAM03-1d-W-A06	c.ProbeAvar c.T TT d-dNAM03-1d-W-A06
+56	S-dNAM03-1d-W-A07	c.ProbeAvar c.T TT d-dNAM03-1d-W-A07
+57	S-dNAM03-1d-W-A08	c.ProbeAvar c.T TT d-dNAM03-1d-W-A08
+58	S-dNAM03-1d-W-A09	c.ProbeAvar c.T TT d-dNAM03-1d-W-A09
+59	S-dNAM03-1d-W-A10	c.ProbeAvar c.T TT d-dNAM03-1d-W-A10
+60	S-dNAM03-1d-W-A11	c.ProbeAvar c.T TT d-dNAM03-1d-W-A11
+61	S-dNAM03-1d-W-A12	c.ProbeAvar c.T TT d-dNAM03-1d-W-A12
+62	S-dNAM03-1d-W-A13	c.ProbeAvar c.T TT d-dNAM03-1d-W-A13
+63	S-dNAM03-1d-W-A14	c.ProbeAvar c.T TT d-dNAM03-1d-W-A14
+64	S-dNAM03-1d-W-A15	c.ProbeAvar c.T TT d-dNAM03-1d-W-A15
+65	S-dNAM03-1d-W-A16	c.ProbeAvar c.T TT d-dNAM03-1d-W-A16
+66	S-dNAM03-1d-W-A17	c.ProbeAvar c.T TT d-dNAM03-1d-W-A17
+67	S-dNAM03-1d-W-A18	c.ProbeAvar c.T TT d-dNAM03-1d-W-A18
+68	S-dNAM03-1d-W-A19	c.ProbeAvar c.T TT d-dNAM03-1d-W-A19
+69	S-dNAM03-1d-W-A20	c.ProbeAvar c.T TT d-dNAM03-1d-W-A20
+70	S-dNAM03-1d-W-A21	c.ProbeAvar c.T TT d-dNAM03-1d-W-A21
+71	S-dNAM03-1d-W-A22	c.ProbeAvar c.T TT d-dNAM03-1d-W-A22
+72	S-dNAM03-1d-W-A23	c.ProbeAvar c.T TT d-dNAM03-1d-W-A23
+73	S-dNAM03-1d-W-A24	c.ProbeAvar c.T TT d-dNAM03-1d-W-A24
+74	S-dNAM03-1d-W-A25	c.ProbeAvar c.T TT d-dNAM03-1d-W-A25
+75	S-dNAM03-1d-W-A26	c.ProbeAvar c.T TT d-dNAM03-1d-W-A26
+76	S-dNAM03-1d-W-A27	c.ProbeAvar c.T TT d-dNAM03-1d-W-A27
+77	S-dNAM03-1d-W-A28	c.ProbeAvar c.T TT d-dNAM03-1d-W-A28
+78	S-dNAM03-1d-W-A29	c.ProbeAvar c.T TT d-dNAM03-1d-W-A29
+79	S-dNAM03-1d-W-A30	c.ProbeAvar c.T TT d-dNAM03-1d-W-A30
+80	S-dNAM03-1d-W-A31	c.ProbeAvar c.T TT d-dNAM03-1d-W-A31
+81	S-dNAM03-1d-W-A32	c.ProbeAvar c.T TT d-dNAM03-1d-W-A32
+82	S-dNAM03-1d-W-A33	c.ProbeAvar c.T TT d-dNAM03-1d-W-A33
+83	S-dNAM03-1d-W-A34	c.ProbeAvar c.T TT d-dNAM03-1d-W-A34
+84	S-dNAM03-1d-W-A35	c.ProbeAvar c.T TT d-dNAM03-1d-W-A35
+85	S-dNAM03-1d-W-A36	c.ProbeAvar c.T TT d-dNAM03-1d-W-A36
+86	S-dNAM03-1d-W-A37	c.ProbeAvar c.T TT d-dNAM03-1d-W-A37
+87	S-dNAM03-1d-W-A38	c.ProbeAvar c.T TT d-dNAM03-1d-W-A38
+88	S-dNAM03-1d-W-A39	c.ProbeAvar c.T TT d-dNAM03-1d-W-A39
+89	S-dNAM03-1d-W-A40	c.ProbeAvar c.T TT d-dNAM03-1d-W-A40
+90	S-dNAM03-1d-W-A41	c.ProbeAvar c.T TT d-dNAM03-1d-W-A41
+91	S-dNAM03-1d-W-A42	c.ProbeAvar c.T TT d-dNAM03-1d-W-A42
+92	S-dNAM03-1d-W-A43	c.ProbeAvar c.T TT d-dNAM03-1d-W-A43
+93	S-dNAM03-1d-W-A44	c.ProbeAvar c.T TT d-dNAM03-1d-W-A44
+94	S-dNAM03-1d-W-A45	c.ProbeAvar c.T TT d-dNAM03-1d-W-A45
+95	S-dNAM03-1d-W-A46	c.ProbeAvar c.T TT d-dNAM03-1d-W-A46
+96	S-dNAM03-1d-W-A47	c.ProbeAvar c.T TT d-dNAM03-1d-W-A47
+97	S-dNAM03-1d-W-A48	c.ProbeAvar c.T TT d-dNAM03-1d-W-A48
+98	S-dNAM03-1d-W-B01	c.ProbeBvar c.T TT d-dNAM03-1d-W-B01
+99	S-dNAM03-1d-W-B02	c.ProbeBvar c.T TT d-dNAM03-1d-W-B02
+100	S-dNAM03-1d-W-B03	c.ProbeBvar c.T TT d-dNAM03-1d-W-B03
+101	S-dNAM03-1d-W-B04	c.ProbeBvar c.T TT d-dNAM03-1d-W-B04
+102	S-dNAM03-1d-W-B05	c.ProbeBvar c.T TT d-dNAM03-1d-W-B05
+103	S-dNAM03-1d-W-B06	c.ProbeBvar c.T TT d-dNAM03-1d-W-B06
+104	S-dNAM03-1d-W-B07	c.ProbeBvar c.T TT d-dNAM03-1d-W-B07
+105	S-dNAM03-1d-W-B08	c.ProbeBvar c.T TT d-dNAM03-1d-W-B08
+106	S-dNAM03-1d-W-B09	c.ProbeBvar c.T TT d-dNAM03-1d-W-B09
+107	S-dNAM03-1d-W-B10	c.ProbeBvar c.T TT d-dNAM03-1d-W-B10
+108	S-dNAM03-1d-W-B11	c.ProbeBvar c.T TT d-dNAM03-1d-W-B11
+109	S-dNAM03-1d-W-B12	c.ProbeBvar c.T TT d-dNAM03-1d-W-B12
+110	S-dNAM03-1d-W-B13	c.ProbeBvar c.T TT d-dNAM03-1d-W-B13
+111	S-dNAM03-1d-W-B14	c.ProbeBvar c.T TT d-dNAM03-1d-W-B14
+112	S-dNAM03-1d-W-B15	c.ProbeBvar c.T TT d-dNAM03-1d-W-B15
+113	S-dNAM03-1d-W-B16	c.ProbeBvar c.T TT d-dNAM03-1d-W-B16
+114	S-dNAM03-1d-W-B17	c.ProbeBvar c.T TT d-dNAM03-1d-W-B17
+115	S-dNAM03-1d-W-B18	c.ProbeBvar c.T TT d-dNAM03-1d-W-B18
+116	S-dNAM03-1d-W-B19	c.ProbeBvar c.T TT d-dNAM03-1d-W-B19
+117	S-dNAM03-1d-W-B20	c.ProbeBvar c.T TT d-dNAM03-1d-W-B20
+118	S-dNAM03-1d-W-B21	c.ProbeBvar c.T TT d-dNAM03-1d-W-B21
+119	S-dNAM03-1d-W-B22	c.ProbeBvar c.T TT d-dNAM03-1d-W-B22
+120	S-dNAM03-1d-W-B23	c.ProbeBvar c.T TT d-dNAM03-1d-W-B23
+121	S-dNAM03-1d-W-B24	c.ProbeBvar c.T TT d-dNAM03-1d-W-B24
+122	S-dNAM03-1d-W-B25	c.ProbeBvar c.T TT d-dNAM03-1d-W-B25
+123	S-dNAM03-1d-W-B26	c.ProbeBvar c.T TT d-dNAM03-1d-W-B26
+124	S-dNAM03-1d-W-B27	c.ProbeBvar c.T TT d-dNAM03-1d-W-B27
+125	S-dNAM03-1d-W-B28	c.ProbeBvar c.T TT d-dNAM03-1d-W-B28
+126	S-dNAM03-1d-W-B29	c.ProbeBvar c.T TT d-dNAM03-1d-W-B29
+127	S-dNAM03-1d-W-B30	c.ProbeBvar c.T TT d-dNAM03-1d-W-B30
+128	S-dNAM03-1d-W-B31	c.ProbeBvar c.T TT d-dNAM03-1d-W-B31
+129	S-dNAM03-1d-W-B32	c.ProbeBvar c.T TT d-dNAM03-1d-W-B32
+130	S-dNAM03-1d-W-B33	c.ProbeBvar c.T TT d-dNAM03-1d-W-B33
+131	S-dNAM03-1d-W-B34	c.ProbeBvar c.T TT d-dNAM03-1d-W-B34
+132	S-dNAM03-1d-W-B35	c.ProbeBvar c.T TT d-dNAM03-1d-W-B35
+133	S-dNAM03-1d-W-B36	c.ProbeBvar c.T TT d-dNAM03-1d-W-B36
+134	S-dNAM03-1d-W-B37	c.ProbeBvar c.T TT d-dNAM03-1d-W-B37
+135	S-dNAM03-1d-W-B38	c.ProbeBvar c.T TT d-dNAM03-1d-W-B38
+136	S-dNAM03-1d-W-B39	c.ProbeBvar c.T TT d-dNAM03-1d-W-B39
+137	S-dNAM03-1d-W-B40	c.ProbeBvar c.T TT d-dNAM03-1d-W-B40
+138	S-dNAM03-1d-W-B41	c.ProbeBvar c.T TT d-dNAM03-1d-W-B41
+139	S-dNAM03-1d-W-B42	c.ProbeBvar c.T TT d-dNAM03-1d-W-B42
+140	S-dNAM03-1d-W-B43	c.ProbeBvar c.T TT d-dNAM03-1d-W-B43
+141	S-dNAM03-1d-W-B44	c.ProbeBvar c.T TT d-dNAM03-1d-W-B44
+142	S-dNAM03-1d-W-B45	c.ProbeBvar c.T TT d-dNAM03-1d-W-B45
+143	S-dNAM03-1d-W-B46	c.ProbeBvar c.T TT d-dNAM03-1d-W-B46
+144	S-dNAM03-1d-W-B47	c.ProbeBvar c.T TT d-dNAM03-1d-W-B47
+145	S-dNAM03-1d-W-B48	c.ProbeBvar c.T TT d-dNAM03-1d-W-B48
+146	S-dNAM03-1d-W-C01	c.ProbeCvar c.T TT d-dNAM03-1d-W-C01
+147	S-dNAM03-1d-W-C02	c.ProbeCvar c.T TT d-dNAM03-1d-W-C02
+148	S-dNAM03-1d-W-C03	c.ProbeCvar c.T TT d-dNAM03-1d-W-C03
+149	S-dNAM03-1d-W-C04	c.ProbeCvar c.T TT d-dNAM03-1d-W-C04
+150	S-dNAM03-1d-W-C05	c.ProbeCvar c.T TT d-dNAM03-1d-W-C05
+151	S-dNAM03-1d-W-C06	c.ProbeCvar c.T TT d-dNAM03-1d-W-C06
+152	S-dNAM03-1d-W-C07	c.ProbeCvar c.T TT d-dNAM03-1d-W-C07
+153	S-dNAM03-1d-W-C08	c.ProbeCvar c.T TT d-dNAM03-1d-W-C08
+154	S-dNAM03-1d-W-C09	c.ProbeCvar c.T TT d-dNAM03-1d-W-C09
+155	S-dNAM03-1d-W-C10	c.ProbeCvar c.T TT d-dNAM03-1d-W-C10
+156	S-dNAM03-1d-W-C11	c.ProbeCvar c.T TT d-dNAM03-1d-W-C11
+157	S-dNAM03-1d-W-C12	c.ProbeCvar c.T TT d-dNAM03-1d-W-C12
+158	S-dNAM03-1d-W-C13	c.ProbeCvar c.T TT d-dNAM03-1d-W-C13
+159	S-dNAM03-1d-W-C14	c.ProbeCvar c.T TT d-dNAM03-1d-W-C14
+160	S-dNAM03-1d-W-C15	c.ProbeCvar c.T TT d-dNAM03-1d-W-C15
+161	S-dNAM03-1d-W-C16	c.ProbeCvar c.T TT d-dNAM03-1d-W-C16
+162	S-dNAM03-1d-W-C17	c.ProbeCvar c.T TT d-dNAM03-1d-W-C17
+163	S-dNAM03-1d-W-C18	c.ProbeCvar c.T TT d-dNAM03-1d-W-C18
+164	S-dNAM03-1d-W-C19	c.ProbeCvar c.T TT d-dNAM03-1d-W-C19
+165	S-dNAM03-1d-W-C20	c.ProbeCvar c.T TT d-dNAM03-1d-W-C20
+166	S-dNAM03-1d-W-C21	c.ProbeCvar c.T TT d-dNAM03-1d-W-C21
+167	S-dNAM03-1d-W-C22	c.ProbeCvar c.T TT d-dNAM03-1d-W-C22
+168	S-dNAM03-1d-W-C23	c.ProbeCvar c.T TT d-dNAM03-1d-W-C23
+169	S-dNAM03-1d-W-C24	c.ProbeCvar c.T TT d-dNAM03-1d-W-C24
+170	S-dNAM03-1d-W-C25	c.ProbeCvar c.T TT d-dNAM03-1d-W-C25
+171	S-dNAM03-1d-W-C26	c.ProbeCvar c.T TT d-dNAM03-1d-W-C26
+172	S-dNAM03-1d-W-C27	c.ProbeCvar c.T TT d-dNAM03-1d-W-C27
+173	S-dNAM03-1d-W-C28	c.ProbeCvar c.T TT d-dNAM03-1d-W-C28
+174	S-dNAM03-1d-W-C29	c.ProbeCvar c.T TT d-dNAM03-1d-W-C29
+175	S-dNAM03-1d-W-C30	c.ProbeCvar c.T TT d-dNAM03-1d-W-C30
+176	S-dNAM03-1d-W-C31	c.ProbeCvar c.T TT d-dNAM03-1d-W-C31
+177	S-dNAM03-1d-W-C32	c.ProbeCvar c.T TT d-dNAM03-1d-W-C32
+178	S-dNAM03-1d-W-C33	c.ProbeCvar c.T TT d-dNAM03-1d-W-C33
+179	S-dNAM03-1d-W-C34	c.ProbeCvar c.T TT d-dNAM03-1d-W-C34
+180	S-dNAM03-1d-W-C35	c.ProbeCvar c.T TT d-dNAM03-1d-W-C35
+181	S-dNAM03-1d-W-C36	c.ProbeCvar c.T TT d-dNAM03-1d-W-C36
+182	S-dNAM03-1d-W-C37	c.ProbeCvar c.T TT d-dNAM03-1d-W-C37
+183	S-dNAM03-1d-W-C38	c.ProbeCvar c.T TT d-dNAM03-1d-W-C38
+184	S-dNAM03-1d-W-C39	c.ProbeCvar c.T TT d-dNAM03-1d-W-C39
+185	S-dNAM03-1d-W-C40	c.ProbeCvar c.T TT d-dNAM03-1d-W-C40
+186	S-dNAM03-1d-W-C41	c.ProbeCvar c.T TT d-dNAM03-1d-W-C41
+187	S-dNAM03-1d-W-C42	c.ProbeCvar c.T TT d-dNAM03-1d-W-C42
+188	S-dNAM03-1d-W-C43	c.ProbeCvar c.T TT d-dNAM03-1d-W-C43
+189	S-dNAM03-1d-W-C44	c.ProbeCvar c.T TT d-dNAM03-1d-W-C44
+190	S-dNAM03-1d-W-C45	c.ProbeCvar c.T TT d-dNAM03-1d-W-C45
+191	S-dNAM03-1d-W-C46	c.ProbeCvar c.T TT d-dNAM03-1d-W-C46
+192	S-dNAM03-1d-W-C47	c.ProbeCvar c.T TT d-dNAM03-1d-W-C47
+193	S-dNAM03-1d-W-C48	c.ProbeCvar c.T TT d-dNAM03-1d-W-C48
+194	S-dNAM03-1d-W-D01	c.ProbeDvar c.T TT d-dNAM03-1d-W-D01
+195	S-dNAM03-1d-W-D02	c.ProbeDvar c.T TT d-dNAM03-1d-W-D02
+196	S-dNAM03-1d-W-D03	c.ProbeDvar c.T TT d-dNAM03-1d-W-D03
+197	S-dNAM03-1d-W-D04	c.ProbeDvar c.T TT d-dNAM03-1d-W-D04
+198	S-dNAM03-1d-W-D05	c.ProbeDvar c.T TT d-dNAM03-1d-W-D05
+199	S-dNAM03-1d-W-D06	c.ProbeDvar c.T TT d-dNAM03-1d-W-D06
+200	S-dNAM03-1d-W-D07	c.ProbeDvar c.T TT d-dNAM03-1d-W-D07
+201	S-dNAM03-1d-W-D08	c.ProbeDvar c.T TT d-dNAM03-1d-W-D08
+202	S-dNAM03-1d-W-D09	c.ProbeDvar c.T TT d-dNAM03-1d-W-D09
+203	S-dNAM03-1d-W-D10	c.ProbeDvar c.T TT d-dNAM03-1d-W-D10
+204	S-dNAM03-1d-W-D11	c.ProbeDvar c.T TT d-dNAM03-1d-W-D11
+205	S-dNAM03-1d-W-D12	c.ProbeDvar c.T TT d-dNAM03-1d-W-D12
+206	S-dNAM03-1d-W-D13	c.ProbeDvar c.T TT d-dNAM03-1d-W-D13
+207	S-dNAM03-1d-W-D14	c.ProbeDvar c.T TT d-dNAM03-1d-W-D14
+208	S-dNAM03-1d-W-D15	c.ProbeDvar c.T TT d-dNAM03-1d-W-D15
+209	S-dNAM03-1d-W-D16	c.ProbeDvar c.T TT d-dNAM03-1d-W-D16
+210	S-dNAM03-1d-W-D17	c.ProbeDvar c.T TT d-dNAM03-1d-W-D17
+211	S-dNAM03-1d-W-D18	c.ProbeDvar c.T TT d-dNAM03-1d-W-D18
+212	S-dNAM03-1d-W-D19	c.ProbeDvar c.T TT d-dNAM03-1d-W-D19
+213	S-dNAM03-1d-W-D20	c.ProbeDvar c.T TT d-dNAM03-1d-W-D20
+214	S-dNAM03-1d-W-D21	c.ProbeDvar c.T TT d-dNAM03-1d-W-D21
+215	S-dNAM03-1d-W-D22	c.ProbeDvar c.T TT d-dNAM03-1d-W-D22
+216	S-dNAM03-1d-W-D23	c.ProbeDvar c.T TT d-dNAM03-1d-W-D23
+217	S-dNAM03-1d-W-D24	c.ProbeDvar c.T TT d-dNAM03-1d-W-D24
+218	S-dNAM03-1d-W-D25	c.ProbeDvar c.T TT d-dNAM03-1d-W-D25
+219	S-dNAM03-1d-W-D26	c.ProbeDvar c.T TT d-dNAM03-1d-W-D26
+220	S-dNAM03-1d-W-D27	c.ProbeDvar c.T TT d-dNAM03-1d-W-D27
+221	S-dNAM03-1d-W-D28	c.ProbeDvar c.T TT d-dNAM03-1d-W-D28
+222	S-dNAM03-1d-W-D29	c.ProbeDvar c.T TT d-dNAM03-1d-W-D29
+223	S-dNAM03-1d-W-D30	c.ProbeDvar c.T TT d-dNAM03-1d-W-D30
+224	S-dNAM03-1d-W-D31	c.ProbeDvar c.T TT d-dNAM03-1d-W-D31
+225	S-dNAM03-1d-W-D32	c.ProbeDvar c.T TT d-dNAM03-1d-W-D32
+226	S-dNAM03-1d-W-D33	c.ProbeDvar c.T TT d-dNAM03-1d-W-D33
+227	S-dNAM03-1d-W-D34	c.ProbeDvar c.T TT d-dNAM03-1d-W-D34
+228	S-dNAM03-1d-W-D35	c.ProbeDvar c.T TT d-dNAM03-1d-W-D35
+229	S-dNAM03-1d-W-D36	c.ProbeDvar c.T TT d-dNAM03-1d-W-D36
+230	S-dNAM03-1d-W-D37	c.ProbeDvar c.T TT d-dNAM03-1d-W-D37
+231	S-dNAM03-1d-W-D38	c.ProbeDvar c.T TT d-dNAM03-1d-W-D38
+232	S-dNAM03-1d-W-D39	c.ProbeDvar c.T TT d-dNAM03-1d-W-D39
+233	S-dNAM03-1d-W-D40	c.ProbeDvar c.T TT d-dNAM03-1d-W-D40
+234	S-dNAM03-1d-W-D41	c.ProbeDvar c.T TT d-dNAM03-1d-W-D41
+235	S-dNAM03-1d-W-D42	c.ProbeDvar c.T TT d-dNAM03-1d-W-D42
+236	S-dNAM03-1d-W-D43	c.ProbeDvar c.T TT d-dNAM03-1d-W-D43
+237	S-dNAM03-1d-W-D44	c.ProbeDvar c.T TT d-dNAM03-1d-W-D44
+238	S-dNAM03-1d-W-D45	c.ProbeDvar c.T TT d-dNAM03-1d-W-D45
+239	S-dNAM03-1d-W-D46	c.ProbeDvar c.T TT d-dNAM03-1d-W-D46
+240	S-dNAM03-1d-W-D47	c.ProbeDvar c.T TT d-dNAM03-1d-W-D47
+241	S-dNAM03-1d-W-D48	c.ProbeDvar c.T TT d-dNAM03-1d-W-D48
+242	S-ProbeA	T ProbeAvar
+243	S-ProbeB	T ProbeBvar
+244	S-ProbeC	T ProbeCvar
+245	S-ProbeD	T ProbeDvar
