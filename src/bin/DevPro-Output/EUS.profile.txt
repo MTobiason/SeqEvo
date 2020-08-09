@@ -1,6 +1,0 @@
-//Intermolecular structural profile of unique complements identified by DevPro.jar on Wed Jul 08 20:40:17 EDT 2020
-Complement Length (Base-Pairs), Number of Complements
-2, 32
-3, 8
-4, 4
-23, 1

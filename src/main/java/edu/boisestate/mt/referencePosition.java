@@ -15,8 +15,8 @@ public class referencePosition
 {
 
 	private static MTlogger MTout = new MTlogger("referencePosition.java",3);
-   private static int intramolecularSLC; //Scoring-length-Criteria. WCC shorter than SLC will be ingored.
-	private static int intermolecularSLC;
+   private static int IntraOligoSLC; //Scoring-length-Criteria. WCC shorter than SLC will be ingored.
+	private static int InterOligoSLC;
 
 	private int S1; // index of first strand involved in the alignment
 	private int S2; // index of second strand involved in the alignment
@@ -192,8 +192,8 @@ public class referencePosition
       // Load default values
       // *******************
         
-      intramolecularSLC = 2;
-      intermolecularSLC = 2;
+      IntraOligoSLC = 1;
+      InterOligoSLC = 1;
       
       // ****************************
       // Check parameters File for options
@@ -206,43 +206,43 @@ public class referencePosition
          streamtokenizer.nextToken();
          if (streamtokenizer.ttype == StreamTokenizer.TT_WORD)
          {
-            if (streamtokenizer.sval.equalsIgnoreCase("intramolecularSLC"))
+            if (streamtokenizer.sval.equalsIgnoreCase("IntraOligoSLC"))
             {
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_NUMBER && (int)streamtokenizer.nval >= 1)
                {
-                  intramolecularSLC = (int)streamtokenizer.nval;
-                  System.out.println("intramolecularSLC value imported. Accepted value: " + intramolecularSLC);
+                  IntraOligoSLC = (int)streamtokenizer.nval;
+                  System.out.println("IntraOligoSLC value imported. Accepted value: " + IntraOligoSLC);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"intramolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IntraOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"intramolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IntraOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);            
                }
             }
-            else if (streamtokenizer.sval.equalsIgnoreCase("intermolecularSLC"))
+            else if (streamtokenizer.sval.equalsIgnoreCase("InterOligoSLC"))
             {
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_NUMBER && (int)streamtokenizer.nval >= 1)
                {
-                  intermolecularSLC = (int)streamtokenizer.nval;
-                  System.out.println("intermolecularSLC value imported. Accepted value: " + intermolecularSLC);
+                  InterOligoSLC = (int)streamtokenizer.nval;
+                  System.out.println("InterOligoSLC value imported. Accepted value: " + InterOligoSLC);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"intermolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"InterOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"intermolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"InterOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);            
                }
             }
@@ -524,7 +524,7 @@ public class referencePosition
                {
                   if (tempIsIntramolecular)
                   {
-                     if (complementLength >= intramolecularSLC)
+                     if (complementLength >= IntraOligoSLC)
                      {
                         //record the complement
                         tempScore = tempScore.add(intraScoreMap.get(complementLength));
@@ -532,7 +532,7 @@ public class referencePosition
                   }
                   else
                   {
-                     if(complementLength >= intermolecularSLC)
+                     if(complementLength >= InterOligoSLC)
                      {
                         //record the complement
                         tempScore = tempScore.add(interScoreMap.get(complementLength));
@@ -546,7 +546,7 @@ public class referencePosition
          {
             if (tempIsIntramolecular)
             {
-               if (complementLength >= intramolecularSLC)
+               if (complementLength >= IntraOligoSLC)
                {
                   //record the complement
                   tempScore = tempScore.add(intraScoreMap.get(complementLength));
@@ -554,7 +554,7 @@ public class referencePosition
             }
             else
             {
-               if(complementLength >= intermolecularSLC)
+               if(complementLength >= InterOligoSLC)
                {
                   //record the complement
                   tempScore = tempScore.add(interScoreMap.get(complementLength));
@@ -627,7 +627,7 @@ public class referencePosition
                {
                   if (tempIsIntramolecular)
                   {
-                     if (complementLength >= intramolecularSLC)
+                     if (complementLength >= IntraOligoSLC)
                      {
                         //record the complement
                         tempScore = tempScore.add(intraScoreMap.get(complementLength));
@@ -635,7 +635,7 @@ public class referencePosition
                   }
                   else
                   {
-                     if(complementLength >= intermolecularSLC)
+                     if(complementLength >= InterOligoSLC)
                      {
                         //record the complement
                         tempScore = tempScore.add(interScoreMap.get(complementLength));
@@ -649,7 +649,7 @@ public class referencePosition
          {
             if (tempIsIntramolecular)
             {
-               if (complementLength >= intramolecularSLC)
+               if (complementLength >= IntraOligoSLC)
                {
                   //record the complement
                   tempScore = tempScore.add(intraScoreMap.get(complementLength));
@@ -657,7 +657,7 @@ public class referencePosition
             }
             else
             {
-               if(complementLength >= intermolecularSLC)
+               if(complementLength >= InterOligoSLC)
                {
                   //record the complement
                   tempScore = tempScore.add(interScoreMap.get(complementLength));
@@ -688,7 +688,7 @@ public class referencePosition
    {
       Map<Integer,Integer> tempOL = new TreeMap<Integer,Integer>();
          
-      for (int j = IL ; j > 0 && j >= intramolecularSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
+      for (int j = IL ; j > 0 && j >= IntraOligoSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
       {
          tempOL.put( j , IL - j + 1);
       }
@@ -699,7 +699,7 @@ public class referencePosition
    {
       Map<Integer,Integer> tempOL = new TreeMap<Integer,Integer>();
          
-      for (int j = IL ; j > 0 && j >= intermolecularSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
+      for (int j = IL ; j > 0 && j >= InterOligoSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
       {
          tempOL.put( j , IL - j + 1);
       }
@@ -778,7 +778,7 @@ public class referencePosition
                {
                   if (tempIsIntramolecular)
                   {
-                     if (complementLength >= intramolecularSLC)
+                     if (complementLength >= IntraOligoSLC)
                      {
                         //record the complement
                         if(tempInterferenceProfile.containsKey(complementLength))
@@ -789,7 +789,7 @@ public class referencePosition
                   }
                   else
                   {
-                     if(complementLength >= intermolecularSLC)
+                     if(complementLength >= InterOligoSLC)
                      {
                         //record the complement
                         if(tempInterferenceProfile.containsKey(complementLength))
@@ -806,7 +806,7 @@ public class referencePosition
          {
             if (tempIsIntramolecular)
             {
-               if (complementLength >= intramolecularSLC)
+               if (complementLength >= IntraOligoSLC)
                {
                   //record the complement
                   if(tempInterferenceProfile.containsKey(complementLength))
@@ -817,7 +817,7 @@ public class referencePosition
             }
             else
             {
-               if(complementLength >= intermolecularSLC)
+               if(complementLength >= InterOligoSLC)
                {
                   //record the complement
                   if(tempInterferenceProfile.containsKey(complementLength))
@@ -909,7 +909,7 @@ public class referencePosition
                {
                   if (tempIsIntramolecular)
                   {
-                     if (complementLength >= intramolecularSLC)
+                     if (complementLength >= IntraOligoSLC)
                      {
                         //record the complement
                         if(tempInterferenceProfile.containsKey(complementLength))
@@ -920,7 +920,7 @@ public class referencePosition
                   }
                   else
                   {
-                     if(complementLength >= intermolecularSLC)
+                     if(complementLength >= InterOligoSLC)
                      {
                         //record the complement
                         if(tempInterferenceProfile.containsKey(complementLength))
@@ -937,7 +937,7 @@ public class referencePosition
          {
             if (tempIsIntramolecular)
             {
-               if (complementLength >= intramolecularSLC)
+               if (complementLength >= IntraOligoSLC)
                {
                   //record the complement
                   if(tempInterferenceProfile.containsKey(complementLength))
@@ -948,7 +948,7 @@ public class referencePosition
             }
             else
             {
-               if(complementLength >= intermolecularSLC)
+               if(complementLength >= InterOligoSLC)
                {
                   //record the complement
                   if(tempInterferenceProfile.containsKey(complementLength))
@@ -1037,7 +1037,7 @@ public class referencePosition
                {
                   if (tempIsIntramolecular)
                   {
-                     if (complementLength >= intramolecularSLC)
+                     if (complementLength >= IntraOligoSLC)
                      {
                         //record the complement
                         if(tempBP.containsKey(complementLength))
@@ -1048,7 +1048,7 @@ public class referencePosition
                   }
                   else
                   {
-                     if(complementLength >= intermolecularSLC)
+                     if(complementLength >= InterOligoSLC)
                      {
                         //record the complement
                         if(tempBP.containsKey(complementLength))
@@ -1065,7 +1065,7 @@ public class referencePosition
          {
             if (tempIsIntramolecular)
             {
-               if (complementLength >= intramolecularSLC)
+               if (complementLength >= IntraOligoSLC)
                {
                   //record the complement
                   if(tempBP.containsKey(complementLength))
@@ -1076,7 +1076,7 @@ public class referencePosition
             }
             else
             {
-               if(complementLength >= intermolecularSLC)
+               if(complementLength >= InterOligoSLC)
                {
                   //record the complement
                   if(tempBP.containsKey(complementLength))
@@ -1145,7 +1145,7 @@ public class referencePosition
                {
                   if (tempIsIntramolecular)
                   {
-                     if (complementLength >= intramolecularSLC)
+                     if (complementLength >= IntraOligoSLC)
                      {
                         //record the complement
                         if(tempBP.containsKey(complementLength))
@@ -1156,7 +1156,7 @@ public class referencePosition
                   }
                   else
                   {
-                     if(complementLength >= intermolecularSLC)
+                     if(complementLength >= InterOligoSLC)
                      {
                         //record the complement
                         if(tempBP.containsKey(complementLength))
@@ -1173,7 +1173,7 @@ public class referencePosition
          {
             if (tempIsIntramolecular)
             {
-               if (complementLength >= intramolecularSLC)
+               if (complementLength >= IntraOligoSLC)
                {
                   //record the complement
                   if(tempBP.containsKey(complementLength))
@@ -1184,7 +1184,7 @@ public class referencePosition
             }
             else
             {
-               if(complementLength >= intermolecularSLC)
+               if(complementLength >= InterOligoSLC)
                {
                   //record the complement
                   if(tempBP.containsKey(complementLength))

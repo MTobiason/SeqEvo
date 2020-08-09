@@ -1,0 +1,523 @@
+// Example Oligo-Domains File. MT 2020-08-05.
+// Format of each line: "Oligo number" -tab- "Oligo name" -tab- "Oligo domains"
+// "Oligo number": A user assigned number for each oligo. Not used by SeqEvo or DevPro.
+// "Oligo name": A user-assigned name for each oligo. May contain upper/lower case letters, numbers, '_', or '-'. Must start with a letter. 
+// "Oligo domains": A list of the binding domains in each oligo, entered in the 5' to 3' orientation. Entries must be seperated by a whitespace character ' '. The binding complement of a domain can be indicated by prepending a "Domain name" with 'c.'. Each "Domain name" must have a sequence provided in the "Domain Sequences" input file.
+// Lines preceded by a double slash "//" are ignored by SeqEvo and DevPro
+1	Strand-1	Domain-02-01-04	c.Domain-02-01-03	c.Domain-03-01-03	Domain-03-01-04
+2	Strand-3	Domain-02-01-08	c.Domain-02-01-07	c.Domain-03-01-07	Domain-03-01-08
+3	Strand-6	Domain-04-01-04	c.Domain-04-01-03	c.Domain-05-01-03	Domain-05-01-04
+4	Strand-7	Domain-04-01-06	c.Domain-04-01-05	c.Domain-03-01-05	Domain-03-01-06
+5	Strand-8	Domain-04-01-08	c.Domain-04-01-07	c.Domain-05-01-07	Domain-05-01-08
+6	Strand-11	Domain-06-01-04	c.Domain-06-01-03	c.Domain-07-01-03	Domain-07-01-04
+7	Strand-12	Domain-06-01-06	c.Domain-06-01-05	c.Domain-05-01-05	Domain-05-01-06
+8	Strand-13	Domain-06-01-08	c.Domain-06-01-07	c.Domain-07-01-07	Domain-07-01-08
+9	Strand-16	Domain-08-01-04	c.Domain-08-01-03	c.Domain-09-01-03	Domain-09-01-04
+10	Strand-17	Domain-08-01-06	c.Domain-08-01-05	c.Domain-07-01-05	Domain-07-01-06
+11	Strand-18	Domain-08-01-08	c.Domain-08-01-07	c.Domain-09-01-07	Domain-09-01-08
+12	Strand-23	Domain-09-02-02	c.Domain-09-02-01	c.Domain-08-02-01	Domain-08-02-02
+13	Strand-25	Domain-09-02-06	c.Domain-09-02-05	c.Domain-08-02-05	Domain-08-02-06
+14	Strand-27	Domain-09-02-10	c.Domain-09-02-09	c.Domain-08-02-09	Domain-08-02-10
+15	Strand-28	Domain-07-02-02	c.Domain-07-02-01	c.Domain-06-02-01	Domain-06-02-02
+16	Strand-29	Domain-07-02-04	c.Domain-07-02-03	c.Domain-08-02-03	Domain-08-02-04
+17	Strand-30	Domain-07-02-06	c.Domain-07-02-05	c.Domain-06-02-05	Domain-06-02-06
+18	Strand-31	Domain-07-02-08	c.Domain-07-02-07	c.Domain-08-02-07	Domain-08-02-08
+19	Strand-32	Domain-07-02-10	c.Domain-07-02-09	c.Domain-06-02-09	Domain-06-02-10
+20	Strand-33	Domain-05-02-02	c.Domain-05-02-01	c.Domain-04-02-01	Domain-04-02-02
+21	Strand-34	Domain-05-02-04	c.Domain-05-02-03	c.Domain-06-02-03	Domain-06-02-04
+22	Strand-35	Domain-05-02-06	c.Domain-05-02-05	c.Domain-04-02-05	Domain-04-02-06
+23	Strand-36	Domain-05-02-08	c.Domain-05-02-07	c.Domain-06-02-07	Domain-06-02-08
+24	Strand-37	Domain-05-02-10	c.Domain-05-02-09	c.Domain-04-02-09	Domain-04-02-10
+25	Strand-38	Domain-03-02-02	c.Domain-03-02-01	c.Domain-02-02-01	Domain-02-02-02
+26	Strand-39	Domain-03-02-04	c.Domain-03-02-03	c.Domain-04-02-03	Domain-04-02-04
+27	Strand-40	Domain-03-02-06	c.Domain-03-02-05	c.Domain-02-02-05	Domain-02-02-06
+28	Strand-41	Domain-03-02-08	c.Domain-03-02-07	c.Domain-04-02-07	Domain-04-02-08
+29	Strand-42	Domain-03-02-10	c.Domain-03-02-09	c.Domain-02-02-09	Domain-02-02-10
+30	Strand-46	Domain-02-03-04	c.Domain-02-03-03	c.Domain-03-03-03	Domain-03-03-04
+31	Strand-48	Domain-02-03-08	c.Domain-02-03-07	c.Domain-03-03-07	Domain-03-03-08
+32	Strand-49	Domain-02-03-10	c.Domain-02-03-09	c.Domain-01-03-09	Domain-01-03-10
+33	Strand-50	Domain-04-03-02	c.Domain-04-03-01	c.Domain-03-03-01	Domain-03-03-02
+34	Strand-51	Domain-04-03-04	c.Domain-04-03-03	c.Domain-05-03-03	Domain-05-03-04
+35	Strand-52	Domain-04-03-06	c.Domain-04-03-05	c.Domain-03-03-05	Domain-03-03-06
+36	Strand-53	Domain-04-03-08	c.Domain-04-03-07	c.Domain-05-03-07	Domain-05-03-08
+37	Strand-54	Domain-04-03-10	c.Domain-04-03-09	c.Domain-03-03-09	Domain-03-03-10
+38	Strand-55	Domain-06-03-02	c.Domain-06-03-01	c.Domain-05-03-01	Domain-05-03-02
+39	Strand-56	Domain-06-03-04	c.Domain-06-03-03	c.Domain-07-03-03	Domain-07-03-04
+40	Strand-57	Domain-06-03-06	c.Domain-06-03-05	c.Domain-05-03-05	Domain-05-03-06
+41	Strand-58	Domain-06-03-08	c.Domain-06-03-07	c.Domain-07-03-07	Domain-07-03-08
+42	Strand-59	Domain-06-03-10	c.Domain-06-03-09	c.Domain-05-03-09	Domain-05-03-10
+43	Strand-60	Domain-08-03-02	c.Domain-08-03-01	c.Domain-07-03-01	Domain-07-03-02
+44	Strand-61	Domain-08-03-04	c.Domain-08-03-03	c.Domain-09-03-03	Domain-09-03-04
+45	Strand-62	Domain-08-03-06	c.Domain-08-03-05	c.Domain-07-03-05	Domain-07-03-06
+46	Strand-63	Domain-08-03-08	c.Domain-08-03-07	c.Domain-09-03-07	Domain-09-03-08
+47	Strand-64	Domain-08-03-10	c.Domain-08-03-09	c.Domain-07-03-09	Domain-07-03-10
+48	Strand-67	Domain-10-03-10	c.Domain-10-03-09	c.Domain-09-03-09	Domain-09-03-10
+49	Strand-68	Domain-09-04-02	c.Domain-09-04-01	c.Domain-08-04-01	Domain-08-04-02
+50	Strand-70	Domain-09-04-06	c.Domain-09-04-05	c.Domain-08-04-05	Domain-08-04-06
+51	Strand-72	Domain-09-04-10	c.Domain-09-04-09	c.Domain-08-04-09	Domain-08-04-10
+52	Strand-73	Domain-07-04-02	c.Domain-07-04-01	c.Domain-06-04-01	Domain-06-04-02
+53	Strand-74	Domain-07-04-04	c.Domain-07-04-03	c.Domain-08-04-03	Domain-08-04-04
+54	Strand-75	Domain-07-04-06	c.Domain-07-04-05	c.Domain-06-04-05	Domain-06-04-06
+55	Strand-76	Domain-07-04-08	c.Domain-07-04-07	c.Domain-08-04-07	Domain-08-04-08
+56	Strand-77	Domain-07-04-10	c.Domain-07-04-09	c.Domain-06-04-09	Domain-06-04-10
+57	Strand-78	Domain-05-04-02	c.Domain-05-04-01	c.Domain-04-04-01	Domain-04-04-02
+58	Strand-79	Domain-05-04-04	c.Domain-05-04-03	c.Domain-06-04-03	Domain-06-04-04
+59	Strand-80	Domain-05-04-06	c.Domain-05-04-05	c.Domain-04-04-05	Domain-04-04-06
+60	Strand-81	Domain-05-04-08	c.Domain-05-04-07	c.Domain-06-04-07	Domain-06-04-08
+61	Strand-82	Domain-05-04-10	c.Domain-05-04-09	c.Domain-04-04-09	Domain-04-04-10
+62	Strand-83	Domain-03-04-02	c.Domain-03-04-01	c.Domain-02-04-01	Domain-02-04-02
+63	Strand-84	Domain-03-04-04	c.Domain-03-04-03	c.Domain-04-04-03	Domain-04-04-04
+64	Strand-85	Domain-03-04-06	c.Domain-03-04-05	c.Domain-02-04-05	Domain-02-04-06
+65	Strand-86	Domain-03-04-08	c.Domain-03-04-07	c.Domain-04-04-07	Domain-04-04-08
+66	Strand-87	Domain-03-04-10	c.Domain-03-04-09	c.Domain-02-04-09	Domain-02-04-10
+67	Strand-91	Domain-02-05-04	c.Domain-02-05-03	c.Domain-03-05-03	Domain-03-05-04
+68	Strand-93	Domain-02-05-08	c.Domain-02-05-07	c.Domain-03-05-07	Domain-03-05-08
+69	Strand-94	Domain-02-05-10	c.Domain-02-05-09	c.Domain-01-05-09	Domain-01-05-10
+70	Strand-95	Domain-04-05-02	c.Domain-04-05-01	c.Domain-03-05-01	Domain-03-05-02
+71	Strand-96	Domain-04-05-04	c.Domain-04-05-03	c.Domain-05-05-03	Domain-05-05-04
+72	Strand-97	Domain-04-05-06	c.Domain-04-05-05	c.Domain-03-05-05	Domain-03-05-06
+73	Strand-98	Domain-04-05-08	c.Domain-04-05-07	c.Domain-05-05-07	Domain-05-05-08
+74	Strand-99	Domain-04-05-10	c.Domain-04-05-09	c.Domain-03-05-09	Domain-03-05-10
+75	Strand-100	Domain-06-05-02	c.Domain-06-05-01	c.Domain-05-05-01	Domain-05-05-02
+76	Strand-101	Domain-06-05-04	c.Domain-06-05-03	c.Domain-07-05-03	Domain-07-05-04
+77	Strand-102	Domain-06-05-06	c.Domain-06-05-05	c.Domain-05-05-05	Domain-05-05-06
+78	Strand-103	Domain-06-05-08	c.Domain-06-05-07	c.Domain-07-05-07	Domain-07-05-08
+79	Strand-104	Domain-06-05-10	c.Domain-06-05-09	c.Domain-05-05-09	Domain-05-05-10
+80	Strand-105	Domain-08-05-02	c.Domain-08-05-01	c.Domain-07-05-01	Domain-07-05-02
+81	Strand-106	Domain-08-05-04	c.Domain-08-05-03	c.Domain-09-05-03	Domain-09-05-04
+82	Strand-107	Domain-08-05-06	c.Domain-08-05-05	c.Domain-07-05-05	Domain-07-05-06
+83	Strand-108	Domain-08-05-08	c.Domain-08-05-07	c.Domain-09-05-07	Domain-09-05-08
+84	Strand-109	Domain-08-05-10	c.Domain-08-05-09	c.Domain-07-05-09	Domain-07-05-10
+85	Strand-112	Domain-10-05-10	c.Domain-10-05-09	c.Domain-09-05-09	Domain-09-05-10
+86	Strand-113	Domain-09-06-02	c.Domain-09-06-01	c.Domain-08-06-01	Domain-08-06-02
+87	Strand-115	Domain-09-06-06	c.Domain-09-06-05	c.Domain-08-06-05	Domain-08-06-06
+88	Strand-117	Domain-09-06-10	c.Domain-09-06-09	c.Domain-08-06-09	Domain-08-06-10
+89	Strand-118	Domain-07-06-02	c.Domain-07-06-01	c.Domain-06-06-01	Domain-06-06-02
+90	Strand-119	Domain-07-06-04	c.Domain-07-06-03	c.Domain-08-06-03	Domain-08-06-04
+91	Strand-120	Domain-07-06-06	c.Domain-07-06-05	c.Domain-06-06-05	Domain-06-06-06
+92	Strand-121	Domain-07-06-08	c.Domain-07-06-07	c.Domain-08-06-07	Domain-08-06-08
+93	Strand-122	Domain-07-06-10	c.Domain-07-06-09	c.Domain-06-06-09	Domain-06-06-10
+94	Strand-123	Domain-05-06-02	c.Domain-05-06-01	c.Domain-04-06-01	Domain-04-06-02
+95	Strand-124	Domain-05-06-04	c.Domain-05-06-03	c.Domain-06-06-03	Domain-06-06-04
+96	Strand-125	Domain-05-06-06	c.Domain-05-06-05	c.Domain-04-06-05	Domain-04-06-06
+97	Strand-126	Domain-05-06-08	c.Domain-05-06-07	c.Domain-06-06-07	Domain-06-06-08
+98	Strand-127	Domain-05-06-10	c.Domain-05-06-09	c.Domain-04-06-09	Domain-04-06-10
+99	Strand-128	Domain-03-06-02	c.Domain-03-06-01	c.Domain-02-06-01	Domain-02-06-02
+100	Strand-129	Domain-03-06-04	c.Domain-03-06-03	c.Domain-04-06-03	Domain-04-06-04
+101	Strand-130	Domain-03-06-06	c.Domain-03-06-05	c.Domain-02-06-05	Domain-02-06-06
+102	Strand-131	Domain-03-06-08	c.Domain-03-06-07	c.Domain-04-06-07	Domain-04-06-08
+103	Strand-132	Domain-03-06-10	c.Domain-03-06-09	c.Domain-02-06-09	Domain-02-06-10
+104	Strand-136	Domain-02-07-04	c.Domain-02-07-03	c.Domain-03-07-03	Domain-03-07-04
+105	Strand-138	Domain-02-07-08	c.Domain-02-07-07	c.Domain-03-07-07	Domain-03-07-08
+106	Strand-139	Domain-02-07-10	c.Domain-02-07-09	c.Domain-01-07-09	Domain-01-07-10
+107	Strand-140	Domain-04-07-02	c.Domain-04-07-01	c.Domain-03-07-01	Domain-03-07-02
+108	Strand-141	Domain-04-07-04	c.Domain-04-07-03	c.Domain-05-07-03	Domain-05-07-04
+109	Strand-142	Domain-04-07-06	c.Domain-04-07-05	c.Domain-03-07-05	Domain-03-07-06
+110	Strand-143	Domain-04-07-08	c.Domain-04-07-07	c.Domain-05-07-07	Domain-05-07-08
+111	Strand-144	Domain-04-07-10	c.Domain-04-07-09	c.Domain-03-07-09	Domain-03-07-10
+112	Strand-145	Domain-06-07-02	c.Domain-06-07-01	c.Domain-05-07-01	Domain-05-07-02
+113	Strand-146	Domain-06-07-04	c.Domain-06-07-03	c.Domain-07-07-03	Domain-07-07-04
+114	Strand-147	Domain-06-07-06	c.Domain-06-07-05	c.Domain-05-07-05	Domain-05-07-06
+115	Strand-148	Domain-06-07-08	c.Domain-06-07-07	c.Domain-07-07-07	Domain-07-07-08
+116	Strand-149	Domain-06-07-10	c.Domain-06-07-09	c.Domain-05-07-09	Domain-05-07-10
+117	Strand-150	Domain-08-07-02	c.Domain-08-07-01	c.Domain-07-07-01	Domain-07-07-02
+118	Strand-151	Domain-08-07-04	c.Domain-08-07-03	c.Domain-09-07-03	Domain-09-07-04
+119	Strand-152	Domain-08-07-06	c.Domain-08-07-05	c.Domain-07-07-05	Domain-07-07-06
+120	Strand-153	Domain-08-07-08	c.Domain-08-07-07	c.Domain-09-07-07	Domain-09-07-08
+121	Strand-154	Domain-08-07-10	c.Domain-08-07-09	c.Domain-07-07-09	Domain-07-07-10
+122	Strand-157	Domain-10-07-10	c.Domain-10-07-09	c.Domain-09-07-09	Domain-09-07-10
+123	Strand-158	Domain-09-08-02	c.Domain-09-08-01	c.Domain-08-08-01	Domain-08-08-02
+124	Strand-160	Domain-09-08-06	c.Domain-09-08-05	c.Domain-08-08-05	Domain-08-08-06
+125	Strand-162	Domain-09-08-10	c.Domain-09-08-09	c.Domain-08-08-09	Domain-08-08-10
+126	Strand-163	Domain-07-08-02	c.Domain-07-08-01	c.Domain-06-08-01	Domain-06-08-02
+127	Strand-164	Domain-07-08-04	c.Domain-07-08-03	c.Domain-08-08-03	Domain-08-08-04
+128	Strand-165	Domain-07-08-06	c.Domain-07-08-05	c.Domain-06-08-05	Domain-06-08-06
+129	Strand-166	Domain-07-08-08	c.Domain-07-08-07	c.Domain-08-08-07	Domain-08-08-08
+130	Strand-167	Domain-07-08-10	c.Domain-07-08-09	c.Domain-06-08-09	Domain-06-08-10
+131	Strand-168	Domain-05-08-02	c.Domain-05-08-01	c.Domain-04-08-01	Domain-04-08-02
+132	Strand-169	Domain-05-08-04	c.Domain-05-08-03	c.Domain-06-08-03	Domain-06-08-04
+133	Strand-170	Domain-05-08-06	c.Domain-05-08-05	c.Domain-04-08-05	Domain-04-08-06
+134	Strand-171	Domain-05-08-08	c.Domain-05-08-07	c.Domain-06-08-07	Domain-06-08-08
+135	Strand-172	Domain-05-08-10	c.Domain-05-08-09	c.Domain-04-08-09	Domain-04-08-10
+136	Strand-173	Domain-03-08-02	c.Domain-03-08-01	c.Domain-02-08-01	Domain-02-08-02
+137	Strand-174	Domain-03-08-04	c.Domain-03-08-03	c.Domain-04-08-03	Domain-04-08-04
+138	Strand-175	Domain-03-08-06	c.Domain-03-08-05	c.Domain-02-08-05	Domain-02-08-06
+139	Strand-176	Domain-03-08-08	c.Domain-03-08-07	c.Domain-04-08-07	Domain-04-08-08
+140	Strand-177	Domain-03-08-10	c.Domain-03-08-09	c.Domain-02-08-09	Domain-02-08-10
+141	Strand-181	Domain-02-09-04	c.Domain-02-09-03	c.Domain-03-09-03	Domain-03-09-04
+142	Strand-183	Domain-02-09-08	c.Domain-02-09-07	c.Domain-03-09-07	Domain-03-09-08
+143	Strand-184	Domain-02-09-10	c.Domain-02-09-09	c.Domain-01-09-09	Domain-01-09-10
+144	Strand-185	Domain-04-09-02	c.Domain-04-09-01	c.Domain-03-09-01	Domain-03-09-02
+145	Strand-186	Domain-04-09-04	c.Domain-04-09-03	c.Domain-05-09-03	Domain-05-09-04
+146	Strand-187	Domain-04-09-06	c.Domain-04-09-05	c.Domain-03-09-05	Domain-03-09-06
+147	Strand-188	Domain-04-09-08	c.Domain-04-09-07	c.Domain-05-09-07	Domain-05-09-08
+148	Strand-189	Domain-04-09-10	c.Domain-04-09-09	c.Domain-03-09-09	Domain-03-09-10
+149	Strand-190	Domain-06-09-02	c.Domain-06-09-01	c.Domain-05-09-01	Domain-05-09-02
+150	Strand-191	Domain-06-09-04	c.Domain-06-09-03	c.Domain-07-09-03	Domain-07-09-04
+151	Strand-192	Domain-06-09-06	c.Domain-06-09-05	c.Domain-05-09-05	Domain-05-09-06
+152	Strand-193	Domain-06-09-08	c.Domain-06-09-07	c.Domain-07-09-07	Domain-07-09-08
+153	Strand-194	Domain-06-09-10	c.Domain-06-09-09	c.Domain-05-09-09	Domain-05-09-10
+154	Strand-195	Domain-08-09-02	c.Domain-08-09-01	c.Domain-07-09-01	Domain-07-09-02
+155	Strand-196	Domain-08-09-04	c.Domain-08-09-03	c.Domain-09-09-03	Domain-09-09-04
+156	Strand-197	Domain-08-09-06	c.Domain-08-09-05	c.Domain-07-09-05	Domain-07-09-06
+157	Strand-198	Domain-08-09-08	c.Domain-08-09-07	c.Domain-09-09-07	Domain-09-09-08
+158	Strand-199	Domain-08-09-10	c.Domain-08-09-09	c.Domain-07-09-09	Domain-07-09-10
+159	Strand-202	Domain-10-09-10	c.Domain-10-09-09	c.Domain-09-09-09	Domain-09-09-10
+160	Strand-205	Domain-09-10-06	c.Domain-09-10-05	c.Domain-08-10-05	Domain-08-10-06
+161	Strand-206	Domain-09-10-08	c.Domain-09-10-07	c.Domain-10-10-07	Domain-10-10-08
+162	Strand-209	Domain-07-10-04	c.Domain-07-10-03	c.Domain-08-10-03	Domain-08-10-04
+163	Strand-210	Domain-07-10-06	c.Domain-07-10-05	c.Domain-06-10-05	Domain-06-10-06
+164	Strand-211	Domain-07-10-08	c.Domain-07-10-07	c.Domain-08-10-07	Domain-08-10-08
+165	Strand-214	Domain-05-10-04	c.Domain-05-10-03	c.Domain-06-10-03	Domain-06-10-04
+166	Strand-215	Domain-05-10-06	c.Domain-05-10-05	c.Domain-04-10-05	Domain-04-10-06
+167	Strand-216	Domain-05-10-08	c.Domain-05-10-07	c.Domain-06-10-07	Domain-06-10-08
+168	Strand-219	Domain-03-10-04	c.Domain-03-10-03	c.Domain-04-10-03	Domain-04-10-04
+169	Strand-220	Domain-03-10-06	c.Domain-03-10-05	c.Domain-02-10-05	Domain-02-10-06
+170	Strand-221	Domain-03-10-08	c.Domain-03-10-07	c.Domain-04-10-07	Domain-04-10-08
+171	Strand-227	Domain-T8	c.Domain-01-01-10	c.Domain-01-02-10	Domain-T8
+172	Strand-230	Domain-T8	c.Domain-03-01-10	c.Domain-03-02-10	Domain-T8
+173	Strand-233	Domain-T8	c.Domain-05-01-10	c.Domain-05-02-10	Domain-T8
+174	Strand-236	Domain-T8	c.Domain-07-01-10	c.Domain-07-02-10	Domain-T8
+175	Strand-239	Domain-T8	c.Domain-09-01-10	c.Domain-09-02-10	Domain-T8
+176	Strand-240	Domain-10-02-01	Domain-T8	Domain-T8	Domain-10-01-01
+177	Strand-241	Domain-10-02-03	c.Domain-10-02-02	c.Domain-10-03-02	Domain-10-03-03
+178	Strand-243	Domain-10-02-07	c.Domain-10-02-06	c.Domain-10-03-06	Domain-10-03-07
+179	Strand-244	Domain-10-02-09	c.Domain-10-02-08	c.Domain-10-01-08	Domain-10-01-09
+180	Strand-245	Domain-T8	c.Domain-10-02-10	c.Domain-10-03-10	Domain-T8
+181	Strand-246	Domain-08-02-01	Domain-T8	Domain-T8	Domain-08-01-01
+182	Strand-247	Domain-08-02-03	c.Domain-08-02-02	c.Domain-08-03-02	Domain-08-03-03
+183	Strand-249	Domain-08-02-07	c.Domain-08-02-06	c.Domain-08-03-06	Domain-08-03-07
+184	Strand-250	Domain-08-02-09	c.Domain-08-02-08	c.Domain-08-01-08	Domain-08-01-09
+185	Strand-251	Domain-T8	c.Domain-08-02-10	c.Domain-08-03-10	Domain-T8
+186	Strand-252	Domain-06-02-01	Domain-T8	Domain-T8	Domain-06-01-01
+187	Strand-253	Domain-06-02-03	c.Domain-06-02-02	c.Domain-06-03-02	Domain-06-03-03
+188	Strand-255	Domain-06-02-07	c.Domain-06-02-06	c.Domain-06-03-06	Domain-06-03-07
+189	Strand-256	Domain-06-02-09	c.Domain-06-02-08	c.Domain-06-01-08	Domain-06-01-09
+190	Strand-257	Domain-T8	c.Domain-06-02-10	c.Domain-06-03-10	Domain-T8
+191	Strand-258	Domain-04-02-01	Domain-T8	Domain-T8	Domain-04-01-01
+192	Strand-259	Domain-04-02-03	c.Domain-04-02-02	c.Domain-04-03-02	Domain-04-03-03
+193	Strand-261	Domain-04-02-07	c.Domain-04-02-06	c.Domain-04-03-06	Domain-04-03-07
+194	Strand-262	Domain-04-02-09	c.Domain-04-02-08	c.Domain-04-01-08	Domain-04-01-09
+195	Strand-263	Domain-T8	c.Domain-04-02-10	c.Domain-04-03-10	Domain-T8
+196	Strand-264	Domain-02-02-01	Domain-T8	Domain-T8	Domain-02-01-01
+197	Strand-265	Domain-02-02-03	c.Domain-02-02-02	c.Domain-02-03-02	Domain-02-03-03
+198	Strand-267	Domain-02-02-07	c.Domain-02-02-06	c.Domain-02-03-06	Domain-02-03-07
+199	Strand-268	Domain-02-02-09	c.Domain-02-02-08	c.Domain-02-01-08	Domain-02-01-09
+200	Strand-269	Domain-T8	c.Domain-02-02-10	c.Domain-02-03-10	Domain-T8
+201	Strand-270	Domain-01-03-01	Domain-T8	Domain-T8	Domain-01-02-01
+202	Strand-271	Domain-01-03-03	c.Domain-01-03-02	c.Domain-01-04-02	Domain-01-04-03
+203	Strand-272	Domain-01-03-05	c.Domain-01-03-04	c.Domain-01-02-04	Domain-01-02-05
+204	Strand-273	Domain-01-03-07	c.Domain-01-03-06	c.Domain-01-04-06	Domain-01-04-07
+205	Strand-274	Domain-01-03-09	c.Domain-01-03-08	c.Domain-01-02-08	Domain-01-02-09
+206	Strand-275	Domain-T8	c.Domain-01-03-10	c.Domain-01-04-10	Domain-T8
+207	Strand-276	Domain-03-03-01	Domain-T8	Domain-T8	Domain-03-02-01
+208	Strand-277	Domain-03-03-03	c.Domain-03-03-02	c.Domain-03-04-02	Domain-03-04-03
+209	Strand-278	Domain-03-03-05	c.Domain-03-03-04	c.Domain-03-02-04	Domain-03-02-05
+210	Strand-279	Domain-03-03-07	c.Domain-03-03-06	c.Domain-03-04-06	Domain-03-04-07
+211	Strand-280	Domain-03-03-09	c.Domain-03-03-08	c.Domain-03-02-08	Domain-03-02-09
+212	Strand-281	Domain-T8	c.Domain-03-03-10	c.Domain-03-04-10	Domain-T8
+213	Strand-282	Domain-05-03-01	Domain-T8	Domain-T8	Domain-05-02-01
+214	Strand-283	Domain-05-03-03	c.Domain-05-03-02	c.Domain-05-04-02	Domain-05-04-03
+215	Strand-284	Domain-05-03-05	c.Domain-05-03-04	c.Domain-05-02-04	Domain-05-02-05
+216	Strand-285	Domain-05-03-07	c.Domain-05-03-06	c.Domain-05-04-06	Domain-05-04-07
+217	Strand-286	Domain-05-03-09	c.Domain-05-03-08	c.Domain-05-02-08	Domain-05-02-09
+218	Strand-287	Domain-T8	c.Domain-05-03-10	c.Domain-05-04-10	Domain-T8
+219	Strand-288	Domain-07-03-01	Domain-T8	Domain-T8	Domain-07-02-01
+220	Strand-289	Domain-07-03-03	c.Domain-07-03-02	c.Domain-07-04-02	Domain-07-04-03
+221	Strand-290	Domain-07-03-05	c.Domain-07-03-04	c.Domain-07-02-04	Domain-07-02-05
+222	Strand-291	Domain-07-03-07	c.Domain-07-03-06	c.Domain-07-04-06	Domain-07-04-07
+223	Strand-292	Domain-07-03-09	c.Domain-07-03-08	c.Domain-07-02-08	Domain-07-02-09
+224	Strand-293	Domain-T8	c.Domain-07-03-10	c.Domain-07-04-10	Domain-T8
+225	Strand-294	Domain-09-03-01	Domain-T8	Domain-T8	Domain-09-02-01
+226	Strand-295	Domain-09-03-03	c.Domain-09-03-02	c.Domain-09-04-02	Domain-09-04-03
+227	Strand-296	Domain-09-03-05	c.Domain-09-03-04	c.Domain-09-02-04	Domain-09-02-05
+228	Strand-297	Domain-09-03-07	c.Domain-09-03-06	c.Domain-09-04-06	Domain-09-04-07
+229	Strand-298	Domain-09-03-09	c.Domain-09-03-08	c.Domain-09-02-08	Domain-09-02-09
+230	Strand-299	Domain-T8	c.Domain-09-03-10	c.Domain-09-04-10	Domain-T8
+231	Strand-300	Domain-10-04-01	Domain-T8	Domain-T8	Domain-10-03-01
+232	Strand-301	Domain-10-04-03	c.Domain-10-04-02	c.Domain-10-05-02	Domain-10-05-03
+233	Strand-302	Domain-10-04-05	c.Domain-10-04-04	c.Domain-10-03-04	Domain-10-03-05
+234	Strand-303	Domain-10-04-07	c.Domain-10-04-06	c.Domain-10-05-06	Domain-10-05-07
+235	Strand-304	Domain-10-04-09	c.Domain-10-04-08	c.Domain-10-03-08	Domain-10-03-09
+236	Strand-305	Domain-T8	c.Domain-10-04-10	c.Domain-10-05-10	Domain-T8
+237	Strand-306	Domain-08-04-01	Domain-T8	Domain-T8	Domain-08-03-01
+238	Strand-307	Domain-08-04-03	c.Domain-08-04-02	c.Domain-08-05-02	Domain-08-05-03
+239	Strand-308	Domain-08-04-05	c.Domain-08-04-04	c.Domain-08-03-04	Domain-08-03-05
+240	Strand-309	Domain-08-04-07	c.Domain-08-04-06	c.Domain-08-05-06	Domain-08-05-07
+241	Strand-310	Domain-08-04-09	c.Domain-08-04-08	c.Domain-08-03-08	Domain-08-03-09
+242	Strand-311	Domain-T8	c.Domain-08-04-10	c.Domain-08-05-10	Domain-T8
+243	Strand-312	Domain-06-04-01	Domain-T8	Domain-T8	Domain-06-03-01
+244	Strand-313	Domain-06-04-03	c.Domain-06-04-02	c.Domain-06-05-02	Domain-06-05-03
+245	Strand-314	Domain-06-04-05	c.Domain-06-04-04	c.Domain-06-03-04	Domain-06-03-05
+246	Strand-315	Domain-06-04-07	c.Domain-06-04-06	c.Domain-06-05-06	Domain-06-05-07
+247	Strand-316	Domain-06-04-09	c.Domain-06-04-08	c.Domain-06-03-08	Domain-06-03-09
+248	Strand-317	Domain-T8	c.Domain-06-04-10	c.Domain-06-05-10	Domain-T8
+249	Strand-318	Domain-04-04-01	Domain-T8	Domain-T8	Domain-04-03-01
+250	Strand-319	Domain-04-04-03	c.Domain-04-04-02	c.Domain-04-05-02	Domain-04-05-03
+251	Strand-320	Domain-04-04-05	c.Domain-04-04-04	c.Domain-04-03-04	Domain-04-03-05
+252	Strand-321	Domain-04-04-07	c.Domain-04-04-06	c.Domain-04-05-06	Domain-04-05-07
+253	Strand-322	Domain-04-04-09	c.Domain-04-04-08	c.Domain-04-03-08	Domain-04-03-09
+254	Strand-323	Domain-T8	c.Domain-04-04-10	c.Domain-04-05-10	Domain-T8
+255	Strand-324	Domain-02-04-01	Domain-T8	Domain-T8	Domain-02-03-01
+256	Strand-325	Domain-02-04-03	c.Domain-02-04-02	c.Domain-02-05-02	Domain-02-05-03
+257	Strand-326	Domain-02-04-05	c.Domain-02-04-04	c.Domain-02-03-04	Domain-02-03-05
+258	Strand-327	Domain-02-04-07	c.Domain-02-04-06	c.Domain-02-05-06	Domain-02-05-07
+259	Strand-328	Domain-02-04-09	c.Domain-02-04-08	c.Domain-02-03-08	Domain-02-03-09
+260	Strand-329	Domain-T8	c.Domain-02-04-10	c.Domain-02-05-10	Domain-T8
+261	Strand-330	Domain-01-05-01	Domain-T8	Domain-T8	Domain-01-04-01
+262	Strand-331	Domain-01-05-03	c.Domain-01-05-02	c.Domain-01-06-02	Domain-01-06-03
+263	Strand-332	Domain-01-05-05	c.Domain-01-05-04	c.Domain-01-04-04	Domain-01-04-05
+264	Strand-333	Domain-01-05-07	c.Domain-01-05-06	c.Domain-01-06-06	Domain-01-06-07
+265	Strand-334	Domain-01-05-09	c.Domain-01-05-08	c.Domain-01-04-08	Domain-01-04-09
+266	Strand-335	Domain-T8	c.Domain-01-05-10	c.Domain-01-06-10	Domain-T8
+267	Strand-336	Domain-03-05-01	Domain-T8	Domain-T8	Domain-03-04-01
+268	Strand-337	Domain-03-05-03	c.Domain-03-05-02	c.Domain-03-06-02	Domain-03-06-03
+269	Strand-338	Domain-03-05-05	c.Domain-03-05-04	c.Domain-03-04-04	Domain-03-04-05
+270	Strand-339	Domain-03-05-07	c.Domain-03-05-06	c.Domain-03-06-06	Domain-03-06-07
+271	Strand-340	Domain-03-05-09	c.Domain-03-05-08	c.Domain-03-04-08	Domain-03-04-09
+272	Strand-341	Domain-T8	c.Domain-03-05-10	c.Domain-03-06-10	Domain-T8
+273	Strand-342	Domain-05-05-01	Domain-T8	Domain-T8	Domain-05-04-01
+274	Strand-343	Domain-05-05-03	c.Domain-05-05-02	c.Domain-05-06-02	Domain-05-06-03
+275	Strand-344	Domain-05-05-05	c.Domain-05-05-04	c.Domain-05-04-04	Domain-05-04-05
+276	Strand-345	Domain-05-05-07	c.Domain-05-05-06	c.Domain-05-06-06	Domain-05-06-07
+277	Strand-346	Domain-05-05-09	c.Domain-05-05-08	c.Domain-05-04-08	Domain-05-04-09
+278	Strand-347	Domain-T8	c.Domain-05-05-10	c.Domain-05-06-10	Domain-T8
+279	Strand-348	Domain-07-05-01	Domain-T8	Domain-T8	Domain-07-04-01
+280	Strand-349	Domain-07-05-03	c.Domain-07-05-02	c.Domain-07-06-02	Domain-07-06-03
+281	Strand-350	Domain-07-05-05	c.Domain-07-05-04	c.Domain-07-04-04	Domain-07-04-05
+282	Strand-351	Domain-07-05-07	c.Domain-07-05-06	c.Domain-07-06-06	Domain-07-06-07
+283	Strand-352	Domain-07-05-09	c.Domain-07-05-08	c.Domain-07-04-08	Domain-07-04-09
+284	Strand-353	Domain-T8	c.Domain-07-05-10	c.Domain-07-06-10	Domain-T8
+285	Strand-354	Domain-09-05-01	Domain-T8	Domain-T8	Domain-09-04-01
+286	Strand-355	Domain-09-05-03	c.Domain-09-05-02	c.Domain-09-06-02	Domain-09-06-03
+287	Strand-356	Domain-09-05-05	c.Domain-09-05-04	c.Domain-09-04-04	Domain-09-04-05
+288	Strand-357	Domain-09-05-07	c.Domain-09-05-06	c.Domain-09-06-06	Domain-09-06-07
+289	Strand-358	Domain-09-05-09	c.Domain-09-05-08	c.Domain-09-04-08	Domain-09-04-09
+290	Strand-359	Domain-T8	c.Domain-09-05-10	c.Domain-09-06-10	Domain-T8
+291	Strand-360	Domain-10-06-01	Domain-T8	Domain-T8	Domain-10-05-01
+292	Strand-361	Domain-10-06-03	c.Domain-10-06-02	c.Domain-10-07-02	Domain-10-07-03
+293	Strand-362	Domain-10-06-05	c.Domain-10-06-04	c.Domain-10-05-04	Domain-10-05-05
+294	Strand-363	Domain-10-06-07	c.Domain-10-06-06	c.Domain-10-07-06	Domain-10-07-07
+295	Strand-364	Domain-10-06-09	c.Domain-10-06-08	c.Domain-10-05-08	Domain-10-05-09
+296	Strand-365	Domain-T8	c.Domain-10-06-10	c.Domain-10-07-10	Domain-T8
+297	Strand-366	Domain-08-06-01	Domain-T8	Domain-T8	Domain-08-05-01
+298	Strand-367	Domain-08-06-03	c.Domain-08-06-02	c.Domain-08-07-02	Domain-08-07-03
+299	Strand-368	Domain-08-06-05	c.Domain-08-06-04	c.Domain-08-05-04	Domain-08-05-05
+300	Strand-369	Domain-08-06-07	c.Domain-08-06-06	c.Domain-08-07-06	Domain-08-07-07
+301	Strand-370	Domain-08-06-09	c.Domain-08-06-08	c.Domain-08-05-08	Domain-08-05-09
+302	Strand-371	Domain-T8	c.Domain-08-06-10	c.Domain-08-07-10	Domain-T8
+303	Strand-372	Domain-06-06-01	Domain-T8	Domain-T8	Domain-06-05-01
+304	Strand-373	Domain-06-06-03	c.Domain-06-06-02	c.Domain-06-07-02	Domain-06-07-03
+305	Strand-374	Domain-06-06-05	c.Domain-06-06-04	c.Domain-06-05-04	Domain-06-05-05
+306	Strand-375	Domain-06-06-07	c.Domain-06-06-06	c.Domain-06-07-06	Domain-06-07-07
+307	Strand-376	Domain-06-06-09	c.Domain-06-06-08	c.Domain-06-05-08	Domain-06-05-09
+308	Strand-377	Domain-T8	c.Domain-06-06-10	c.Domain-06-07-10	Domain-T8
+309	Strand-378	Domain-04-06-01	Domain-T8	Domain-T8	Domain-04-05-01
+310	Strand-379	Domain-04-06-03	c.Domain-04-06-02	c.Domain-04-07-02	Domain-04-07-03
+311	Strand-380	Domain-04-06-05	c.Domain-04-06-04	c.Domain-04-05-04	Domain-04-05-05
+312	Strand-381	Domain-04-06-07	c.Domain-04-06-06	c.Domain-04-07-06	Domain-04-07-07
+313	Strand-382	Domain-04-06-09	c.Domain-04-06-08	c.Domain-04-05-08	Domain-04-05-09
+314	Strand-383	Domain-T8	c.Domain-04-06-10	c.Domain-04-07-10	Domain-T8
+315	Strand-384	Domain-02-06-01	Domain-T8	Domain-T8	Domain-02-05-01
+316	Strand-385	Domain-02-06-03	c.Domain-02-06-02	c.Domain-02-07-02	Domain-02-07-03
+317	Strand-386	Domain-02-06-05	c.Domain-02-06-04	c.Domain-02-05-04	Domain-02-05-05
+318	Strand-387	Domain-02-06-07	c.Domain-02-06-06	c.Domain-02-07-06	Domain-02-07-07
+319	Strand-388	Domain-02-06-09	c.Domain-02-06-08	c.Domain-02-05-08	Domain-02-05-09
+320	Strand-389	Domain-T8	c.Domain-02-06-10	c.Domain-02-07-10	Domain-T8
+321	Strand-390	Domain-01-07-01	Domain-T8	Domain-T8	Domain-01-06-01
+322	Strand-391	Domain-01-07-03	c.Domain-01-07-02	c.Domain-01-08-02	Domain-01-08-03
+323	Strand-392	Domain-01-07-05	c.Domain-01-07-04	c.Domain-01-06-04	Domain-01-06-05
+324	Strand-393	Domain-01-07-07	c.Domain-01-07-06	c.Domain-01-08-06	Domain-01-08-07
+325	Strand-394	Domain-01-07-09	c.Domain-01-07-08	c.Domain-01-06-08	Domain-01-06-09
+326	Strand-395	Domain-T8	c.Domain-01-07-10	c.Domain-01-08-10	Domain-T8
+327	Strand-396	Domain-03-07-01	Domain-T8	Domain-T8	Domain-03-06-01
+328	Strand-397	Domain-03-07-03	c.Domain-03-07-02	c.Domain-03-08-02	Domain-03-08-03
+329	Strand-398	Domain-03-07-05	c.Domain-03-07-04	c.Domain-03-06-04	Domain-03-06-05
+330	Strand-399	Domain-03-07-07	c.Domain-03-07-06	c.Domain-03-08-06	Domain-03-08-07
+331	Strand-400	Domain-03-07-09	c.Domain-03-07-08	c.Domain-03-06-08	Domain-03-06-09
+332	Strand-401	Domain-T8	c.Domain-03-07-10	c.Domain-03-08-10	Domain-T8
+333	Strand-402	Domain-05-07-01	Domain-T8	Domain-T8	Domain-05-06-01
+334	Strand-403	Domain-05-07-03	c.Domain-05-07-02	c.Domain-05-08-02	Domain-05-08-03
+335	Strand-404	Domain-05-07-05	c.Domain-05-07-04	c.Domain-05-06-04	Domain-05-06-05
+336	Strand-405	Domain-05-07-07	c.Domain-05-07-06	c.Domain-05-08-06	Domain-05-08-07
+337	Strand-406	Domain-05-07-09	c.Domain-05-07-08	c.Domain-05-06-08	Domain-05-06-09
+338	Strand-407	Domain-T8	c.Domain-05-07-10	c.Domain-05-08-10	Domain-T8
+339	Strand-408	Domain-07-07-01	Domain-T8	Domain-T8	Domain-07-06-01
+340	Strand-409	Domain-07-07-03	c.Domain-07-07-02	c.Domain-07-08-02	Domain-07-08-03
+341	Strand-410	Domain-07-07-05	c.Domain-07-07-04	c.Domain-07-06-04	Domain-07-06-05
+342	Strand-411	Domain-07-07-07	c.Domain-07-07-06	c.Domain-07-08-06	Domain-07-08-07
+343	Strand-412	Domain-07-07-09	c.Domain-07-07-08	c.Domain-07-06-08	Domain-07-06-09
+344	Strand-413	Domain-T8	c.Domain-07-07-10	c.Domain-07-08-10	Domain-T8
+345	Strand-414	Domain-09-07-01	Domain-T8	Domain-T8	Domain-09-06-01
+346	Strand-415	Domain-09-07-03	c.Domain-09-07-02	c.Domain-09-08-02	Domain-09-08-03
+347	Strand-416	Domain-09-07-05	c.Domain-09-07-04	c.Domain-09-06-04	Domain-09-06-05
+348	Strand-417	Domain-09-07-07	c.Domain-09-07-06	c.Domain-09-08-06	Domain-09-08-07
+349	Strand-418	Domain-09-07-09	c.Domain-09-07-08	c.Domain-09-06-08	Domain-09-06-09
+350	Strand-419	Domain-T8	c.Domain-09-07-10	c.Domain-09-08-10	Domain-T8
+351	Strand-420	Domain-10-08-01	Domain-T8	Domain-T8	Domain-10-07-01
+352	Strand-421	Domain-10-08-03	c.Domain-10-08-02	c.Domain-10-09-02	Domain-10-09-03
+353	Strand-422	Domain-10-08-05	c.Domain-10-08-04	c.Domain-10-07-04	Domain-10-07-05
+354	Strand-423	Domain-10-08-07	c.Domain-10-08-06	c.Domain-10-09-06	Domain-10-09-07
+355	Strand-424	Domain-10-08-09	c.Domain-10-08-08	c.Domain-10-07-08	Domain-10-07-09
+356	Strand-425	Domain-T8	c.Domain-10-08-10	c.Domain-10-09-10	Domain-T8
+357	Strand-426	Domain-08-08-01	Domain-T8	Domain-T8	Domain-08-07-01
+358	Strand-427	Domain-08-08-03	c.Domain-08-08-02	c.Domain-08-09-02	Domain-08-09-03
+359	Strand-428	Domain-08-08-05	c.Domain-08-08-04	c.Domain-08-07-04	Domain-08-07-05
+360	Strand-429	Domain-08-08-07	c.Domain-08-08-06	c.Domain-08-09-06	Domain-08-09-07
+361	Strand-430	Domain-08-08-09	c.Domain-08-08-08	c.Domain-08-07-08	Domain-08-07-09
+362	Strand-431	Domain-T8	c.Domain-08-08-10	c.Domain-08-09-10	Domain-T8
+363	Strand-432	Domain-06-08-01	Domain-T8	Domain-T8	Domain-06-07-01
+364	Strand-433	Domain-06-08-03	c.Domain-06-08-02	c.Domain-06-09-02	Domain-06-09-03
+365	Strand-434	Domain-06-08-05	c.Domain-06-08-04	c.Domain-06-07-04	Domain-06-07-05
+366	Strand-435	Domain-06-08-07	c.Domain-06-08-06	c.Domain-06-09-06	Domain-06-09-07
+367	Strand-436	Domain-06-08-09	c.Domain-06-08-08	c.Domain-06-07-08	Domain-06-07-09
+368	Strand-437	Domain-T8	c.Domain-06-08-10	c.Domain-06-09-10	Domain-T8
+369	Strand-438	Domain-04-08-01	Domain-T8	Domain-T8	Domain-04-07-01
+370	Strand-439	Domain-04-08-03	c.Domain-04-08-02	c.Domain-04-09-02	Domain-04-09-03
+371	Strand-440	Domain-04-08-05	c.Domain-04-08-04	c.Domain-04-07-04	Domain-04-07-05
+372	Strand-441	Domain-04-08-07	c.Domain-04-08-06	c.Domain-04-09-06	Domain-04-09-07
+373	Strand-442	Domain-04-08-09	c.Domain-04-08-08	c.Domain-04-07-08	Domain-04-07-09
+374	Strand-443	Domain-T8	c.Domain-04-08-10	c.Domain-04-09-10	Domain-T8
+375	Strand-444	Domain-02-08-01	Domain-T8	Domain-T8	Domain-02-07-01
+376	Strand-445	Domain-02-08-03	c.Domain-02-08-02	c.Domain-02-09-02	Domain-02-09-03
+377	Strand-446	Domain-02-08-05	c.Domain-02-08-04	c.Domain-02-07-04	Domain-02-07-05
+378	Strand-447	Domain-02-08-07	c.Domain-02-08-06	c.Domain-02-09-06	Domain-02-09-07
+379	Strand-448	Domain-02-08-09	c.Domain-02-08-08	c.Domain-02-07-08	Domain-02-07-09
+380	Strand-449	Domain-T8	c.Domain-02-08-10	c.Domain-02-09-10	Domain-T8
+381	Strand-450	Domain-01-09-01	Domain-T8	Domain-T8	Domain-01-08-01
+382	Strand-452	Domain-01-09-05	c.Domain-01-09-04	c.Domain-01-08-04	Domain-01-08-05
+383	Strand-454	Domain-01-09-09	c.Domain-01-09-08	c.Domain-01-08-08	Domain-01-08-09
+384	Strand-455	Domain-T8	c.Domain-01-09-10	c.Domain-01-10-10	Domain-T8
+385	Strand-456	Domain-03-09-01	Domain-T8	Domain-T8	Domain-03-08-01
+386	Strand-458	Domain-03-09-05	c.Domain-03-09-04	c.Domain-03-08-04	Domain-03-08-05
+387	Strand-460	Domain-03-09-09	c.Domain-03-09-08	c.Domain-03-08-08	Domain-03-08-09
+388	Strand-461	Domain-T8	c.Domain-03-09-10	c.Domain-03-10-10	Domain-T8
+389	Strand-462	Domain-05-09-01	Domain-T8	Domain-T8	Domain-05-08-01
+390	Strand-464	Domain-05-09-05	c.Domain-05-09-04	c.Domain-05-08-04	Domain-05-08-05
+391	Strand-466	Domain-05-09-09	c.Domain-05-09-08	c.Domain-05-08-08	Domain-05-08-09
+392	Strand-467	Domain-T8	c.Domain-05-09-10	c.Domain-05-10-10	Domain-T8
+393	Strand-468	Domain-07-09-01	Domain-T8	Domain-T8	Domain-07-08-01
+394	Strand-470	Domain-07-09-05	c.Domain-07-09-04	c.Domain-07-08-04	Domain-07-08-05
+395	Strand-472	Domain-07-09-09	c.Domain-07-09-08	c.Domain-07-08-08	Domain-07-08-09
+396	Strand-473	Domain-T8	c.Domain-07-09-10	c.Domain-07-10-10	Domain-T8
+397	Strand-474	Domain-09-09-01	Domain-T8	Domain-T8	Domain-09-08-01
+398	Strand-476	Domain-09-09-05	c.Domain-09-09-04	c.Domain-09-08-04	Domain-09-08-05
+399	Strand-478	Domain-09-09-09	c.Domain-09-09-08	c.Domain-09-08-08	Domain-09-08-09
+400	Strand-479	Domain-T8	c.Domain-09-09-10	c.Domain-09-10-10	Domain-T8
+401	Strand-480	Domain-10-10-01	Domain-T8	Domain-T8	Domain-10-09-01
+402	Strand-483	Domain-08-10-01	Domain-T8	Domain-T8	Domain-08-09-01
+403	Strand-485	Domain-08-10-09	c.Domain-08-10-08	c.Domain-08-09-08	Domain-08-09-09
+404	Strand-486	Domain-06-10-01	Domain-T8	Domain-T8	Domain-06-09-01
+405	Strand-488	Domain-06-10-09	c.Domain-06-10-08	c.Domain-06-09-08	Domain-06-09-09
+406	Strand-489	Domain-04-10-01	Domain-T8	Domain-T8	Domain-04-09-01
+407	Strand-491	Domain-04-10-09	c.Domain-04-10-08	c.Domain-04-09-08	Domain-04-09-09
+408	Strand-492	Domain-02-10-01	Domain-T8	Domain-T8	Domain-02-09-01
+409	Strand-494	Domain-02-10-09	c.Domain-02-10-08	c.Domain-02-09-08	Domain-02-09-09
+410	Strand-1305	c.Domain-01-01-03	Domain-01-01-04
+411	Strand-1307	Domain-10-01-04	c.Domain-10-01-03
+412	Strand-1309	c.Domain-10-02-01	Domain-10-02-02
+413	Strand-1312	Domain-01-02-02	c.Domain-01-02-01
+414	Strand-1319	c.Domain-10-04-01	Domain-10-04-02
+415	Strand-1322	Domain-01-04-02	c.Domain-01-04-01
+416	Strand-1329	c.Domain-10-06-01	Domain-10-06-02
+417	Strand-1332	Domain-01-06-02	c.Domain-01-06-01
+418	Strand-1339	c.Domain-10-08-01	Domain-10-08-02
+419	Strand-1342	Domain-01-08-02	c.Domain-01-08-01
+420	Strand-1349	c.Domain-10-10-01	Domain-10-10-02
+421	Strand-1357	c.Domain-02-01-02	Domain-02-01-03
+422	Strand-1361	c.Domain-04-01-02	Domain-04-01-03
+423	Strand-1365	c.Domain-06-01-02	Domain-06-01-03
+424	Strand-1369	c.Domain-08-01-02	Domain-08-01-03
+425	Strand-1373	c.Domain-10-01-02	Domain-10-01-03
+426	Strand-1375	Domain-10-10-03	c.Domain-10-10-02
+427	Strand-1379	Domain-08-10-03	c.Domain-08-10-02
+428	Strand-1383	Domain-06-10-03	c.Domain-06-10-02
+429	Strand-1387	Domain-04-10-03	c.Domain-04-10-02
+430	Strand-1391	Domain-02-10-03	c.Domain-02-10-02
+431	Strand-1393	c.Domain-01-10-04	Domain-01-10-05
+432	Strand-2207	Domain-02-01-02	c.Domain-02-01-01	Domain-T8	Domain-01-01-02
+433	Strand-2221	Domain-T8	c.Domain-02-01-09	c.Domain-01-01-09	Domain-01-01-10
+434	Strand-2227	Domain-04-01-02	c.Domain-04-01-01	Domain-T8	Domain-03-01-02
+435	Strand-2241	Domain-T8	c.Domain-04-01-09	c.Domain-03-01-09	Domain-03-01-10
+436	Strand-2247	Domain-06-01-02	c.Domain-06-01-01	Domain-T8	Domain-05-01-02
+437	Strand-2261	Domain-T8	c.Domain-06-01-09	c.Domain-05-01-09	Domain-05-01-10
+438	Strand-2267	Domain-08-01-02	c.Domain-08-01-01	Domain-T8	Domain-07-01-02
+439	Strand-2281	Domain-T8	c.Domain-08-01-09	c.Domain-07-01-09	Domain-07-01-10
+440	Strand-2287	Domain-10-01-02	c.Domain-10-01-01	Domain-T8	Domain-09-01-02
+441	Strand-2293	Domain-T8	c.Domain-10-01-09	c.Domain-09-01-09	Domain-09-01-10
+442	Strand-3018	Domain-09-10-02	Domain-T8	c.Domain-08-10-01	Domain-08-10-02
+443	Strand-3036	Domain-09-10-10	c.Domain-09-10-09	c.Domain-08-10-09	Domain-T8
+444	Strand-3038	Domain-07-10-02	Domain-T8	c.Domain-06-10-01	Domain-06-10-02
+445	Strand-3056	Domain-07-10-10	c.Domain-07-10-09	c.Domain-06-10-09	Domain-T8
+446	Strand-3058	Domain-05-10-02	Domain-T8	c.Domain-04-10-01	Domain-04-10-02
+447	Strand-3076	Domain-05-10-10	c.Domain-05-10-09	c.Domain-04-10-09	Domain-T8
+448	Strand-3078	Domain-03-10-02	Domain-T8	c.Domain-02-10-01	Domain-02-10-02
+449	Strand-3096	Domain-03-10-10	c.Domain-03-10-09	c.Domain-02-10-09	Domain-T8
+450	Strand-3707	Domain-01-09-03	c.Domain-01-09-02	Domain-T8	Domain-01-10-03
+451	Strand-3789	Domain-T8	c.Domain-10-10-08	c.Domain-10-09-08	Domain-10-09-09
+452	Strand-3826	Domain-02-01-06	c.Domain-02-01-05	c.Domain-01-01-05	Domain-01-01-06	c.Domain-01-01-07	Domain-01-01-08
+453	Strand-3859	Domain-10-01-08	c.Domain-10-01-07	Domain-10-01-06	c.Domain-10-01-05	c.Domain-09-01-05	Domain-09-01-06
+454	Strand-3861	Domain-09-02-04	c.Domain-09-02-03	c.Domain-10-02-03	Domain-10-02-04	c.Domain-10-02-05	Domain-10-02-06
+455	Strand-3862	Domain-09-02-08	c.Domain-09-02-07	c.Domain-10-02-07	Domain-10-02-08	c.Domain-10-02-09	Domain-10-02-10
+456	Strand-3894	Domain-01-02-06	c.Domain-01-02-05	Domain-01-02-04	c.Domain-01-02-03	c.Domain-02-02-03	Domain-02-02-04
+457	Strand-3896	Domain-01-02-10	c.Domain-01-02-09	Domain-01-02-08	c.Domain-01-02-07	c.Domain-02-02-07	Domain-02-02-08
+458	Strand-3897	Domain-02-03-02	c.Domain-02-03-01	c.Domain-01-03-01	Domain-01-03-02	c.Domain-01-03-03	Domain-01-03-04
+459	Strand-3898	Domain-02-03-06	c.Domain-02-03-05	c.Domain-01-03-05	Domain-01-03-06	c.Domain-01-03-07	Domain-01-03-08
+460	Strand-3929	Domain-10-03-04	c.Domain-10-03-03	Domain-10-03-02	c.Domain-10-03-01	c.Domain-09-03-01	Domain-09-03-02
+461	Strand-3931	Domain-10-03-08	c.Domain-10-03-07	Domain-10-03-06	c.Domain-10-03-05	c.Domain-09-03-05	Domain-09-03-06
+462	Strand-3933	Domain-09-04-04	c.Domain-09-04-03	c.Domain-10-04-03	Domain-10-04-04	c.Domain-10-04-05	Domain-10-04-06
+463	Strand-3934	Domain-09-04-08	c.Domain-09-04-07	c.Domain-10-04-07	Domain-10-04-08	c.Domain-10-04-09	Domain-10-04-10
+464	Strand-3966	Domain-01-04-06	c.Domain-01-04-05	Domain-01-04-04	c.Domain-01-04-03	c.Domain-02-04-03	Domain-02-04-04
+465	Strand-3968	Domain-01-04-10	c.Domain-01-04-09	Domain-01-04-08	c.Domain-01-04-07	c.Domain-02-04-07	Domain-02-04-08
+466	Strand-3969	Domain-02-05-02	c.Domain-02-05-01	c.Domain-01-05-01	Domain-01-05-02	c.Domain-01-05-03	Domain-01-05-04
+467	Strand-3970	Domain-02-05-06	c.Domain-02-05-05	c.Domain-01-05-05	Domain-01-05-06	c.Domain-01-05-07	Domain-01-05-08
+468	Strand-4001	Domain-10-05-04	c.Domain-10-05-03	Domain-10-05-02	c.Domain-10-05-01	c.Domain-09-05-01	Domain-09-05-02
+469	Strand-4003	Domain-10-05-08	c.Domain-10-05-07	Domain-10-05-06	c.Domain-10-05-05	c.Domain-09-05-05	Domain-09-05-06
+470	Strand-4005	Domain-09-06-04	c.Domain-09-06-03	c.Domain-10-06-03	Domain-10-06-04	c.Domain-10-06-05	Domain-10-06-06
+471	Strand-4006	Domain-09-06-08	c.Domain-09-06-07	c.Domain-10-06-07	Domain-10-06-08	c.Domain-10-06-09	Domain-10-06-10
+472	Strand-4038	Domain-01-06-06	c.Domain-01-06-05	Domain-01-06-04	c.Domain-01-06-03	c.Domain-02-06-03	Domain-02-06-04
+473	Strand-4040	Domain-01-06-10	c.Domain-01-06-09	Domain-01-06-08	c.Domain-01-06-07	c.Domain-02-06-07	Domain-02-06-08
+474	Strand-4041	Domain-02-07-02	c.Domain-02-07-01	c.Domain-01-07-01	Domain-01-07-02	c.Domain-01-07-03	Domain-01-07-04
+475	Strand-4042	Domain-02-07-06	c.Domain-02-07-05	c.Domain-01-07-05	Domain-01-07-06	c.Domain-01-07-07	Domain-01-07-08
+476	Strand-4073	Domain-10-07-04	c.Domain-10-07-03	Domain-10-07-02	c.Domain-10-07-01	c.Domain-09-07-01	Domain-09-07-02
+477	Strand-4075	Domain-10-07-08	c.Domain-10-07-07	Domain-10-07-06	c.Domain-10-07-05	c.Domain-09-07-05	Domain-09-07-06
+478	Strand-4077	Domain-09-08-04	c.Domain-09-08-03	c.Domain-10-08-03	Domain-10-08-04	c.Domain-10-08-05	Domain-10-08-06
+479	Strand-4078	Domain-09-08-08	c.Domain-09-08-07	c.Domain-10-08-07	Domain-10-08-08	c.Domain-10-08-09	Domain-10-08-10
+480	Strand-4110	Domain-01-08-06	c.Domain-01-08-05	Domain-01-08-04	c.Domain-01-08-03	c.Domain-02-08-03	Domain-02-08-04
+481	Strand-4112	Domain-01-08-10	c.Domain-01-08-09	Domain-01-08-08	c.Domain-01-08-07	c.Domain-02-08-07	Domain-02-08-08
+482	Strand-4113	Domain-02-09-02	c.Domain-02-09-01	c.Domain-01-09-01	Domain-01-09-02	c.Domain-01-09-03	Domain-01-09-04
+483	Strand-4114	Domain-02-09-06	c.Domain-02-09-05	c.Domain-01-09-05	Domain-01-09-06	c.Domain-01-09-07	Domain-01-09-08
+484	Strand-4145	Domain-10-09-04	c.Domain-10-09-03	Domain-10-09-02	c.Domain-10-09-01	c.Domain-09-09-01	Domain-09-09-02
+485	Strand-4147	Domain-10-09-08	c.Domain-10-09-07	Domain-10-09-06	c.Domain-10-09-05	c.Domain-09-09-05	Domain-09-09-06
+486	Strand-4149	Domain-09-10-04	c.Domain-09-10-03	c.Domain-10-10-03	Domain-10-10-04	c.Domain-10-10-05	Domain-10-10-06
+487	Strand-4182	Domain-01-10-06	c.Domain-01-10-05	Domain-01-10-04	c.Domain-01-10-03	c.Domain-02-10-03	Domain-02-10-04
+488	Strand-4184	Domain-01-10-10	c.Domain-01-10-09	Domain-01-10-08	c.Domain-01-10-07	c.Domain-02-10-07	Domain-02-10-08
+489	Strand-4185	Domain-01-01-05	c.Domain-01-01-04	Domain-01-01-03	c.Domain-01-01-02	c.Domain-01-02-02	Domain-01-02-03
+490	Strand-4187	Domain-01-01-09	c.Domain-01-01-08	Domain-01-01-07	c.Domain-01-01-06	c.Domain-01-02-06	Domain-01-02-07
+491	Strand-4188	Domain-02-02-05	c.Domain-02-02-04	c.Domain-02-01-04	Domain-02-01-05	c.Domain-02-01-06	Domain-02-01-07
+492	Strand-4189	Domain-03-01-05	c.Domain-03-01-04	Domain-03-01-03	c.Domain-03-01-02	c.Domain-03-02-02	Domain-03-02-03
+493	Strand-4191	Domain-03-01-09	c.Domain-03-01-08	Domain-03-01-07	c.Domain-03-01-06	c.Domain-03-02-06	Domain-03-02-07
+494	Strand-4192	Domain-04-02-05	c.Domain-04-02-04	c.Domain-04-01-04	Domain-04-01-05	c.Domain-04-01-06	Domain-04-01-07
+495	Strand-4193	Domain-05-01-05	c.Domain-05-01-04	Domain-05-01-03	c.Domain-05-01-02	c.Domain-05-02-02	Domain-05-02-03
+496	Strand-4195	Domain-05-01-09	c.Domain-05-01-08	Domain-05-01-07	c.Domain-05-01-06	c.Domain-05-02-06	Domain-05-02-07
+497	Strand-4196	Domain-06-02-05	c.Domain-06-02-04	c.Domain-06-01-04	Domain-06-01-05	c.Domain-06-01-06	Domain-06-01-07
+498	Strand-4197	Domain-07-01-05	c.Domain-07-01-04	Domain-07-01-03	c.Domain-07-01-02	c.Domain-07-02-02	Domain-07-02-03
+499	Strand-4199	Domain-07-01-09	c.Domain-07-01-08	Domain-07-01-07	c.Domain-07-01-06	c.Domain-07-02-06	Domain-07-02-07
+500	Strand-4200	Domain-08-02-05	c.Domain-08-02-04	c.Domain-08-01-04	Domain-08-01-05	c.Domain-08-01-06	Domain-08-01-07
+501	Strand-4201	Domain-09-01-05	c.Domain-09-01-04	Domain-09-01-03	c.Domain-09-01-02	c.Domain-09-02-02	Domain-09-02-03
+502	Strand-4203	Domain-09-01-09	c.Domain-09-01-08	Domain-09-01-07	c.Domain-09-01-06	c.Domain-09-02-06	Domain-09-02-07
+503	Strand-4204	Domain-10-02-05	c.Domain-10-02-04	c.Domain-10-01-04	Domain-10-01-05	c.Domain-10-01-06	Domain-10-01-07
+504	Strand-4431	Domain-10-10-07	c.Domain-10-10-06	Domain-10-10-05	c.Domain-10-10-04	c.Domain-10-09-04	Domain-10-09-05
+505	Strand-4433	Domain-09-09-03	c.Domain-09-09-02	c.Domain-09-10-02	Domain-09-10-03	c.Domain-09-10-04	Domain-09-10-05
+506	Strand-4434	Domain-09-09-07	c.Domain-09-09-06	c.Domain-09-10-06	Domain-09-10-07	c.Domain-09-10-08	Domain-09-10-09
+507	Strand-4436	Domain-08-10-07	c.Domain-08-10-06	Domain-08-10-05	c.Domain-08-10-04	c.Domain-08-09-04	Domain-08-09-05
+508	Strand-4438	Domain-07-09-03	c.Domain-07-09-02	c.Domain-07-10-02	Domain-07-10-03	c.Domain-07-10-04	Domain-07-10-05
+509	Strand-4439	Domain-07-09-07	c.Domain-07-09-06	c.Domain-07-10-06	Domain-07-10-07	c.Domain-07-10-08	Domain-07-10-09
+510	Strand-4441	Domain-06-10-07	c.Domain-06-10-06	Domain-06-10-05	c.Domain-06-10-04	c.Domain-06-09-04	Domain-06-09-05
+511	Strand-4443	Domain-05-09-03	c.Domain-05-09-02	c.Domain-05-10-02	Domain-05-10-03	c.Domain-05-10-04	Domain-05-10-05
+512	Strand-4444	Domain-05-09-07	c.Domain-05-09-06	c.Domain-05-10-06	Domain-05-10-07	c.Domain-05-10-08	Domain-05-10-09
+513	Strand-4446	Domain-04-10-07	c.Domain-04-10-06	Domain-04-10-05	c.Domain-04-10-04	c.Domain-04-09-04	Domain-04-09-05
+514	Strand-4448	Domain-03-09-03	c.Domain-03-09-02	c.Domain-03-10-02	Domain-03-10-03	c.Domain-03-10-04	Domain-03-10-05
+515	Strand-4449	Domain-03-09-07	c.Domain-03-09-06	c.Domain-03-10-06	Domain-03-10-07	c.Domain-03-10-08	Domain-03-10-09
+516	Strand-4451	Domain-02-10-07	c.Domain-02-10-06	Domain-02-10-05	c.Domain-02-10-04	c.Domain-02-09-04	Domain-02-09-05
+517	Strand-4454	Domain-01-09-07	c.Domain-01-09-06	c.Domain-01-10-06	Domain-01-10-07	c.Domain-01-10-08	Domain-01-10-09

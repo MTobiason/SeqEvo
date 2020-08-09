@@ -20,12 +20,13 @@ public class SeqEvo
    private static String CTOFilePath; // Cycle-Trajectory-Output-File-Path
    private static String LCTOFilePath; // Logarithmic-Cycle-Trajectory-File-Path
    private static String GTOFilePath; // Generation-Trajectory-Output
-   private static String ROFilePath; // Report-Output-File-Path
-   private static String SOFilePath; // Strands-Output-File-Path
-   private static String DOFilePath; // Domains-Output-File-Path
-   private static String NOFilePath; // Network-Output-File-Path
-   private static String IOFilePath; // Interference-Out File Path
+   private static String ORFilePath; // Report-Output-File-Path
+   private static String OODFilePath; // Strands-Output-File-Path
+   private static String ODSFilePath; // Domains-Output-File-Path
+   private static String OOSFilePath; // Network-Output-File-Path
+   private static String OSPFilePath; // Interference-Out File Path
    
+   private static boolean silent = false;
    private static boolean sflm; // Shuffle-First-Lineage-Mother
    private static boolean solm; // Shuffle-Other-Lineage-Mothers
    
@@ -48,18 +49,10 @@ public class SeqEvo
    
 	public static void main(String[] args) throws Exception
 	{
-      
-      System.out.println();
-      System.out.println("********************************************************************");  
-      System.out.println("                 SequenceEvolver: " + version );      
-      System.out.println("Program for designing DNA Strands with minimal unwanted interactions");
-      System.out.println("********************************************************************"); 
-      System.out.println();
-      
       readArguments( args );
-      importSettings( PFilePath ); // read the arguments, and accept incoming settings.
-            
-      if (MTout.DebugFlag)
+      importSettings( PFilePath ); // read the arguments, and accept incoming settings.  
+	  
+	  if (MTout.DebugFlag)
       {
          System.out.println("Debug reporting active");
          System.out.println();
@@ -70,6 +63,13 @@ public class SeqEvo
          System.out.println("Verbose reporting active");
          System.out.println();
       }
+	  
+	  System.out.println();
+	  System.out.println("*******************************************************");  
+	  System.out.println("                SequenceEvolver: " + version );      
+	  System.out.println("Program for Generating Fit sets of DNA Oligonucleotides");
+	  System.out.println("*******************************************************"); 
+	  System.out.println();
       
       // *******************************
       // Import settings for each module
@@ -81,6 +81,8 @@ public class SeqEvo
       Lineage.importSettings(PFilePath);
       baseAlignment.importSettings(PFilePath);
       referencePosition.importSettings(PFilePath);
+	  System.out.println("Parameters initialized.");
+	  System.out.println(); 	  
       
       // **************************
       // Import network information
@@ -102,13 +104,12 @@ public class SeqEvo
       // Print the 0th Generation's information
       // **************************************
       
-      System.out.println("********************************");
-      System.out.println("Information from generation zero");
-      System.out.println("********************************");
-      System.out.println();
-      
-      Outputs.printIGI( Gen0 );
-      Outputs.printScores( Gen0 );
+		//System.out.println("********************************");
+		//System.out.println("Information from generation zero");
+		//System.out.println("********************************");
+		//System.out.println();
+		//Outputs.printIGI( Gen0 );
+		//Outputs.printScores( Gen0 );
       
       // ***********************************
       // Create the Array of Lineage Mothers
@@ -125,7 +126,7 @@ public class SeqEvo
       MTout.log("Randomizing Designs");
       if(!Generation.checkValidity(Gen0)) 
       {
-         System.out.println("Initial Sequences invalid (too many consecutive identical bases), looking for valid alternatives"); 
+         System.out.println("Initial Oligo Sequences invalid (too many consecutive identical bases), looking for valid alternatives"); 
          System.out.println();
       }
       if (sflm || !Generation.checkValidity(Gen0)) // if shuffle first lineage is active.
@@ -157,17 +158,13 @@ public class SeqEvo
             if(f.getName().startsWith("ILM-"))
                f.delete();
 	
-         FileWriter ILMfilewriter = new FileWriter( ILMFilePath + "ILM-1.network.txt" ); //initiate the export for initial lineage mothers
+         System.out.println("Initial Lineage Mother reporting active. The first generation of lineage mothers will be output to directory: \"" + ILMFilePath+ "\"");
+         System.out.println();
+		 
+		 FileWriter ILMfilewriter = new FileWriter( ILMFilePath + "ILM-1-OligoSequences.txt" ); //initiate the export for initial lineage mothers
          BufferedWriter ILMbw = new BufferedWriter (ILMfilewriter);
          PrintWriter ILMPW = new PrintWriter (ILMbw);
-         
-         System.out.println("****************************************");
-         System.out.println("Initial Lineage Mother reporting active.");
-         System.out.println("Lineage mothers (Generation #1) will be");  
-         System.out.println("output to directory \"" + ILMFilePath+ "\"");         
-         System.out.println("****************************************");
-         System.out.println();
-         
+		 
          MTout.log("Exporting initial mothers");
          for ( int i = 0; i < nl; i++) // for all Lineage-Mothers
          {
@@ -178,24 +175,21 @@ public class SeqEvo
             // Export the information from this mother
             // ***************************************
             
-            ILMfilewriter = new FileWriter (ILMFilePath + "ILM-" + (i+1) + ".network.txt");
+            ILMfilewriter = new FileWriter (ILMFilePath + "ILM-" + (i+1) + "-OligoSequences.txt");
             ILMbw = new BufferedWriter (ILMfilewriter);
             ILMPW = new PrintWriter (ILMbw);
             
-            Outputs.exportNI(ILMPW , LMs[i]);
+			ILMPW.println("//File Generated by SeqEvo. Version: " + version + "; run time: " + runDate);
+			ILMPW.println("//Format: \"Oligo Name\" -tab- \"Oligo Sequence (5' to 3')\"");  
+            Outputs.exportOS(ILMPW , LMs[i]);
             ILMPW.close();
             
-            ILMfilewriter = new FileWriter (ILMFilePath + "ILM-" + (i+1) + ".strands.txt");
+            ILMfilewriter = new FileWriter (ILMFilePath + "ILM-" + (i+1) + "-DomainSequences.txt");
             ILMbw = new BufferedWriter (ILMfilewriter);
             ILMPW = new PrintWriter (ILMbw);
             
-            Outputs.exportISR(ILMPW , LMs[i]);
-            ILMPW.close();
-            
-            ILMfilewriter = new FileWriter (ILMFilePath + "ILM-" + (i+1) + ".domains.txt");
-            ILMbw = new BufferedWriter (ILMfilewriter);
-            ILMPW = new PrintWriter (ILMbw);
-            
+			ILMPW.println("//File Generated by SeqEvo. Version: " + version + "; run time: " + runDate);
+			ILMPW.println("//Format: \"Domain Index\" -tab- \"Domain Name\" -tab- \"Domain Type\" -tab- \"Domain Sequence (5' to 3')\""); 
             Outputs.exportIDI(ILMPW , LMs[i]);
             ILMPW.close();
             
@@ -210,19 +204,15 @@ public class SeqEvo
       System.out.println("Evolutionary Search Parameters");
       System.out.println("******************************");
       System.out.println();
-      
-      System.out.println("Algorithm Structure");
-      System.out.println("-------------------");
-      System.out.println("Number of lineages: " + nl );
-      System.out.println("Number of cycles per lineage: " + Lineage.getCPL());
-      System.out.println("Number of computing threads used: " + nt);
-      System.out.println("Shuffle first lineage mother: " + sflm);
-      System.out.println("Shuffle other lineage mothers: " + solm);
-      System.out.println("Number of new mothers per cycle: " + Lineage.getNMPC() );
-      System.out.println("Number of mutations per mother: " + Lineage.getMPM() );
-      System.out.println("Number of new daughters per mother: " + Lineage.getNDPM() );
-      System.out.println("Number of mutations per daughter: " + Lineage.getMPD() );
-      System.out.println("Number of generations per cycle: " + Lineage.getGPC() );
+      System.out.println("Number of lineages (nl): " + nl );
+      System.out.println("Number of cycles per lineage (cpl): " + Lineage.getCPL());
+      System.out.println("Shuffle first lineage mother (sflm): " + sflm);
+      System.out.println("Shuffle other lineage mothers (solm): " + solm);
+      System.out.println("Number of new mothers per cycle (nmpc): " + Lineage.getNMPC() );
+      System.out.println("Number of mutations per mother (mpm): " + Lineage.getMPM() );
+      System.out.println("Number of new daughters per mother (ndpm): " + Lineage.getNDPM() );
+      System.out.println("Number of mutations per daughter (mpd): " + Lineage.getMPD() );
+      System.out.println("Number of generations per cycle (gpc):" + Lineage.getGPC() );
       System.out.println();
       
       // *************************************************************
@@ -262,7 +252,7 @@ public class SeqEvo
       // *******************
     
       System.out.println("*****************************");
-      System.out.println("Beginning Evolutionary Cycles");
+      System.out.println("Beginning Evolutionary Search");
       System.out.println("*****************************");
       System.out.println();
       
@@ -281,6 +271,7 @@ public class SeqEvo
       {
          TotalThreadCycles = TotalThreadCycles+1;
       }
+	  
       ProgressReporter.setTotalThreadCycles( TotalThreadCycles);
       ProgressReporter.startTiming();
       ProgressReporter.reportProgress();
@@ -314,8 +305,26 @@ public class SeqEvo
       
       
       System.out.println("*****************************");
-      System.out.println("Evolutionary Cycles Completed");
+      System.out.println("Evolutionary Search Completed");
       System.out.println("*****************************");
+      System.out.println();
+	  
+	  // **********************************
+      // Calculate runtime up to this point
+      // **********************************
+            
+      double endTime   = System.currentTimeMillis(); // record evolutionary cycle endtime
+      double elapsedTime = endTime-startTime;
+      int H = (int)((elapsedTime/1000) / (60 *60)); // Hours
+      int M = (int)(((elapsedTime/1000) / 60) % 60 ); // Minutes
+      int S = (int)((elapsedTime/1000) % 60 );   // Seconds
+      String totalTime = ( H + " h " + M + " m " + S + " s ");
+	  
+	  // **************
+      // Report Runtime
+      // **************
+      
+      System.out.println("Runtime of search: " + totalTime);
       System.out.println();
       
       // *************************
@@ -335,17 +344,6 @@ public class SeqEvo
       }
       FittestGeneration.copy(LMs[IndexOfFittest]); // replace victor with fittest lineage mother.
       
-      // **********************************
-      // Calculate runtime up to this point
-      // **********************************
-            
-      double endTime   = System.currentTimeMillis(); // record evolutionary cycle endtime
-      double elapsedTime = endTime-startTime;
-      int H = (int)((elapsedTime/1000) / (60 *60)); // Hours
-      int M = (int)(((elapsedTime/1000) / 60) % 60 ); // Minutes
-      int S = (int)((elapsedTime/1000) % 60 );   // Seconds
-      String totalTime = ( H + " h " + M + " m " + S + " s ");
-      
       
       // ***************************************
       // Print information from final generation
@@ -355,41 +353,31 @@ public class SeqEvo
       {
          File FLMtemp = new File(FLMFilePath); // uhh, stuff to make directory if it doesnt exist yet?
          FLMtemp.mkdirs();
-		 
-
          
-         FileWriter FLMfilewriter = new FileWriter( FLMFilePath + "FLM-1.network.txt" ); //initiate the export for initial lineage mothers
+         FileWriter FLMfilewriter = new FileWriter( FLMFilePath + "FLM-1-OligoSequences.txt" ); //initiate the export for initial lineage mothers
          BufferedWriter FLMbw = new BufferedWriter (FLMfilewriter);
          PrintWriter FLMPW = new PrintWriter (FLMbw);
          
-         System.out.println("***************************************");
-         System.out.println("Final Lineage Mother reporting active.");
-         System.out.println("Lineage mothers (Final Generation) will");  
-         System.out.println("be output to directory \"" + FLMFilePath+ "\"");         
-         System.out.println("***************************************");
+         System.out.println("Final Lineage Mother reporting active. The final Generation of lineage mothers will be output to directory \"" + FLMFilePath+ "\"");         
          System.out.println();
          
          for ( int i = 0; i < nl; i++) // for each lineage
          {
-            
-            FLMfilewriter = new FileWriter (FLMFilePath + "FLM-" + (i+1) + ".network.txt");
+			FLMfilewriter = new FileWriter (FLMFilePath + "FLM-" + (i+1) + "-OligoSequences.txt");
             FLMbw = new BufferedWriter (FLMfilewriter);
             FLMPW = new PrintWriter (FLMbw);
             
-            Outputs.exportNI(FLMPW , LMs[i]);
+			FLMPW.println("//File Generated by SeqEvo. Version: " + version + "; run time: " + runDate);
+			FLMPW.println("//Format: \"Oligo Name\" -tab- \"Oligo Sequence (5' to 3')\"");  
+            Outputs.exportOS(FLMPW , LMs[i]);
             FLMPW.close();
             
-            FLMfilewriter = new FileWriter (FLMFilePath + "FLM-" + (i+1) + ".strands.txt");
+            FLMfilewriter = new FileWriter (FLMFilePath + "FLM-" + (i+1) + "-DomainSequences.txt");
             FLMbw = new BufferedWriter (FLMfilewriter);
             FLMPW = new PrintWriter (FLMbw);
             
-            Outputs.exportISR(FLMPW , LMs[i]);
-            FLMPW.close();
-            
-            FLMfilewriter = new FileWriter (FLMFilePath + "FLM-" + (i+1) + ".domains.txt");
-            FLMbw = new BufferedWriter (FLMfilewriter);
-            FLMPW = new PrintWriter (FLMbw);
-            
+			FLMPW.println("//File Generated by SeqEvo. Version: " + version + "; run time: " + runDate);
+			FLMPW.println("//Format: \"Domain Index\" -tab- \"Domain Name\" -tab- \"Domain Type\" -tab- \"Domain Sequence (5' to 3')\""); 
             Outputs.exportIDI(FLMPW , LMs[i]);
             FLMPW.close();
          }
@@ -400,7 +388,7 @@ public class SeqEvo
       System.out.println("***********************************");
       System.out.println();
       
-      Outputs.printIGI( FittestGeneration ); // print the fittest generation's information.
+      //Outputs.printIGI( FittestGeneration ); // print the fittest generation's information.
       Outputs.printScores( FittestGeneration );
 
 
@@ -408,65 +396,57 @@ public class SeqEvo
       // Create Report File
       // ******************
        
-      FileWriter filewriter = new FileWriter( ROFilePath );
+      FileWriter filewriter = new FileWriter( ORFilePath );
       BufferedWriter bw = new BufferedWriter (filewriter);
       PrintWriter PW = new PrintWriter (bw);
       
-      PW.println("SequenceEvolver Output");
-      PW.println("Version: " + version );
-      PW.println("Program Started: " + runDate);      
-      PW.println("Time taken to complete search: " + totalTime );
-      PW.println();
+      PW.println("//File Generated by SeqEvo. Version: " + version + "; run time: " + runDate);   
       
-      PW.println("******************************");
+      PW.println("------------------------------");
       PW.println("Evolutionary Search Parameters");
-      PW.println("******************************");
-      PW.println();
+      PW.println("------------------------------");
+      PW.println("Number of lineages (nl): " + nl );
+      PW.println("Shuffle first lineage mother (sflm): " + sflm);
+      PW.println("Shuffle other lineage mothers (solm): " + solm);
+      PW.println("Number of cycles per lineage (cpl): " + Lineage.getCPL());
+	  PW.println("Number of new mothers per cycle (nmpc): " + Lineage.getNMPC() );
+      PW.println("Number of mutations per mother (mpm): " + Lineage.getMPM() );
+      PW.println("Number of new daughters per mother (ndpm): " + Lineage.getNDPM() );
+      PW.println("Number of mutations per daughter (mpd): " + Lineage.getMPD() );
+      PW.println("Number of generations per cycle (gpc): " + Lineage.getGPC() );
+	  PW.println("------------------------------");
+      PW.println();   
       
-      PW.println("Algorithm Duration");
-      PW.println("------------------");
-      PW.println("Number of cycles per lineage: " + Lineage.getCPL());
-      PW.println("Number of lineages: " + nl );
-      PW.println("Number of computing threads used: " + nt);
-      PW.println();
-      
-      PW.println("Algorithm Structure");
-      PW.println("-------------------");
-      PW.println("Shuffle first lineage mother: " + sflm);
-      PW.println("Shuffle other lineage mothers: " + solm);
-      PW.println("Number of new mothers per cycle: " + Lineage.getNMPC() );
-      PW.println("Number of mutations per mother: " + Lineage.getMPM() );
-      PW.println("Number of new daughters per mother: " + Lineage.getNDPM() );
-      PW.println("Number of mutations per daughter: " + Lineage.getMPD() );
-      PW.println("Number of generations per cycle: " + Lineage.getGPC() );
-      PW.println();
-      
+      PW.println("------------------"); 
       PW.println("Scoring Parameters");
       PW.println("------------------");      
-      PW.println("IntramolecularSLC: " + Generation.getIntraSLC());
-      PW.println("IntermolecularSLC: " + Generation.getIntraSLC());
-      PW.println("IntramolecularW: " + Generation.getIntraW());
-      PW.println("IntermolecularW: " + Generation.getInterW());
+      PW.println("IntraOligoSLC: " + Generation.getIntraSLC());
+      PW.println("InterOligoSLC: " + Generation.getIntraSLC());
+      PW.println("IntraOligoW: " + Generation.getIntraW());
+      PW.println("InterOligoW: " + Generation.getInterW());
       PW.println("AASLC: " + Generation.getAASLC());
       PW.println("TTSLC: " + Generation.getTTSLC());
       PW.println("CCSLC: " + Generation.getCCSLC());
       PW.println("GGSLC: " + Generation.getGGSLC());
+	  PW.println("------------------"); 
       PW.println();
+	  
+	  PW.println("Time taken to complete search: " + totalTime );
+      PW.println();	
       
-      PW.println("Time taken to complete evolutionary process: " + totalTime );
-      PW.println();
-      
-      PW.println("**********************************");
-      PW.println("Initial Design (Input) Information");
-      PW.println("**********************************");
+      PW.println("*****************");
+      PW.println("Initial Sequences");
+      PW.println("*****************");
       PW.println();
       Outputs.exportIGI( PW, Gen0 );
+	  PW.println("*****************");
       
-      PW.println("*********************************");
-      PW.println("Final Design (Output) Information");
-      PW.println("*********************************");
+      PW.println("***************");
+      PW.println("Final Sequences");
+      PW.println("***************");
       PW.println();
       Outputs.exportIGI( PW, FittestGeneration);
+	  PW.println("***************");
       
       PW.close();
       
@@ -480,15 +460,15 @@ public class SeqEvo
          bw = new BufferedWriter (filewriter);
          PW = new PrintWriter (bw);
  
-         PW.print("Total Designs Scored, Generation #,");  // print the generation number in the first column 
+         PW.print("Generation #, Total oligo-sets scored,");  // print the generation number in the first column 
  
          for (int i = 0; i < nl ; i++) // for each lineage
          {
-            PW.print(" Lineage " + (i+1) + " Score,"); //print that column's header.
+            PW.print(" Lineage " + (i+1) + " Weighted fitness score (W),"); //print that column's header.
          }
          PW.println(); // move to the first row.
          
-         PW.print("0, gen0"); //print gen 0's score
+         PW.print("0, 1"); //print gen 0's score
          for (int i = 0; i < nl ; i++) // for each lineage
          {
             PW.print(", " + Gen0.getTFS()); //print Gen 0's score
@@ -497,7 +477,7 @@ public class SeqEvo
 
          for( int g = 0; g < Lineages[0].getGST().size() ; g++ ) // for all elements in the vector
          {
-            PW.print( nl * Lineages[0].getTDSTrajectory().get(g) + ", " + Lineages[0].getGenerationNumberTrajectory().get(g) + ", ");  
+            PW.print( Lineages[0].getGenerationNumberTrajectory().get(g) + ", " + nl * Lineages[0].getTDSTrajectory().get(g) + ", ");  
             
             for (int i = 0; i < nl ; i++) // for each lineage
             {
@@ -524,7 +504,7 @@ public class SeqEvo
                 
          for (int i = 0; i < nl ; i++) // for each lineage
          {
-            PW.print(" Lineage " + (i+1) + " Score,"); //print that column's header.
+            PW.print(" Lineage " + (i+1) + " Weighted fitness score (W),"); //print that column's header.
          }
          PW.println(); // move to the first row.
 
@@ -556,7 +536,7 @@ public class SeqEvo
                 
          for (int i = 0; i < nl ; i++) // for each lineage
          {
-            PW.print(" Lineage " + (i+1) + " Score,"); //print that column's header.
+            PW.print(" Lineage " + (i+1) + " Weighted fitness score (W),"); //print that column's header.
          }
          PW.println(); // move to the first row.
          
@@ -588,19 +568,14 @@ public class SeqEvo
       // **********************
       // Create DomainsOut File
       // **********************
-      if( DOFilePath != "disabled")
+      if( ODSFilePath != "disabled")
       {
-         filewriter = new FileWriter( DOFilePath );
+         filewriter = new FileWriter( ODSFilePath );
          bw = new BufferedWriter (filewriter);
          PW = new PrintWriter (bw);
-         
-         PW.println("// Fittest generation's domains from StrandEvolver; Version: " + version + "; run time: " + runDate);
-         PW.println("// Domain Types: f = fixed, vs = Variable(Seeded), v = Variable(unseeded)");
-         PW.println("//");
-         PW.println("// Domain information:");
-         PW.println("// ------------------------------------------------------");      
-         PW.println("// number" + "\t" + "name" + "\t" + "type" + "\t" + "sequence(5'-3')");
-         PW.println("// ------------------------------------------------------");
+
+		 PW.println("//File Generated by SeqEvo. Version: " + version + "; run time: " + runDate);
+         PW.println("//Format: \"Domain Index\" -tab- \"Domain Name\" -tab- \"Domain Type\" -tab- \"Domain Sequence (5' to 3')\""); 
          Outputs.exportIDI( PW, FittestGeneration);
        
          PW.close();
@@ -610,35 +585,31 @@ public class SeqEvo
       // Create StrandsOut File
       // **********************
       
-      if (SOFilePath != "disabled")
+      if (OODFilePath != "disabled")
       {
-         filewriter = new FileWriter( SOFilePath );
+         filewriter = new FileWriter( OODFilePath );
          bw = new BufferedWriter (filewriter);
          PW = new PrintWriter (bw);
          
-         PW.println("// Strand Recipe's used by Sequence Evolver: " + version + "; run time: " + runDate);
-         PW.println("//");
-         PW.println("// File Format:");
-         PW.println("// ------------------------------------------------------");      
-         PW.println("// Number" + "\t" + "Strand Name" + "\t" + "Constituent Domains(5'-3')");
-         PW.println("// ------------------------------------------------------");
+         PW.println("//File Generated by SeqEvo. Version: " + version + "; run time: " + runDate);
+         PW.println("//Format: \"Oligo Index\" -tab- \"Oligo Name\" -tab- \"Oligo Domains (5' to 3')\""); 
          Outputs.exportISR( PW, FittestGeneration);
        
          PW.close();
       }
       
-      // **********************
-      // Create NetworkOut File
-      // **********************
-      if ( NOFilePath != "disabled")
+      // ***************************
+      // Create Oligo Sequences File
+      // ***************************
+      if ( OOSFilePath != "disabled")
       {
-         filewriter = new FileWriter( NOFilePath );
+         filewriter = new FileWriter( OOSFilePath );
          bw = new BufferedWriter (filewriter);
          PW = new PrintWriter (bw);
          
-         PW.println("Fittest Generation from StrandEvolver; Version: " + version + "; run time: " + runDate);
-         PW.println();      
-         Outputs.exportNI ( PW , FittestGeneration);
+         PW.println("//Oligo Sequences Generated by SeqEvo. Version: " + version + "; run time: " + runDate);
+		 PW.println("//Format: \"Oligo Name\" -tab- \"Oligo Sequence (5' to 3')\"");     
+         Outputs.exportOS ( PW , FittestGeneration);
 
          PW.close(); 
       }
@@ -646,52 +617,35 @@ public class SeqEvo
       // ********************************
       // Create Interference Output File
       // ********************************
-      if( IOFilePath != "disabled" )
+      if( OSPFilePath != "disabled" )
       {
-         FileWriter interferenceFileWriter = new FileWriter( IOFilePath );
+         FileWriter interferenceFileWriter = new FileWriter( OSPFilePath );
          BufferedWriter interferenceBW = new BufferedWriter (interferenceFileWriter);
          PrintWriter interferencePW = new PrintWriter (interferenceBW);
          
          interferencePW.println("// Profile of interference structures found in fittest generation. Produced by SequenceEvolver Version: " + version + "; run on  " + runDate);
          interferencePW.println();  
 
-         interferencePW.println("**************************************");
-         interferencePW.println("Intramolecular Interference Structures");
-         interferencePW.println("**************************************");
-         interferencePW.println();
-         
-         interferencePW.println("Complement Length (Base-Pairs), Number of Complements");
          interferencePW.println("-----------------------------------------------------");
-         
-         FittestGeneration.getIntraInterferenceProfile().entrySet().stream().forEach( e -> interferencePW.println(e.getKey()+", "+e.getValue()));
-         interferencePW.println();
+         interferencePW.println("Intra-Oligo Simple Secondary Structures (Inadvertent)");
+         interferencePW.println("-----------------------------------------------------");
+		 interferencePW.println("Structure Size (Base-Pairs), Number of Structures");
+         interferencePW.println("-----------------------------------------------------");
+         FittestGeneration.getIntraInterferenceCompleteOccurrences().entrySet().stream().forEach( e -> interferencePW.println(e.getKey()+", "+e.getValue()));
+         interferencePW.println("-----------------------------------------------------");
          interferencePW.println();
 
        
-         interferencePW.println("**************************************");
-         interferencePW.println("Intermolecular Interference Structures");
-         interferencePW.println("**************************************");
-         interferencePW.println();
-         interferencePW.println("Complement Length (Base-Pairs), Number of Complements");
          interferencePW.println("-----------------------------------------------------");
-         
-         FittestGeneration.getInterInterferenceProfile().entrySet().stream().forEach( e -> interferencePW.println(e.getKey()+", "+e.getValue()));
-         interferencePW.close();
+         interferencePW.println("Inter-Oligo Simple Secondary Structures (Inadvertent)");
+         interferencePW.println("-----------------------------------------------------");
+		 interferencePW.println("Structure Size (Base-Pairs), Number of Structures");
+         interferencePW.println("-----------------------------------------------------");
+         FittestGeneration.getInterInterferenceCompleteOccurrences().entrySet().stream().forEach( e -> interferencePW.println(e.getKey()+", "+e.getValue()));
+         interferencePW.println("-----------------------------------------------------");
+		 interferencePW.close();
          
       }
-      
-     
-      System.out.println("***********");
-      System.out.println("Program End");
-      System.out.println("***********");
-      System.out.println();
-      
-      // **************
-      // Report Runtime
-      // **************
-      
-      System.out.println("Runtime of Evolutionary Process: " + totalTime);
-      System.out.println();
 	}
    
    
@@ -703,7 +657,7 @@ public class SeqEvo
       
       MTout.setDebug(false);      //Set Debug text to be active (true) or inactive (false)
       MTout.setVerbose(false);      //Set Verbose text to be active (true) or inactive (false)
-      PFilePath = "se.parameters.txt";      // P: parameter-File-Path
+      PFilePath = "SE-parameters.txt";      // P: parameter-File-Path
       
       // ***************************
       // Check arguments for options
@@ -711,10 +665,7 @@ public class SeqEvo
       
       for(int i = 0; i < Iargs.length; i++)
       {         
-         if (Iargs[i].equals("-v"))
-         {
-            MTout.setVerbose(true); //set verbose flags
-         }
+
          
          if (Iargs[i].equals("-d"))
          {
@@ -743,8 +694,13 @@ public class SeqEvo
             PFilePath = Iargs[i+1]; // accept the next argument as the parameter file
             System.out.println("Using Parameters file: " + PFilePath); 
          }
-      }
-   }
+         
+		 if (Iargs[i].equals("-v"))
+         {
+            MTout.setVerbose(true); //set verbose flags
+         }
+		}
+	}
    
    public static void importSettings( String PFilePath ) throws Exception
    {
@@ -761,14 +717,15 @@ public class SeqEvo
       sflm = false; // Shuffle-First-Lineage-Mothers
       solm = true; // Shuffle-Other-Lineage-Mothers
       
-      GTOFilePath = "se.out.generation-trajectory.csv"; //GTO: Generation-Trajectory-Output 
-      CTOFilePath = "se.out.cycle-tragectory"; //log-Cycle-Trajectory-Output
-      LCTOFilePath = "se.out.log-cycle-trajectory.csv";
-      ROFilePath = "se.out.report.txt"; // RO: Report-Out
-      SOFilePath = "se.out.strands.txt"; // SO: Strands-Out
-      DOFilePath = "se.out.domains.txt"; // DO: Domains-Out  
-      NOFilePath = "disabled"; // NO: Network-Out 
-      IOFilePath = "disabled"; // IO: Interference-Out 
+      GTOFilePath = "SE-out-GenerationScore.csv";
+      CTOFilePath = "SE-out-CycleScore.csv"; 
+      LCTOFilePath = "SE-out-LogCycleScore.csv";
+	  
+      ORFilePath = "SE-out-report.txt"; // RO: Report-Out
+      OODFilePath = "disabled"; // SO: Strands-Out
+      ODSFilePath = "SE-out-DomainSequences.txt"; // DO: Domains-Out  
+      OOSFilePath = "SE-out-OligoSequences.txt"; // NO: Network-Out 
+      OSPFilePath = "disabled"; // IO: Interference-Out 
       
       // ************************************************
       // Read the parameter File, looking for local variables
@@ -800,23 +757,23 @@ public class SeqEvo
                   System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"CTOFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
-            }else if (streamtokenizer.sval.equalsIgnoreCase("dofilepath"))
+            }else if (streamtokenizer.sval.equalsIgnoreCase("odsfilepath"))
             {   
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_WORD )
                {
-                  DOFilePath = streamtokenizer.sval;
-                  System.out.println("DOFilePath value imported. Accepted value: "+ DOFilePath);
+                  ODSFilePath = streamtokenizer.sval;
+                  System.out.println("ODSFilePath value imported. Accepted value: "+ ODSFilePath);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"DOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"ODSFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"DOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"ODSFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
             }
@@ -900,43 +857,43 @@ public class SeqEvo
                   System.exit(0);            
                }
             }
-            else if (streamtokenizer.sval.equalsIgnoreCase("nofilepath"))
+            else if (streamtokenizer.sval.equalsIgnoreCase("oosfilepath"))
             {   
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_WORD )
                {
-                  NOFilePath = streamtokenizer.sval;
-                  System.out.println("NOFilePath value imported. Accepted value: " + DOFilePath);
+                  OOSFilePath = streamtokenizer.sval;
+                  System.out.println("OOSFilePath value imported. Accepted value: " + ODSFilePath);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"NOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"OOSFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"NOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"OOSFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
             }
-            else if (streamtokenizer.sval.equalsIgnoreCase("IOFilePath"))
+            else if (streamtokenizer.sval.equalsIgnoreCase("OSPFilePath"))
             {   
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_WORD )
                {
-                  IOFilePath = streamtokenizer.sval;
-                  System.out.println("IOFilePath value imported. Accepted value: "+ IOFilePath);
+                  OSPFilePath = streamtokenizer.sval;
+                  System.out.println("OSPFilePath value imported. Accepted value: "+ OSPFilePath);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"OSPFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"OSPFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
             }
@@ -984,43 +941,43 @@ public class SeqEvo
                   System.exit(0);
                }
             }
-            else if (streamtokenizer.sval.equalsIgnoreCase("rofilepath"))
+            else if (streamtokenizer.sval.equalsIgnoreCase("orfilepath"))
             {   
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_WORD )
                {
-                  ROFilePath = streamtokenizer.sval;
-                  System.out.println("ROFilePath value imported. Accepted value: "+ ROFilePath);
+                  ORFilePath = streamtokenizer.sval;
+                  System.out.println("ORFilePath value imported. Accepted value: "+ ORFilePath);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"ROFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"ORFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"ROFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"ORFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
             }
-            else if (streamtokenizer.sval.equalsIgnoreCase("sofilepath"))
+            else if (streamtokenizer.sval.equalsIgnoreCase("oodfilepath"))
             {   
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_WORD )
                {
-                  SOFilePath = streamtokenizer.sval;
-                  System.out.println("SOFilePath value imported. Accepted value: "+ SOFilePath);
+                  OODFilePath = streamtokenizer.sval;
+                  System.out.println("OODFilePath value imported. Accepted value: "+ OODFilePath);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"SOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"OODFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"SOFilePath\" in " + PFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"OODFilePath\" in " + PFilePath); 
                   System.exit(0);                    
                }
             }

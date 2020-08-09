@@ -1,0 +1,59 @@
+//Sample input file - MT 2018/09/18
+// All lines begining with a "//" are interpreted as comments, and ignored by the program
+
+// ****************
+// Input File Paths
+// ****************
+
+IDSFilePath = SE-out-DomainSequences.txt	// Input file containing the domain information
+IODFilePath = OligoDomains.txt	// Input file containing the strand information
+
+// ******************
+// Scoring Parameters
+// ******************
+
+//IntraOligoW = 10000 // integer > 0 :: weighting factor for compliments within a strand
+//InterOligoW = 1	// integer > 0 :: weighting factor for compliments between two strands
+//IntraOligoSLC = 1	// integer >= 1 :: Complements within a single strand with length greather than or equal to this SLC contribute to a design's score.
+//InterOligoSLC = 1	// integer >= 1 :: Complements between 2 strands with length greather than or equal to this SLC contribute to a design's score.
+
+// ********************
+// Default output files
+// ********************
+
+//ReportFilePath = DP-out-report.txt	// File to create which will contain the program's full report
+//ScoresFilePath = DP-out-scores.txt 	// File to create which will contain the calculated fitness scores
+
+// ***********************
+// Additional output files
+// ***********************
+
+// Nomenculture for output files: 
+// P-> profile of structures (binned by length)
+// S-> Sequence of structures
+// O-> Intraoligo
+// N-> Interoligo
+// B-> Baseline structures (intentional & implied)
+// I-> Inadvertent (niether intentional or implied)
+
+// PO	= DP-out-PO.txt  // Output file containing the profile of intra-oligo simple secondary structures. Default: disabled.
+// POB	= DP-out-POB.txt  // Output file containing the profile of baseline (intentional & implied) intra-oligo simple secondary structures. Default: disabled.
+// POI	= DP-out-POI.txt  // Output file containing the profile of inadvertent intra-oligo simple secondary structures. Default: disabled.
+// POU 	= DP-out-POU.txt  // Output file containing the profile of unique intra-oligo simple secondary structures. Default: disabled.
+// POUB	= DP-out-POUB.txt  // Output file containing the profile of baseline (intentional & implied) unique intra-oligo simple secondary structures. Default: disabled.
+// POUI	= DP-out-POIU.txt  // Output file containing the profile of inadvertent unique intra-oligo simple secondary structures. Default: disabled.
+				
+// SOU	= DP-out-SOU.txt  // Output file containing the unique intra-oligo simple secondary structures. Default: disabled.
+// SOUB	= DP-out-SOUB.txt // Output file containing the baseline (inentional & implied) unique intra-oligo simple secondary structures. Default: disabled.
+// SOUI	= DP-out-SOIU.txt // Output file containing the inadvertent unique intra-oligo simple secondary structures. Default: disabled.
+				
+// PN = DP-out-PN.txt 	// Output file containing the profile of inter-oligo simple secondary structures. Default: disabled.	
+// PNB = DP-out-PNB.txt  // Output file containing the profile of baseline (intentional & implied) inter-oligo simple secondary structures. Default: disabled.	
+// PNI = DP-out-PNI.txt  // Output file containing the profile of inadvertent inter-oligo simple secondary structures. Default: disabled.	
+// PNU = DP-out-PNU.txt  // Output file containing the profile of unique inter-oligo simple secondary structures. Default: disabled.	
+// PNUB = DP-out-PNUB.txt  // Output file containing the profile of inadvertent unique inter-oligo simple secondary structures. Default: disabled.	
+// PNUI = DP-out-PNIU.txt  // Output file containing the profile of baseline (intentional & implied) unique inter-oligo simple secondary structures. Default: disabled.	
+		
+// SNU = DP-out-SNU.txt  // Output file containing the unique inter-oligo simple secondary structures. Default: disabled.	
+// SNUB = DP-out-SNUB.txt  // Output file containing the baseline (inentional & implied) unique inter-oligo simple secondary structures. Default: disabled.	
+// SNUI = DP-out-SNIU.txt  // Output file containing the inadvertent unique inter-oligo simple secondary structures. Default: disabled.	

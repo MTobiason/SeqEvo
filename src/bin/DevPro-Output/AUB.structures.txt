@@ -1,2 +1,0 @@
-//Unique intramolecular baseline structures(complements) identified by DevPro.jar on Wed Jul 08 20:40:17 EDT 2020
-Length (bp), Strand #1, index of 1st base in Strand #1, Sequence #1, Strand #2, index of 1st base in Strand #2, Sequence #2

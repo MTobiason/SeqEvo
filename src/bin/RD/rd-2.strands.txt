@@ -1,3 +1,0 @@
-1	Strand-1	A 
-2	Strand-2	c.A 
-

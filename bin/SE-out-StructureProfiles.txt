@@ -1,0 +1,31 @@
+// Profile of interference structures found in fittest generation. Produced by SequenceEvolver Version: 1.8; run on  Sun Aug 09 02:14:38 EDT 2020
+
+-----------------------------------------------------
+Intra-Oligo Simple Secondary Structures (Inadvertent)
+-----------------------------------------------------
+Structure Size (Base-Pairs), Number of Structures
+-----------------------------------------------------
+1, 26545
+2, 14666
+3, 2787
+4, 358
+5, 15
+6, 2
+-----------------------------------------------------
+
+-----------------------------------------------------
+Inter-Oligo Simple Secondary Structures (Inadvertent)
+-----------------------------------------------------
+Structure Size (Base-Pairs), Number of Structures
+-----------------------------------------------------
+1, 15251935
+2, 8619856
+3, 1987777
+4, 452682
+5, 99667
+6, 21563
+7, 4234
+8, 656
+9, 117
+10, 1
+-----------------------------------------------------

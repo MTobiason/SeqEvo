@@ -1,5 +1,0 @@
-//Intermolecular interference structural profile identified by DevPro.jar on Wed Jul 08 20:40:17 EDT 2020
-Complement Length (Base-Pairs), Number of Complements
-2, 60
-3, 16
-4, 4

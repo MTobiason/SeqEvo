@@ -70,10 +70,10 @@ public class Generation
    private static int CCslc;
    private static int GGslc;
    private static int TTslc;
-   private static int IntramolecularSLC;
-   private static int IntermolecularSLC;
-   private static BigInteger IntramolecularW;
-   private static BigInteger IntermolecularW;
+   private static int IntraOligoSLC;
+   private static int InterOligoSLC;
+   private static BigInteger IntraOligoW;
+   private static BigInteger InterOligoW;
    private static int MaxTranspositionAttempts = 1000; // Transposition-Attemps: Number of times to attempt to find a valid transposition
    private static int MaxShuffleAttempts = 1000; // Number of attempts to produce a valid design via random shuffle
    private static int MaxMutationAttempts = 1000;
@@ -1352,11 +1352,11 @@ public class Generation
       MaxTranspositionAttempts = 1000;
       MaxMutationAttempts = 1000;
       
-      IntramolecularSLC = 2;
-      IntermolecularSLC = 2;
+      IntraOligoSLC = 1;
+      InterOligoSLC = 1;
       
-      IntramolecularW = BigInteger.valueOf(10000);
-      IntermolecularW = BigInteger.valueOf(1);
+      IntraOligoW = BigInteger.valueOf(10000);
+      InterOligoW = BigInteger.valueOf(1);
       
       AAslc = 6;
       CCslc = 3;
@@ -1379,33 +1379,35 @@ public class Generation
 				{
 					switch (scanner2.next())
 					{
-						case "IntramolecularW":
+						case "IntraOligoW":
 						scanner2.next(); // Skip = sign
 						try{
-							IntramolecularW = new BigInteger((String)scanner2.next());
+							IntraOligoW = new BigInteger((String)scanner2.next());
+							System.out.println("IntraOligoW value imported. Accepted value: " + IntraOligoW);
 						}
 						catch (Exception a)
 						{
-							throw new Exception("Invalid value for IntramolecularW");
+							throw new Exception("Invalid value for IntraOligoW");
 						}
-						if (IntramolecularW.compareTo(BigInteger.valueOf(0)) == -1)
+						if (IntraOligoW.compareTo(BigInteger.valueOf(0)) == -1)
 						{
-							throw new Exception((IntramolecularW + " is not a valid value for IntramolecularW"));
+							throw new Exception((IntraOligoW + " is not a valid value for IntraOligoW"));
 						}
 						break;
 						
-						case "IntermolecularW":
+						case "InterOligoW":
 						scanner2.next(); // Skip = sign
 						try{
-							IntermolecularW = new BigInteger((String)scanner2.next());
+							InterOligoW = new BigInteger((String)scanner2.next());
+							System.out.println("InterOligoW value imported. Accepted value: " + InterOligoW);
 						}
 						catch (Exception a)
 						{
-							throw new Exception("Invalid value for IntermolecularW");
+							throw new Exception("Invalid value for InterOligoW");
 						}
-						if (IntermolecularW.compareTo(BigInteger.valueOf(0)) == -1)
+						if (InterOligoW.compareTo(BigInteger.valueOf(0)) == -1)
 						{
-							throw new Exception((IntermolecularW + " is not a valid value for IntermolecularW"));
+							throw new Exception((InterOligoW + " is not a valid value for InterOligoW"));
 						}
 						break;
 						
@@ -1419,7 +1421,7 @@ public class Generation
 		}
 		catch (Exception e)
 		{
-			System.out.println("Error while importing Sequences from "+ ParametersFilePath + " :: ");
+			System.out.println("Error while importing parameters from "+ ParametersFilePath + " :: ");
 			System.out.println(e.getMessage());
 			System.exit(0);
 		}
@@ -1431,43 +1433,43 @@ public class Generation
          streamtokenizer.nextToken();
          if (streamtokenizer.ttype == StreamTokenizer.TT_WORD)
          {
-            if (streamtokenizer.sval.equalsIgnoreCase("IntramolecularSLC"))
+            if (streamtokenizer.sval.equalsIgnoreCase("IntraOligoSLC"))
             {
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_NUMBER && (int)streamtokenizer.nval >= 1)
                {
-                  IntramolecularSLC = (int)streamtokenizer.nval;
-                  System.out.println("IntramolecularSLC value imported. Accepted value: " + IntramolecularSLC);
+                  IntraOligoSLC = (int)streamtokenizer.nval;
+                  System.out.println("IntraOligoSLC value imported. Accepted value: " + IntraOligoSLC);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IntramolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IntraOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IntramolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IntraOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);            
                }
             }
-            else if (streamtokenizer.sval.equalsIgnoreCase("IntermolecularSLC"))
+            else if (streamtokenizer.sval.equalsIgnoreCase("InterOligoSLC"))
             {
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_NUMBER && (int)streamtokenizer.nval >= 1)
                {
-                  IntermolecularSLC = (int)streamtokenizer.nval;
-                  System.out.println("IntermolecularSLC value imported. Accepted value: " + IntermolecularSLC);
+                  InterOligoSLC = (int)streamtokenizer.nval;
+                  System.out.println("InterOligoSLC value imported. Accepted value: " + InterOligoSLC);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IntermolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"InterOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IntermolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"InterOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);            
                }
             }
@@ -2268,7 +2270,7 @@ public class Generation
       {
          Map<Integer,Integer> tempOL = new TreeMap<Integer,Integer>();
          
-         for (int j = IL ; j > 0 && j >= IntramolecularSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
+         for (int j = IL ; j > 0 && j >= IntraOligoSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
             {
                tempOL.put( j , IL - j + 1);
             }
@@ -2283,7 +2285,7 @@ public class Generation
       {
          Map<Integer,Integer> tempOL = new TreeMap<Integer,Integer>();
          
-         for (int j = IL ; j > 0 && j >= IntermolecularSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
+         for (int j = IL ; j > 0 && j >= InterOligoSLC; j--) // for all lengths shorter than  or equal to this length, but longer than SLC
             {
                tempOL.put( j , IL - j + 1);
             }
@@ -2369,7 +2371,7 @@ public class Generation
    
    private void calculateTFS()
    {
-      tfs = (getSFS().multiply(IntramolecularW)).add(getNFS().multiply(IntermolecularW));
+      tfs = (getSFS().multiply(IntraOligoW)).add(getNFS().multiply(InterOligoW));
       tfsUpToDate =true;
    }
    
@@ -2994,21 +2996,21 @@ public class Generation
    
    public static int getIntraSLC()
    {
-      return IntramolecularSLC;
+      return IntraOligoSLC;
    }
    
    public static int getInterSLC()
    {
-      return IntermolecularSLC;
+      return InterOligoSLC;
    }
    
    public static BigInteger getIntraW()
    {
-      return IntramolecularW;
+      return IntraOligoW;
    }
    public static BigInteger getInterW()
    {
-      return IntermolecularW;
+      return InterOligoW;
    }
    
    public static int getAASLC()

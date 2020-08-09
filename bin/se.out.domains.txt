@@ -1,9 +1,0 @@
-// Fittest generation's domains from StrandEvolver; Version: 1.8; run time: Tue Aug 04 23:53:47 EDT 2020
-// Domain Types: f = fixed, vs = Variable(Seeded), v = Variable(unseeded)
-//
-// Domain information:
-// ------------------------------------------------------
-// number	name	type	sequence(5'-3')
-// ------------------------------------------------------
-1	A	v	GCACGACTCCCTACCAAACATAA
-

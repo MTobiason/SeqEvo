@@ -12,8 +12,8 @@ public class baseAlignment
 {
 
 	private static MTlogger MTout = new MTlogger("baseAlignment.java",3);
-   private static int IntramolecularSLC; //Scoring-length-Criteria. WCC shorter than SLC will be ingored.
-	private static int IntermolecularSLC;
+   private static int IntraOligoSLC; //Scoring-length-Criteria. WCC shorter than SLC will be ingored.
+	private static int InterOligoSLC;
 
 	private int S1; // index of first strand involved in the alignment
 	private int S2; // index of second strand involved in the alignment
@@ -104,8 +104,8 @@ public class baseAlignment
       // Load default values
       // *******************
         
-      IntramolecularSLC = 2;
-      IntermolecularSLC = 2;
+      IntraOligoSLC = 1;
+      InterOligoSLC = 1;
       
       // ****************************
       // Check parameters File for options
@@ -118,43 +118,43 @@ public class baseAlignment
          streamtokenizer.nextToken();
          if (streamtokenizer.ttype == StreamTokenizer.TT_WORD)
          {
-            if (streamtokenizer.sval.equalsIgnoreCase("IntramolecularSLC"))
+            if (streamtokenizer.sval.equalsIgnoreCase("IntraOligoSLC"))
             {
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_NUMBER && (int)streamtokenizer.nval >= 1)
                {
-                  IntramolecularSLC = (int)streamtokenizer.nval;
-                  System.out.println("IntramolecularSLC value imported. Accepted value: " + IntramolecularSLC);
+                  IntraOligoSLC = (int)streamtokenizer.nval;
+                  System.out.println("IntraOligoSLC value imported. Accepted value: " + IntraOligoSLC);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IntramolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IntraOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IntramolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IntraOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);            
                }
             }
-            else if (streamtokenizer.sval.equalsIgnoreCase("IntermolecularSLC"))
+            else if (streamtokenizer.sval.equalsIgnoreCase("InterOligoSLC"))
             {
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_NUMBER && (int)streamtokenizer.nval >= 1)
                {
-                  IntermolecularSLC = (int)streamtokenizer.nval;
-                  System.out.println("IntermolecularSLC value imported. Accepted value: " + IntermolecularSLC);
+                  InterOligoSLC = (int)streamtokenizer.nval;
+                  System.out.println("InterOligoSLC value imported. Accepted value: " + InterOligoSLC);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IntermolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"InterOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IntermolecularSLC\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"InterOligoSLC\" in " + ParametersFilePath); 
                   System.exit(0);            
                }
             }
@@ -257,12 +257,12 @@ public class baseAlignment
          }
          else  //if the bases are not complementary 
          {
-            if(isIntramolecular && lengthCounter >= IntramolecularSLC)
+            if(isIntramolecular && lengthCounter >= IntraOligoSLC)
             {
                //add the complement to the baseline, reset variables
                baselineStructures.add( new WCStructure(S1,complementS1B1,S2,(S2B1+(L-1)-i+1),lengthCounter, isIntramolecular));
             }
-            else if(lengthCounter >= IntermolecularSLC) // and there is a long intermolecular complement
+            else if(lengthCounter >= InterOligoSLC) // and there is a long intermolecular complement
             {
                //add the complement to the baseline, reset variables
                baselineStructures.add( new WCStructure(S1,complementS1B1,S2,(S2B1+(L-1)-i+1),lengthCounter, isIntramolecular));
@@ -274,12 +274,12 @@ public class baseAlignment
       //if the loop ends on a complement, count it.
       if( ess[S1][(S1B1 + (L-1))] + ess[S2][(S2B1)] == 5 || ess[S1][(S1B1 + (L-1))] + ess[S2][(S2B1)]== (2*nvb +11) )
       {
-         if(isIntramolecular && lengthCounter >= IntramolecularSLC)
+         if(isIntramolecular && lengthCounter >= IntraOligoSLC)
          {
             //add the complement to the baseline, reset variables
             baselineStructures.add( new WCStructure(S1,complementS1B1,S2,S2B1,lengthCounter, isIntramolecular));
          }
-         else if(lengthCounter >= IntermolecularSLC) // and there is a long intermolecular complement
+         else if(lengthCounter >= InterOligoSLC) // and there is a long intermolecular complement
          {
             //add the complement to the baseline, reset variables
             baselineStructures.add( new WCStructure(S1,complementS1B1,S2,S2B1,lengthCounter, isIntramolecular));
@@ -357,12 +357,12 @@ public class baseAlignment
          
          else  //if the bases are not complementary 
          {
-            if(isIntramolecular && lengthCounter >= IntramolecularSLC)
+            if(isIntramolecular && lengthCounter >= IntraOligoSLC)
             {
                //add the complement to the baseline, reset variables
                structures.add( new WCStructure(S1,complementS1B1,S2,(S2B1+(L-1)-i+1),lengthCounter, isIntramolecular));
             }
-            else if(lengthCounter >= IntermolecularSLC) // and there is a long intermolecular complement
+            else if(lengthCounter >= InterOligoSLC) // and there is a long intermolecular complement
             {
                //add the complement to the baseline, reset variables
                structures.add( new WCStructure(S1,complementS1B1,S2,(S2B1+(L-1)-i+1),lengthCounter, isIntramolecular));
@@ -374,12 +374,12 @@ public class baseAlignment
       //if the loop ends on a complement, count it.
       if( ESS[S1][(S1B1 + (L-1))] + ESS[S2][(S2B1)] == 5 )
       {
-         if(isIntramolecular && lengthCounter >= IntramolecularSLC)
+         if(isIntramolecular && lengthCounter >= IntraOligoSLC)
          {
             //add the complement to the baseline, reset variables
             structures.add( new WCStructure(S1,complementS1B1,S2,S2B1,lengthCounter, isIntramolecular));
          }
-         else if(!isIntramolecular && lengthCounter >= IntermolecularSLC) // and there is a long intermolecular complement
+         else if(!isIntramolecular && lengthCounter >= InterOligoSLC) // and there is a long intermolecular complement
          {
             //add the complement to the baseline, reset variables
             structures.add( new WCStructure(S1,complementS1B1,S2,S2B1,lengthCounter, isIntramolecular));
@@ -437,8 +437,8 @@ public class baseAlignment
 		int nvb = Generation.getNVB(); //get number of variable bases
       
       int tempSLC = 0;
-      if(isIntramolecular) tempSLC = IntramolecularSLC;
-      else tempSLC = IntermolecularSLC;
+      if(isIntramolecular) tempSLC = IntraOligoSLC;
+      else tempSLC = InterOligoSLC;
 
       int lengthCounter = 0;
       
@@ -491,8 +491,8 @@ public class baseAlignment
       UniqueOccurrences.clear();
       
       int tempSLC = 0;
-      if(isIntramolecular) tempSLC = IntramolecularSLC;
-      else tempSLC = IntermolecularSLC;
+      if(isIntramolecular) tempSLC = IntraOligoSLC;
+      else tempSLC = InterOligoSLC;
 
       int lengthCounter = 0;
       

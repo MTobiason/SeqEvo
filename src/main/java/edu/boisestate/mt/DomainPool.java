@@ -39,7 +39,7 @@ public class DomainPool
    // Global Variables for DomainPool objects
    // ***************************************
    
-   private static String DIFilePath;
+   private static String IDSFilePath;
    
    //*********************************************
    //Constructors which create a DomainPool object
@@ -48,14 +48,14 @@ public class DomainPool
    public DomainPool() throws Exception
    {
    
-      MTout.log("Calculating the number of domains in: " + DIFilePath);
-      calculateMND( DIFilePath );
+      MTout.log("Calculating the number of domains in: " + IDSFilePath);
+      calculateMND( IDSFilePath );
       
       MTout.log("Setting the size of arrays using mnd = " + mnd);
       setArraySizes();
    
-      MTout.log("Importing domain information from: " + DIFilePath);
-      readDomains( DIFilePath );
+      MTout.log("Importing domain information from: " + IDSFilePath);
+      readDomains( IDSFilePath );
       
       MTout.log("Seeding variable domains");
       seedVariableDomains();
@@ -174,7 +174,7 @@ public class DomainPool
       FileReader filereader = new FileReader(ParametersFilePath);   
       StreamTokenizer streamtokenizer = new StreamTokenizer(filereader);
 
-	   streamtokenizer.nextToken();
+	  streamtokenizer.nextToken();
       for(int i =0; streamtokenizer.ttype != StreamTokenizer.TT_EOF && i < mnd; i++) // for each line of input file, until end of file
       {
          streamtokenizer.nextToken(); // Read the domain name
@@ -209,7 +209,7 @@ public class DomainPool
             streamtokenizer.nextToken(); // Read base sequence
             ds[i] = streamtokenizer.sval;         
          }
-      tnd = i + 1 ;  // Set the total number of domains to be equal to i + 1
+		tnd = i + 1 ;  // Set the total number of domains to be equal to i + 1
 	   streamtokenizer.nextToken();
       }  
    }
@@ -336,9 +336,9 @@ public class DomainPool
       System.out.println();
    }
    
-   public static void setDIFilePath( String IDIFilePath )
+   public static void setIDSFilePath( String IIDSFilePath )
    {
-      DIFilePath = IDIFilePath;   
+      IDSFilePath = IIDSFilePath;   
    }
    
    public static void importSettings (String IFilePath) throws Exception
@@ -350,7 +350,7 @@ public class DomainPool
       // Set default value for local settings
       // ************************************
       
-      DIFilePath = "in.domains.txt"; // DI: Domains-In
+      IDSFilePath = "DomainSequences.txt"; // DI: Domains-In
       
       FileReader filereader = new FileReader(IFilePath);   
       StreamTokenizer streamtokenizer = new StreamTokenizer(filereader);
@@ -360,23 +360,23 @@ public class DomainPool
          streamtokenizer.nextToken(); 
          if (streamtokenizer.ttype == StreamTokenizer.TT_WORD)
          {
-            if (streamtokenizer.sval.equalsIgnoreCase("difilepath"))
+            if (streamtokenizer.sval.equalsIgnoreCase("idsfilepath"))
             {   
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_WORD )
                {
-                  DIFilePath = streamtokenizer.sval;
-                  System.out.println("DIFilePath value imported. Accepted value: "+ DIFilePath);
+                  IDSFilePath = streamtokenizer.sval;
+                  System.out.println("IDSFilePath value imported. Accepted value: "+ IDSFilePath);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"DIFilePath\" in " + IFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IDSFilePath\" in " + IFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"DIFilePath\" in " + IFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IDSFilePath\" in " + IFilePath); 
                   System.exit(0);                    
                }
             }

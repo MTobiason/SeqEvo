@@ -33,7 +33,7 @@ public class StrandPool
    // Global variables for strandpool objects
    // ***************************************
    
-   private static String SIFilePath;
+   private static String IODFilePath;
    
    //*********************************************
    //Constructors which create a StrandPool object
@@ -42,17 +42,17 @@ public class StrandPool
    public StrandPool() throws Exception
    {
       
-      MTout.log("Calculating Max-Number-Strands from: " + SIFilePath);
-      calculateMNS(SIFilePath);
+      MTout.log("Calculating Max-Number-Strands from: " + IODFilePath);
+      calculateMNS(IODFilePath);
       
-      MTout.log("Calculating Max-Strand-Recipe-Length from: " + SIFilePath);
-      calculateMSRL(SIFilePath);
+      MTout.log("Calculating Max-Strand-Recipe-Length from: " + IODFilePath);
+      calculateMSRL(IODFilePath);
       
       MTout.log("Setting array sizes using mns = " + mns +"; msrl = " + msrl);
       setArraySizes();
    
-      MTout.log("Importing strand information from: " + SIFilePath);
-      readStrands(SIFilePath);
+      MTout.log("Importing strand information from: " + IODFilePath);
+      readStrands(IODFilePath);
    }
    
    // *************************************************
@@ -181,9 +181,9 @@ public class StrandPool
       System.out.println();
    }
    
-   public static void setSIFilePath( String ISIFilePath )
+   public static void setIODFilePath( String IIODFilePath )
    {
-      SIFilePath = ISIFilePath;   
+      IODFilePath = IIODFilePath;   
    }
    
    public static void importSettings( String ParametersFilePath ) throws Exception
@@ -191,7 +191,7 @@ public class StrandPool
          
       MTout.log("Importing Settings for StrandPool() module from "+ ParametersFilePath );
       
-      SIFilePath = "in.strands.txt"; // SI: Strands-In
+      IODFilePath = "OligoDomains.txt"; // SI: Strands-In
       
       FileReader filereader = new FileReader(ParametersFilePath);   
       StreamTokenizer streamtokenizer = new StreamTokenizer(filereader);
@@ -201,23 +201,23 @@ public class StrandPool
          streamtokenizer.nextToken(); 
          if (streamtokenizer.ttype == StreamTokenizer.TT_WORD)
          {
-            if (streamtokenizer.sval.equalsIgnoreCase("sifilepath"))
+            if (streamtokenizer.sval.equalsIgnoreCase("iodfilepath"))
             {   
                streamtokenizer.nextToken(); // move to separator ( usually "=" )
                streamtokenizer.nextToken(); // move to value
                if(streamtokenizer.ttype == StreamTokenizer.TT_WORD )
                {
-                  SIFilePath = streamtokenizer.sval;
-                  System.out.println("SIFilePath value imported. Accepted value: "+ SIFilePath);
+                  IODFilePath = streamtokenizer.sval;
+                  System.out.println("IODFilePath value imported. Accepted value: "+ IODFilePath);
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_NUMBER)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"SIFilePath\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.nval +"\" not acceptable for \"IODFilePath\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
                else if( streamtokenizer.ttype == StreamTokenizer.TT_WORD)
                {
-                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"SIFilePath\" in " + ParametersFilePath); 
+                  System.out.println("Error:: Value \"" + streamtokenizer.sval +"\" not acceptable for \"IODFilePath\" in " + ParametersFilePath); 
                   System.exit(0);                    
                }
             }

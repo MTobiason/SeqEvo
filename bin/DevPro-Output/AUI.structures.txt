@@ -1,4 +1,0 @@
-//Identity and location of unique intramolecular interference structures identified by DevPro.jar on Tue Aug 04 23:54:39 EDT 2020
-Length (bp), Strand #1, index of 1st base in Strand #1, Sequence #1, Strand #2, index of 1st base in Strand #2, Sequence #2
-2, Top-Strand, 1, GC, Top-Strand, 22, GC
-2, Bottom-Strand, 1, GC, Bottom-Strand, 22, GC
