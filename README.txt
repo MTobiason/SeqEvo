@@ -3,9 +3,6 @@ SeqEvo and DevPro Computer Programs
     version 1.8 : 2020-08-09
 ***********************************
 
-These versions of SeqEvo and DevPro are provided for archival purposes and are no longer actively maintained.
-Use of newer versions is recomended.
-
 The main purpose of the DeviceProfiler (DevPro) program is to calculate the fitness of an existing set of DNA oligonucleotides (oligos).
 The main purpose of the SequenceEvolver (SeqEvo) program is to generate fit sets of DNA oligos.
 
