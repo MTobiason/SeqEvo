@@ -1,0 +1,517 @@
+1	Oligo-1	Domain-02-01-04	c.Domain-02-01-03	c.Domain-03-01-03	Domain-03-01-04
+2	Oligo-3	Domain-02-01-08	c.Domain-02-01-07	c.Domain-03-01-07	Domain-03-01-08
+3	Oligo-6	Domain-04-01-04	c.Domain-04-01-03	c.Domain-05-01-03	Domain-05-01-04
+4	Oligo-7	Domain-04-01-06	c.Domain-04-01-05	c.Domain-03-01-05	Domain-03-01-06
+5	Oligo-8	Domain-04-01-08	c.Domain-04-01-07	c.Domain-05-01-07	Domain-05-01-08
+6	Oligo-11	Domain-06-01-04	c.Domain-06-01-03	c.Domain-07-01-03	Domain-07-01-04
+7	Oligo-12	Domain-06-01-06	c.Domain-06-01-05	c.Domain-05-01-05	Domain-05-01-06
+8	Oligo-13	Domain-06-01-08	c.Domain-06-01-07	c.Domain-07-01-07	Domain-07-01-08
+9	Oligo-16	Domain-08-01-04	c.Domain-08-01-03	c.Domain-09-01-03	Domain-09-01-04
+10	Oligo-17	Domain-08-01-06	c.Domain-08-01-05	c.Domain-07-01-05	Domain-07-01-06
+11	Oligo-18	Domain-08-01-08	c.Domain-08-01-07	c.Domain-09-01-07	Domain-09-01-08
+12	Oligo-23	Domain-09-02-02	c.Domain-09-02-01	c.Domain-08-02-01	Domain-08-02-02
+13	Oligo-25	Domain-09-02-06	c.Domain-09-02-05	c.Domain-08-02-05	Domain-08-02-06
+14	Oligo-27	Domain-09-02-10	c.Domain-09-02-09	c.Domain-08-02-09	Domain-08-02-10
+15	Oligo-28	Domain-07-02-02	c.Domain-07-02-01	c.Domain-06-02-01	Domain-06-02-02
+16	Oligo-29	Domain-07-02-04	c.Domain-07-02-03	c.Domain-08-02-03	Domain-08-02-04
+17	Oligo-30	Domain-07-02-06	c.Domain-07-02-05	c.Domain-06-02-05	Domain-06-02-06
+18	Oligo-31	Domain-07-02-08	c.Domain-07-02-07	c.Domain-08-02-07	Domain-08-02-08
+19	Oligo-32	Domain-07-02-10	c.Domain-07-02-09	c.Domain-06-02-09	Domain-06-02-10
+20	Oligo-33	Domain-05-02-02	c.Domain-05-02-01	c.Domain-04-02-01	Domain-04-02-02
+21	Oligo-34	Domain-05-02-04	c.Domain-05-02-03	c.Domain-06-02-03	Domain-06-02-04
+22	Oligo-35	Domain-05-02-06	c.Domain-05-02-05	c.Domain-04-02-05	Domain-04-02-06
+23	Oligo-36	Domain-05-02-08	c.Domain-05-02-07	c.Domain-06-02-07	Domain-06-02-08
+24	Oligo-37	Domain-05-02-10	c.Domain-05-02-09	c.Domain-04-02-09	Domain-04-02-10
+25	Oligo-38	Domain-03-02-02	c.Domain-03-02-01	c.Domain-02-02-01	Domain-02-02-02
+26	Oligo-39	Domain-03-02-04	c.Domain-03-02-03	c.Domain-04-02-03	Domain-04-02-04
+27	Oligo-40	Domain-03-02-06	c.Domain-03-02-05	c.Domain-02-02-05	Domain-02-02-06
+28	Oligo-41	Domain-03-02-08	c.Domain-03-02-07	c.Domain-04-02-07	Domain-04-02-08
+29	Oligo-42	Domain-03-02-10	c.Domain-03-02-09	c.Domain-02-02-09	Domain-02-02-10
+30	Oligo-46	Domain-02-03-04	c.Domain-02-03-03	c.Domain-03-03-03	Domain-03-03-04
+31	Oligo-48	Domain-02-03-08	c.Domain-02-03-07	c.Domain-03-03-07	Domain-03-03-08
+32	Oligo-49	Domain-02-03-10	c.Domain-02-03-09	c.Domain-01-03-09	Domain-01-03-10
+33	Oligo-50	Domain-04-03-02	c.Domain-04-03-01	c.Domain-03-03-01	Domain-03-03-02
+34	Oligo-51	Domain-04-03-04	c.Domain-04-03-03	c.Domain-05-03-03	Domain-05-03-04
+35	Oligo-52	Domain-04-03-06	c.Domain-04-03-05	c.Domain-03-03-05	Domain-03-03-06
+36	Oligo-53	Domain-04-03-08	c.Domain-04-03-07	c.Domain-05-03-07	Domain-05-03-08
+37	Oligo-54	Domain-04-03-10	c.Domain-04-03-09	c.Domain-03-03-09	Domain-03-03-10
+38	Oligo-55	Domain-06-03-02	c.Domain-06-03-01	c.Domain-05-03-01	Domain-05-03-02
+39	Oligo-56	Domain-06-03-04	c.Domain-06-03-03	c.Domain-07-03-03	Domain-07-03-04
+40	Oligo-57	Domain-06-03-06	c.Domain-06-03-05	c.Domain-05-03-05	Domain-05-03-06
+41	Oligo-58	Domain-06-03-08	c.Domain-06-03-07	c.Domain-07-03-07	Domain-07-03-08
+42	Oligo-59	Domain-06-03-10	c.Domain-06-03-09	c.Domain-05-03-09	Domain-05-03-10
+43	Oligo-60	Domain-08-03-02	c.Domain-08-03-01	c.Domain-07-03-01	Domain-07-03-02
+44	Oligo-61	Domain-08-03-04	c.Domain-08-03-03	c.Domain-09-03-03	Domain-09-03-04
+45	Oligo-62	Domain-08-03-06	c.Domain-08-03-05	c.Domain-07-03-05	Domain-07-03-06
+46	Oligo-63	Domain-08-03-08	c.Domain-08-03-07	c.Domain-09-03-07	Domain-09-03-08
+47	Oligo-64	Domain-08-03-10	c.Domain-08-03-09	c.Domain-07-03-09	Domain-07-03-10
+48	Oligo-67	Domain-10-03-10	c.Domain-10-03-09	c.Domain-09-03-09	Domain-09-03-10
+49	Oligo-68	Domain-09-04-02	c.Domain-09-04-01	c.Domain-08-04-01	Domain-08-04-02
+50	Oligo-70	Domain-09-04-06	c.Domain-09-04-05	c.Domain-08-04-05	Domain-08-04-06
+51	Oligo-72	Domain-09-04-10	c.Domain-09-04-09	c.Domain-08-04-09	Domain-08-04-10
+52	Oligo-73	Domain-07-04-02	c.Domain-07-04-01	c.Domain-06-04-01	Domain-06-04-02
+53	Oligo-74	Domain-07-04-04	c.Domain-07-04-03	c.Domain-08-04-03	Domain-08-04-04
+54	Oligo-75	Domain-07-04-06	c.Domain-07-04-05	c.Domain-06-04-05	Domain-06-04-06
+55	Oligo-76	Domain-07-04-08	c.Domain-07-04-07	c.Domain-08-04-07	Domain-08-04-08
+56	Oligo-77	Domain-07-04-10	c.Domain-07-04-09	c.Domain-06-04-09	Domain-06-04-10
+57	Oligo-78	Domain-05-04-02	c.Domain-05-04-01	c.Domain-04-04-01	Domain-04-04-02
+58	Oligo-79	Domain-05-04-04	c.Domain-05-04-03	c.Domain-06-04-03	Domain-06-04-04
+59	Oligo-80	Domain-05-04-06	c.Domain-05-04-05	c.Domain-04-04-05	Domain-04-04-06
+60	Oligo-81	Domain-05-04-08	c.Domain-05-04-07	c.Domain-06-04-07	Domain-06-04-08
+61	Oligo-82	Domain-05-04-10	c.Domain-05-04-09	c.Domain-04-04-09	Domain-04-04-10
+62	Oligo-83	Domain-03-04-02	c.Domain-03-04-01	c.Domain-02-04-01	Domain-02-04-02
+63	Oligo-84	Domain-03-04-04	c.Domain-03-04-03	c.Domain-04-04-03	Domain-04-04-04
+64	Oligo-85	Domain-03-04-06	c.Domain-03-04-05	c.Domain-02-04-05	Domain-02-04-06
+65	Oligo-86	Domain-03-04-08	c.Domain-03-04-07	c.Domain-04-04-07	Domain-04-04-08
+66	Oligo-87	Domain-03-04-10	c.Domain-03-04-09	c.Domain-02-04-09	Domain-02-04-10
+67	Oligo-91	Domain-02-05-04	c.Domain-02-05-03	c.Domain-03-05-03	Domain-03-05-04
+68	Oligo-93	Domain-02-05-08	c.Domain-02-05-07	c.Domain-03-05-07	Domain-03-05-08
+69	Oligo-94	Domain-02-05-10	c.Domain-02-05-09	c.Domain-01-05-09	Domain-01-05-10
+70	Oligo-95	Domain-04-05-02	c.Domain-04-05-01	c.Domain-03-05-01	Domain-03-05-02
+71	Oligo-96	Domain-04-05-04	c.Domain-04-05-03	c.Domain-05-05-03	Domain-05-05-04
+72	Oligo-97	Domain-04-05-06	c.Domain-04-05-05	c.Domain-03-05-05	Domain-03-05-06
+73	Oligo-98	Domain-04-05-08	c.Domain-04-05-07	c.Domain-05-05-07	Domain-05-05-08
+74	Oligo-99	Domain-04-05-10	c.Domain-04-05-09	c.Domain-03-05-09	Domain-03-05-10
+75	Oligo-100	Domain-06-05-02	c.Domain-06-05-01	c.Domain-05-05-01	Domain-05-05-02
+76	Oligo-101	Domain-06-05-04	c.Domain-06-05-03	c.Domain-07-05-03	Domain-07-05-04
+77	Oligo-102	Domain-06-05-06	c.Domain-06-05-05	c.Domain-05-05-05	Domain-05-05-06
+78	Oligo-103	Domain-06-05-08	c.Domain-06-05-07	c.Domain-07-05-07	Domain-07-05-08
+79	Oligo-104	Domain-06-05-10	c.Domain-06-05-09	c.Domain-05-05-09	Domain-05-05-10
+80	Oligo-105	Domain-08-05-02	c.Domain-08-05-01	c.Domain-07-05-01	Domain-07-05-02
+81	Oligo-106	Domain-08-05-04	c.Domain-08-05-03	c.Domain-09-05-03	Domain-09-05-04
+82	Oligo-107	Domain-08-05-06	c.Domain-08-05-05	c.Domain-07-05-05	Domain-07-05-06
+83	Oligo-108	Domain-08-05-08	c.Domain-08-05-07	c.Domain-09-05-07	Domain-09-05-08
+84	Oligo-109	Domain-08-05-10	c.Domain-08-05-09	c.Domain-07-05-09	Domain-07-05-10
+85	Oligo-112	Domain-10-05-10	c.Domain-10-05-09	c.Domain-09-05-09	Domain-09-05-10
+86	Oligo-113	Domain-09-06-02	c.Domain-09-06-01	c.Domain-08-06-01	Domain-08-06-02
+87	Oligo-115	Domain-09-06-06	c.Domain-09-06-05	c.Domain-08-06-05	Domain-08-06-06
+88	Oligo-117	Domain-09-06-10	c.Domain-09-06-09	c.Domain-08-06-09	Domain-08-06-10
+89	Oligo-118	Domain-07-06-02	c.Domain-07-06-01	c.Domain-06-06-01	Domain-06-06-02
+90	Oligo-119	Domain-07-06-04	c.Domain-07-06-03	c.Domain-08-06-03	Domain-08-06-04
+91	Oligo-120	Domain-07-06-06	c.Domain-07-06-05	c.Domain-06-06-05	Domain-06-06-06
+92	Oligo-121	Domain-07-06-08	c.Domain-07-06-07	c.Domain-08-06-07	Domain-08-06-08
+93	Oligo-122	Domain-07-06-10	c.Domain-07-06-09	c.Domain-06-06-09	Domain-06-06-10
+94	Oligo-123	Domain-05-06-02	c.Domain-05-06-01	c.Domain-04-06-01	Domain-04-06-02
+95	Oligo-124	Domain-05-06-04	c.Domain-05-06-03	c.Domain-06-06-03	Domain-06-06-04
+96	Oligo-125	Domain-05-06-06	c.Domain-05-06-05	c.Domain-04-06-05	Domain-04-06-06
+97	Oligo-126	Domain-05-06-08	c.Domain-05-06-07	c.Domain-06-06-07	Domain-06-06-08
+98	Oligo-127	Domain-05-06-10	c.Domain-05-06-09	c.Domain-04-06-09	Domain-04-06-10
+99	Oligo-128	Domain-03-06-02	c.Domain-03-06-01	c.Domain-02-06-01	Domain-02-06-02
+100	Oligo-129	Domain-03-06-04	c.Domain-03-06-03	c.Domain-04-06-03	Domain-04-06-04
+101	Oligo-130	Domain-03-06-06	c.Domain-03-06-05	c.Domain-02-06-05	Domain-02-06-06
+102	Oligo-131	Domain-03-06-08	c.Domain-03-06-07	c.Domain-04-06-07	Domain-04-06-08
+103	Oligo-132	Domain-03-06-10	c.Domain-03-06-09	c.Domain-02-06-09	Domain-02-06-10
+104	Oligo-136	Domain-02-07-04	c.Domain-02-07-03	c.Domain-03-07-03	Domain-03-07-04
+105	Oligo-138	Domain-02-07-08	c.Domain-02-07-07	c.Domain-03-07-07	Domain-03-07-08
+106	Oligo-139	Domain-02-07-10	c.Domain-02-07-09	c.Domain-01-07-09	Domain-01-07-10
+107	Oligo-140	Domain-04-07-02	c.Domain-04-07-01	c.Domain-03-07-01	Domain-03-07-02
+108	Oligo-141	Domain-04-07-04	c.Domain-04-07-03	c.Domain-05-07-03	Domain-05-07-04
+109	Oligo-142	Domain-04-07-06	c.Domain-04-07-05	c.Domain-03-07-05	Domain-03-07-06
+110	Oligo-143	Domain-04-07-08	c.Domain-04-07-07	c.Domain-05-07-07	Domain-05-07-08
+111	Oligo-144	Domain-04-07-10	c.Domain-04-07-09	c.Domain-03-07-09	Domain-03-07-10
+112	Oligo-145	Domain-06-07-02	c.Domain-06-07-01	c.Domain-05-07-01	Domain-05-07-02
+113	Oligo-146	Domain-06-07-04	c.Domain-06-07-03	c.Domain-07-07-03	Domain-07-07-04
+114	Oligo-147	Domain-06-07-06	c.Domain-06-07-05	c.Domain-05-07-05	Domain-05-07-06
+115	Oligo-148	Domain-06-07-08	c.Domain-06-07-07	c.Domain-07-07-07	Domain-07-07-08
+116	Oligo-149	Domain-06-07-10	c.Domain-06-07-09	c.Domain-05-07-09	Domain-05-07-10
+117	Oligo-150	Domain-08-07-02	c.Domain-08-07-01	c.Domain-07-07-01	Domain-07-07-02
+118	Oligo-151	Domain-08-07-04	c.Domain-08-07-03	c.Domain-09-07-03	Domain-09-07-04
+119	Oligo-152	Domain-08-07-06	c.Domain-08-07-05	c.Domain-07-07-05	Domain-07-07-06
+120	Oligo-153	Domain-08-07-08	c.Domain-08-07-07	c.Domain-09-07-07	Domain-09-07-08
+121	Oligo-154	Domain-08-07-10	c.Domain-08-07-09	c.Domain-07-07-09	Domain-07-07-10
+122	Oligo-157	Domain-10-07-10	c.Domain-10-07-09	c.Domain-09-07-09	Domain-09-07-10
+123	Oligo-158	Domain-09-08-02	c.Domain-09-08-01	c.Domain-08-08-01	Domain-08-08-02
+124	Oligo-160	Domain-09-08-06	c.Domain-09-08-05	c.Domain-08-08-05	Domain-08-08-06
+125	Oligo-162	Domain-09-08-10	c.Domain-09-08-09	c.Domain-08-08-09	Domain-08-08-10
+126	Oligo-163	Domain-07-08-02	c.Domain-07-08-01	c.Domain-06-08-01	Domain-06-08-02
+127	Oligo-164	Domain-07-08-04	c.Domain-07-08-03	c.Domain-08-08-03	Domain-08-08-04
+128	Oligo-165	Domain-07-08-06	c.Domain-07-08-05	c.Domain-06-08-05	Domain-06-08-06
+129	Oligo-166	Domain-07-08-08	c.Domain-07-08-07	c.Domain-08-08-07	Domain-08-08-08
+130	Oligo-167	Domain-07-08-10	c.Domain-07-08-09	c.Domain-06-08-09	Domain-06-08-10
+131	Oligo-168	Domain-05-08-02	c.Domain-05-08-01	c.Domain-04-08-01	Domain-04-08-02
+132	Oligo-169	Domain-05-08-04	c.Domain-05-08-03	c.Domain-06-08-03	Domain-06-08-04
+133	Oligo-170	Domain-05-08-06	c.Domain-05-08-05	c.Domain-04-08-05	Domain-04-08-06
+134	Oligo-171	Domain-05-08-08	c.Domain-05-08-07	c.Domain-06-08-07	Domain-06-08-08
+135	Oligo-172	Domain-05-08-10	c.Domain-05-08-09	c.Domain-04-08-09	Domain-04-08-10
+136	Oligo-173	Domain-03-08-02	c.Domain-03-08-01	c.Domain-02-08-01	Domain-02-08-02
+137	Oligo-174	Domain-03-08-04	c.Domain-03-08-03	c.Domain-04-08-03	Domain-04-08-04
+138	Oligo-175	Domain-03-08-06	c.Domain-03-08-05	c.Domain-02-08-05	Domain-02-08-06
+139	Oligo-176	Domain-03-08-08	c.Domain-03-08-07	c.Domain-04-08-07	Domain-04-08-08
+140	Oligo-177	Domain-03-08-10	c.Domain-03-08-09	c.Domain-02-08-09	Domain-02-08-10
+141	Oligo-181	Domain-02-09-04	c.Domain-02-09-03	c.Domain-03-09-03	Domain-03-09-04
+142	Oligo-183	Domain-02-09-08	c.Domain-02-09-07	c.Domain-03-09-07	Domain-03-09-08
+143	Oligo-184	Domain-02-09-10	c.Domain-02-09-09	c.Domain-01-09-09	Domain-01-09-10
+144	Oligo-185	Domain-04-09-02	c.Domain-04-09-01	c.Domain-03-09-01	Domain-03-09-02
+145	Oligo-186	Domain-04-09-04	c.Domain-04-09-03	c.Domain-05-09-03	Domain-05-09-04
+146	Oligo-187	Domain-04-09-06	c.Domain-04-09-05	c.Domain-03-09-05	Domain-03-09-06
+147	Oligo-188	Domain-04-09-08	c.Domain-04-09-07	c.Domain-05-09-07	Domain-05-09-08
+148	Oligo-189	Domain-04-09-10	c.Domain-04-09-09	c.Domain-03-09-09	Domain-03-09-10
+149	Oligo-190	Domain-06-09-02	c.Domain-06-09-01	c.Domain-05-09-01	Domain-05-09-02
+150	Oligo-191	Domain-06-09-04	c.Domain-06-09-03	c.Domain-07-09-03	Domain-07-09-04
+151	Oligo-192	Domain-06-09-06	c.Domain-06-09-05	c.Domain-05-09-05	Domain-05-09-06
+152	Oligo-193	Domain-06-09-08	c.Domain-06-09-07	c.Domain-07-09-07	Domain-07-09-08
+153	Oligo-194	Domain-06-09-10	c.Domain-06-09-09	c.Domain-05-09-09	Domain-05-09-10
+154	Oligo-195	Domain-08-09-02	c.Domain-08-09-01	c.Domain-07-09-01	Domain-07-09-02
+155	Oligo-196	Domain-08-09-04	c.Domain-08-09-03	c.Domain-09-09-03	Domain-09-09-04
+156	Oligo-197	Domain-08-09-06	c.Domain-08-09-05	c.Domain-07-09-05	Domain-07-09-06
+157	Oligo-198	Domain-08-09-08	c.Domain-08-09-07	c.Domain-09-09-07	Domain-09-09-08
+158	Oligo-199	Domain-08-09-10	c.Domain-08-09-09	c.Domain-07-09-09	Domain-07-09-10
+159	Oligo-202	Domain-10-09-10	c.Domain-10-09-09	c.Domain-09-09-09	Domain-09-09-10
+160	Oligo-205	Domain-09-10-06	c.Domain-09-10-05	c.Domain-08-10-05	Domain-08-10-06
+161	Oligo-206	Domain-09-10-08	c.Domain-09-10-07	c.Domain-10-10-07	Domain-10-10-08
+162	Oligo-209	Domain-07-10-04	c.Domain-07-10-03	c.Domain-08-10-03	Domain-08-10-04
+163	Oligo-210	Domain-07-10-06	c.Domain-07-10-05	c.Domain-06-10-05	Domain-06-10-06
+164	Oligo-211	Domain-07-10-08	c.Domain-07-10-07	c.Domain-08-10-07	Domain-08-10-08
+165	Oligo-214	Domain-05-10-04	c.Domain-05-10-03	c.Domain-06-10-03	Domain-06-10-04
+166	Oligo-215	Domain-05-10-06	c.Domain-05-10-05	c.Domain-04-10-05	Domain-04-10-06
+167	Oligo-216	Domain-05-10-08	c.Domain-05-10-07	c.Domain-06-10-07	Domain-06-10-08
+168	Oligo-219	Domain-03-10-04	c.Domain-03-10-03	c.Domain-04-10-03	Domain-04-10-04
+169	Oligo-220	Domain-03-10-06	c.Domain-03-10-05	c.Domain-02-10-05	Domain-02-10-06
+170	Oligo-221	Domain-03-10-08	c.Domain-03-10-07	c.Domain-04-10-07	Domain-04-10-08
+171	Oligo-227	Domain-T8	c.Domain-01-01-10	c.Domain-01-02-10	Domain-T8
+172	Oligo-230	Domain-T8	c.Domain-03-01-10	c.Domain-03-02-10	Domain-T8
+173	Oligo-233	Domain-T8	c.Domain-05-01-10	c.Domain-05-02-10	Domain-T8
+174	Oligo-236	Domain-T8	c.Domain-07-01-10	c.Domain-07-02-10	Domain-T8
+175	Oligo-239	Domain-T8	c.Domain-09-01-10	c.Domain-09-02-10	Domain-T8
+176	Oligo-240	Domain-10-02-01	Domain-T8	Domain-T8	Domain-10-01-01
+177	Oligo-241	Domain-10-02-03	c.Domain-10-02-02	c.Domain-10-03-02	Domain-10-03-03
+178	Oligo-243	Domain-10-02-07	c.Domain-10-02-06	c.Domain-10-03-06	Domain-10-03-07
+179	Oligo-244	Domain-10-02-09	c.Domain-10-02-08	c.Domain-10-01-08	Domain-10-01-09
+180	Oligo-245	Domain-T8	c.Domain-10-02-10	c.Domain-10-03-10	Domain-T8
+181	Oligo-246	Domain-08-02-01	Domain-T8	Domain-T8	Domain-08-01-01
+182	Oligo-247	Domain-08-02-03	c.Domain-08-02-02	c.Domain-08-03-02	Domain-08-03-03
+183	Oligo-249	Domain-08-02-07	c.Domain-08-02-06	c.Domain-08-03-06	Domain-08-03-07
+184	Oligo-250	Domain-08-02-09	c.Domain-08-02-08	c.Domain-08-01-08	Domain-08-01-09
+185	Oligo-251	Domain-T8	c.Domain-08-02-10	c.Domain-08-03-10	Domain-T8
+186	Oligo-252	Domain-06-02-01	Domain-T8	Domain-T8	Domain-06-01-01
+187	Oligo-253	Domain-06-02-03	c.Domain-06-02-02	c.Domain-06-03-02	Domain-06-03-03
+188	Oligo-255	Domain-06-02-07	c.Domain-06-02-06	c.Domain-06-03-06	Domain-06-03-07
+189	Oligo-256	Domain-06-02-09	c.Domain-06-02-08	c.Domain-06-01-08	Domain-06-01-09
+190	Oligo-257	Domain-T8	c.Domain-06-02-10	c.Domain-06-03-10	Domain-T8
+191	Oligo-258	Domain-04-02-01	Domain-T8	Domain-T8	Domain-04-01-01
+192	Oligo-259	Domain-04-02-03	c.Domain-04-02-02	c.Domain-04-03-02	Domain-04-03-03
+193	Oligo-261	Domain-04-02-07	c.Domain-04-02-06	c.Domain-04-03-06	Domain-04-03-07
+194	Oligo-262	Domain-04-02-09	c.Domain-04-02-08	c.Domain-04-01-08	Domain-04-01-09
+195	Oligo-263	Domain-T8	c.Domain-04-02-10	c.Domain-04-03-10	Domain-T8
+196	Oligo-264	Domain-02-02-01	Domain-T8	Domain-T8	Domain-02-01-01
+197	Oligo-265	Domain-02-02-03	c.Domain-02-02-02	c.Domain-02-03-02	Domain-02-03-03
+198	Oligo-267	Domain-02-02-07	c.Domain-02-02-06	c.Domain-02-03-06	Domain-02-03-07
+199	Oligo-268	Domain-02-02-09	c.Domain-02-02-08	c.Domain-02-01-08	Domain-02-01-09
+200	Oligo-269	Domain-T8	c.Domain-02-02-10	c.Domain-02-03-10	Domain-T8
+201	Oligo-270	Domain-01-03-01	Domain-T8	Domain-T8	Domain-01-02-01
+202	Oligo-271	Domain-01-03-03	c.Domain-01-03-02	c.Domain-01-04-02	Domain-01-04-03
+203	Oligo-272	Domain-01-03-05	c.Domain-01-03-04	c.Domain-01-02-04	Domain-01-02-05
+204	Oligo-273	Domain-01-03-07	c.Domain-01-03-06	c.Domain-01-04-06	Domain-01-04-07
+205	Oligo-274	Domain-01-03-09	c.Domain-01-03-08	c.Domain-01-02-08	Domain-01-02-09
+206	Oligo-275	Domain-T8	c.Domain-01-03-10	c.Domain-01-04-10	Domain-T8
+207	Oligo-276	Domain-03-03-01	Domain-T8	Domain-T8	Domain-03-02-01
+208	Oligo-277	Domain-03-03-03	c.Domain-03-03-02	c.Domain-03-04-02	Domain-03-04-03
+209	Oligo-278	Domain-03-03-05	c.Domain-03-03-04	c.Domain-03-02-04	Domain-03-02-05
+210	Oligo-279	Domain-03-03-07	c.Domain-03-03-06	c.Domain-03-04-06	Domain-03-04-07
+211	Oligo-280	Domain-03-03-09	c.Domain-03-03-08	c.Domain-03-02-08	Domain-03-02-09
+212	Oligo-281	Domain-T8	c.Domain-03-03-10	c.Domain-03-04-10	Domain-T8
+213	Oligo-282	Domain-05-03-01	Domain-T8	Domain-T8	Domain-05-02-01
+214	Oligo-283	Domain-05-03-03	c.Domain-05-03-02	c.Domain-05-04-02	Domain-05-04-03
+215	Oligo-284	Domain-05-03-05	c.Domain-05-03-04	c.Domain-05-02-04	Domain-05-02-05
+216	Oligo-285	Domain-05-03-07	c.Domain-05-03-06	c.Domain-05-04-06	Domain-05-04-07
+217	Oligo-286	Domain-05-03-09	c.Domain-05-03-08	c.Domain-05-02-08	Domain-05-02-09
+218	Oligo-287	Domain-T8	c.Domain-05-03-10	c.Domain-05-04-10	Domain-T8
+219	Oligo-288	Domain-07-03-01	Domain-T8	Domain-T8	Domain-07-02-01
+220	Oligo-289	Domain-07-03-03	c.Domain-07-03-02	c.Domain-07-04-02	Domain-07-04-03
+221	Oligo-290	Domain-07-03-05	c.Domain-07-03-04	c.Domain-07-02-04	Domain-07-02-05
+222	Oligo-291	Domain-07-03-07	c.Domain-07-03-06	c.Domain-07-04-06	Domain-07-04-07
+223	Oligo-292	Domain-07-03-09	c.Domain-07-03-08	c.Domain-07-02-08	Domain-07-02-09
+224	Oligo-293	Domain-T8	c.Domain-07-03-10	c.Domain-07-04-10	Domain-T8
+225	Oligo-294	Domain-09-03-01	Domain-T8	Domain-T8	Domain-09-02-01
+226	Oligo-295	Domain-09-03-03	c.Domain-09-03-02	c.Domain-09-04-02	Domain-09-04-03
+227	Oligo-296	Domain-09-03-05	c.Domain-09-03-04	c.Domain-09-02-04	Domain-09-02-05
+228	Oligo-297	Domain-09-03-07	c.Domain-09-03-06	c.Domain-09-04-06	Domain-09-04-07
+229	Oligo-298	Domain-09-03-09	c.Domain-09-03-08	c.Domain-09-02-08	Domain-09-02-09
+230	Oligo-299	Domain-T8	c.Domain-09-03-10	c.Domain-09-04-10	Domain-T8
+231	Oligo-300	Domain-10-04-01	Domain-T8	Domain-T8	Domain-10-03-01
+232	Oligo-301	Domain-10-04-03	c.Domain-10-04-02	c.Domain-10-05-02	Domain-10-05-03
+233	Oligo-302	Domain-10-04-05	c.Domain-10-04-04	c.Domain-10-03-04	Domain-10-03-05
+234	Oligo-303	Domain-10-04-07	c.Domain-10-04-06	c.Domain-10-05-06	Domain-10-05-07
+235	Oligo-304	Domain-10-04-09	c.Domain-10-04-08	c.Domain-10-03-08	Domain-10-03-09
+236	Oligo-305	Domain-T8	c.Domain-10-04-10	c.Domain-10-05-10	Domain-T8
+237	Oligo-306	Domain-08-04-01	Domain-T8	Domain-T8	Domain-08-03-01
+238	Oligo-307	Domain-08-04-03	c.Domain-08-04-02	c.Domain-08-05-02	Domain-08-05-03
+239	Oligo-308	Domain-08-04-05	c.Domain-08-04-04	c.Domain-08-03-04	Domain-08-03-05
+240	Oligo-309	Domain-08-04-07	c.Domain-08-04-06	c.Domain-08-05-06	Domain-08-05-07
+241	Oligo-310	Domain-08-04-09	c.Domain-08-04-08	c.Domain-08-03-08	Domain-08-03-09
+242	Oligo-311	Domain-T8	c.Domain-08-04-10	c.Domain-08-05-10	Domain-T8
+243	Oligo-312	Domain-06-04-01	Domain-T8	Domain-T8	Domain-06-03-01
+244	Oligo-313	Domain-06-04-03	c.Domain-06-04-02	c.Domain-06-05-02	Domain-06-05-03
+245	Oligo-314	Domain-06-04-05	c.Domain-06-04-04	c.Domain-06-03-04	Domain-06-03-05
+246	Oligo-315	Domain-06-04-07	c.Domain-06-04-06	c.Domain-06-05-06	Domain-06-05-07
+247	Oligo-316	Domain-06-04-09	c.Domain-06-04-08	c.Domain-06-03-08	Domain-06-03-09
+248	Oligo-317	Domain-T8	c.Domain-06-04-10	c.Domain-06-05-10	Domain-T8
+249	Oligo-318	Domain-04-04-01	Domain-T8	Domain-T8	Domain-04-03-01
+250	Oligo-319	Domain-04-04-03	c.Domain-04-04-02	c.Domain-04-05-02	Domain-04-05-03
+251	Oligo-320	Domain-04-04-05	c.Domain-04-04-04	c.Domain-04-03-04	Domain-04-03-05
+252	Oligo-321	Domain-04-04-07	c.Domain-04-04-06	c.Domain-04-05-06	Domain-04-05-07
+253	Oligo-322	Domain-04-04-09	c.Domain-04-04-08	c.Domain-04-03-08	Domain-04-03-09
+254	Oligo-323	Domain-T8	c.Domain-04-04-10	c.Domain-04-05-10	Domain-T8
+255	Oligo-324	Domain-02-04-01	Domain-T8	Domain-T8	Domain-02-03-01
+256	Oligo-325	Domain-02-04-03	c.Domain-02-04-02	c.Domain-02-05-02	Domain-02-05-03
+257	Oligo-326	Domain-02-04-05	c.Domain-02-04-04	c.Domain-02-03-04	Domain-02-03-05
+258	Oligo-327	Domain-02-04-07	c.Domain-02-04-06	c.Domain-02-05-06	Domain-02-05-07
+259	Oligo-328	Domain-02-04-09	c.Domain-02-04-08	c.Domain-02-03-08	Domain-02-03-09
+260	Oligo-329	Domain-T8	c.Domain-02-04-10	c.Domain-02-05-10	Domain-T8
+261	Oligo-330	Domain-01-05-01	Domain-T8	Domain-T8	Domain-01-04-01
+262	Oligo-331	Domain-01-05-03	c.Domain-01-05-02	c.Domain-01-06-02	Domain-01-06-03
+263	Oligo-332	Domain-01-05-05	c.Domain-01-05-04	c.Domain-01-04-04	Domain-01-04-05
+264	Oligo-333	Domain-01-05-07	c.Domain-01-05-06	c.Domain-01-06-06	Domain-01-06-07
+265	Oligo-334	Domain-01-05-09	c.Domain-01-05-08	c.Domain-01-04-08	Domain-01-04-09
+266	Oligo-335	Domain-T8	c.Domain-01-05-10	c.Domain-01-06-10	Domain-T8
+267	Oligo-336	Domain-03-05-01	Domain-T8	Domain-T8	Domain-03-04-01
+268	Oligo-337	Domain-03-05-03	c.Domain-03-05-02	c.Domain-03-06-02	Domain-03-06-03
+269	Oligo-338	Domain-03-05-05	c.Domain-03-05-04	c.Domain-03-04-04	Domain-03-04-05
+270	Oligo-339	Domain-03-05-07	c.Domain-03-05-06	c.Domain-03-06-06	Domain-03-06-07
+271	Oligo-340	Domain-03-05-09	c.Domain-03-05-08	c.Domain-03-04-08	Domain-03-04-09
+272	Oligo-341	Domain-T8	c.Domain-03-05-10	c.Domain-03-06-10	Domain-T8
+273	Oligo-342	Domain-05-05-01	Domain-T8	Domain-T8	Domain-05-04-01
+274	Oligo-343	Domain-05-05-03	c.Domain-05-05-02	c.Domain-05-06-02	Domain-05-06-03
+275	Oligo-344	Domain-05-05-05	c.Domain-05-05-04	c.Domain-05-04-04	Domain-05-04-05
+276	Oligo-345	Domain-05-05-07	c.Domain-05-05-06	c.Domain-05-06-06	Domain-05-06-07
+277	Oligo-346	Domain-05-05-09	c.Domain-05-05-08	c.Domain-05-04-08	Domain-05-04-09
+278	Oligo-347	Domain-T8	c.Domain-05-05-10	c.Domain-05-06-10	Domain-T8
+279	Oligo-348	Domain-07-05-01	Domain-T8	Domain-T8	Domain-07-04-01
+280	Oligo-349	Domain-07-05-03	c.Domain-07-05-02	c.Domain-07-06-02	Domain-07-06-03
+281	Oligo-350	Domain-07-05-05	c.Domain-07-05-04	c.Domain-07-04-04	Domain-07-04-05
+282	Oligo-351	Domain-07-05-07	c.Domain-07-05-06	c.Domain-07-06-06	Domain-07-06-07
+283	Oligo-352	Domain-07-05-09	c.Domain-07-05-08	c.Domain-07-04-08	Domain-07-04-09
+284	Oligo-353	Domain-T8	c.Domain-07-05-10	c.Domain-07-06-10	Domain-T8
+285	Oligo-354	Domain-09-05-01	Domain-T8	Domain-T8	Domain-09-04-01
+286	Oligo-355	Domain-09-05-03	c.Domain-09-05-02	c.Domain-09-06-02	Domain-09-06-03
+287	Oligo-356	Domain-09-05-05	c.Domain-09-05-04	c.Domain-09-04-04	Domain-09-04-05
+288	Oligo-357	Domain-09-05-07	c.Domain-09-05-06	c.Domain-09-06-06	Domain-09-06-07
+289	Oligo-358	Domain-09-05-09	c.Domain-09-05-08	c.Domain-09-04-08	Domain-09-04-09
+290	Oligo-359	Domain-T8	c.Domain-09-05-10	c.Domain-09-06-10	Domain-T8
+291	Oligo-360	Domain-10-06-01	Domain-T8	Domain-T8	Domain-10-05-01
+292	Oligo-361	Domain-10-06-03	c.Domain-10-06-02	c.Domain-10-07-02	Domain-10-07-03
+293	Oligo-362	Domain-10-06-05	c.Domain-10-06-04	c.Domain-10-05-04	Domain-10-05-05
+294	Oligo-363	Domain-10-06-07	c.Domain-10-06-06	c.Domain-10-07-06	Domain-10-07-07
+295	Oligo-364	Domain-10-06-09	c.Domain-10-06-08	c.Domain-10-05-08	Domain-10-05-09
+296	Oligo-365	Domain-T8	c.Domain-10-06-10	c.Domain-10-07-10	Domain-T8
+297	Oligo-366	Domain-08-06-01	Domain-T8	Domain-T8	Domain-08-05-01
+298	Oligo-367	Domain-08-06-03	c.Domain-08-06-02	c.Domain-08-07-02	Domain-08-07-03
+299	Oligo-368	Domain-08-06-05	c.Domain-08-06-04	c.Domain-08-05-04	Domain-08-05-05
+300	Oligo-369	Domain-08-06-07	c.Domain-08-06-06	c.Domain-08-07-06	Domain-08-07-07
+301	Oligo-370	Domain-08-06-09	c.Domain-08-06-08	c.Domain-08-05-08	Domain-08-05-09
+302	Oligo-371	Domain-T8	c.Domain-08-06-10	c.Domain-08-07-10	Domain-T8
+303	Oligo-372	Domain-06-06-01	Domain-T8	Domain-T8	Domain-06-05-01
+304	Oligo-373	Domain-06-06-03	c.Domain-06-06-02	c.Domain-06-07-02	Domain-06-07-03
+305	Oligo-374	Domain-06-06-05	c.Domain-06-06-04	c.Domain-06-05-04	Domain-06-05-05
+306	Oligo-375	Domain-06-06-07	c.Domain-06-06-06	c.Domain-06-07-06	Domain-06-07-07
+307	Oligo-376	Domain-06-06-09	c.Domain-06-06-08	c.Domain-06-05-08	Domain-06-05-09
+308	Oligo-377	Domain-T8	c.Domain-06-06-10	c.Domain-06-07-10	Domain-T8
+309	Oligo-378	Domain-04-06-01	Domain-T8	Domain-T8	Domain-04-05-01
+310	Oligo-379	Domain-04-06-03	c.Domain-04-06-02	c.Domain-04-07-02	Domain-04-07-03
+311	Oligo-380	Domain-04-06-05	c.Domain-04-06-04	c.Domain-04-05-04	Domain-04-05-05
+312	Oligo-381	Domain-04-06-07	c.Domain-04-06-06	c.Domain-04-07-06	Domain-04-07-07
+313	Oligo-382	Domain-04-06-09	c.Domain-04-06-08	c.Domain-04-05-08	Domain-04-05-09
+314	Oligo-383	Domain-T8	c.Domain-04-06-10	c.Domain-04-07-10	Domain-T8
+315	Oligo-384	Domain-02-06-01	Domain-T8	Domain-T8	Domain-02-05-01
+316	Oligo-385	Domain-02-06-03	c.Domain-02-06-02	c.Domain-02-07-02	Domain-02-07-03
+317	Oligo-386	Domain-02-06-05	c.Domain-02-06-04	c.Domain-02-05-04	Domain-02-05-05
+318	Oligo-387	Domain-02-06-07	c.Domain-02-06-06	c.Domain-02-07-06	Domain-02-07-07
+319	Oligo-388	Domain-02-06-09	c.Domain-02-06-08	c.Domain-02-05-08	Domain-02-05-09
+320	Oligo-389	Domain-T8	c.Domain-02-06-10	c.Domain-02-07-10	Domain-T8
+321	Oligo-390	Domain-01-07-01	Domain-T8	Domain-T8	Domain-01-06-01
+322	Oligo-391	Domain-01-07-03	c.Domain-01-07-02	c.Domain-01-08-02	Domain-01-08-03
+323	Oligo-392	Domain-01-07-05	c.Domain-01-07-04	c.Domain-01-06-04	Domain-01-06-05
+324	Oligo-393	Domain-01-07-07	c.Domain-01-07-06	c.Domain-01-08-06	Domain-01-08-07
+325	Oligo-394	Domain-01-07-09	c.Domain-01-07-08	c.Domain-01-06-08	Domain-01-06-09
+326	Oligo-395	Domain-T8	c.Domain-01-07-10	c.Domain-01-08-10	Domain-T8
+327	Oligo-396	Domain-03-07-01	Domain-T8	Domain-T8	Domain-03-06-01
+328	Oligo-397	Domain-03-07-03	c.Domain-03-07-02	c.Domain-03-08-02	Domain-03-08-03
+329	Oligo-398	Domain-03-07-05	c.Domain-03-07-04	c.Domain-03-06-04	Domain-03-06-05
+330	Oligo-399	Domain-03-07-07	c.Domain-03-07-06	c.Domain-03-08-06	Domain-03-08-07
+331	Oligo-400	Domain-03-07-09	c.Domain-03-07-08	c.Domain-03-06-08	Domain-03-06-09
+332	Oligo-401	Domain-T8	c.Domain-03-07-10	c.Domain-03-08-10	Domain-T8
+333	Oligo-402	Domain-05-07-01	Domain-T8	Domain-T8	Domain-05-06-01
+334	Oligo-403	Domain-05-07-03	c.Domain-05-07-02	c.Domain-05-08-02	Domain-05-08-03
+335	Oligo-404	Domain-05-07-05	c.Domain-05-07-04	c.Domain-05-06-04	Domain-05-06-05
+336	Oligo-405	Domain-05-07-07	c.Domain-05-07-06	c.Domain-05-08-06	Domain-05-08-07
+337	Oligo-406	Domain-05-07-09	c.Domain-05-07-08	c.Domain-05-06-08	Domain-05-06-09
+338	Oligo-407	Domain-T8	c.Domain-05-07-10	c.Domain-05-08-10	Domain-T8
+339	Oligo-408	Domain-07-07-01	Domain-T8	Domain-T8	Domain-07-06-01
+340	Oligo-409	Domain-07-07-03	c.Domain-07-07-02	c.Domain-07-08-02	Domain-07-08-03
+341	Oligo-410	Domain-07-07-05	c.Domain-07-07-04	c.Domain-07-06-04	Domain-07-06-05
+342	Oligo-411	Domain-07-07-07	c.Domain-07-07-06	c.Domain-07-08-06	Domain-07-08-07
+343	Oligo-412	Domain-07-07-09	c.Domain-07-07-08	c.Domain-07-06-08	Domain-07-06-09
+344	Oligo-413	Domain-T8	c.Domain-07-07-10	c.Domain-07-08-10	Domain-T8
+345	Oligo-414	Domain-09-07-01	Domain-T8	Domain-T8	Domain-09-06-01
+346	Oligo-415	Domain-09-07-03	c.Domain-09-07-02	c.Domain-09-08-02	Domain-09-08-03
+347	Oligo-416	Domain-09-07-05	c.Domain-09-07-04	c.Domain-09-06-04	Domain-09-06-05
+348	Oligo-417	Domain-09-07-07	c.Domain-09-07-06	c.Domain-09-08-06	Domain-09-08-07
+349	Oligo-418	Domain-09-07-09	c.Domain-09-07-08	c.Domain-09-06-08	Domain-09-06-09
+350	Oligo-419	Domain-T8	c.Domain-09-07-10	c.Domain-09-08-10	Domain-T8
+351	Oligo-420	Domain-10-08-01	Domain-T8	Domain-T8	Domain-10-07-01
+352	Oligo-421	Domain-10-08-03	c.Domain-10-08-02	c.Domain-10-09-02	Domain-10-09-03
+353	Oligo-422	Domain-10-08-05	c.Domain-10-08-04	c.Domain-10-07-04	Domain-10-07-05
+354	Oligo-423	Domain-10-08-07	c.Domain-10-08-06	c.Domain-10-09-06	Domain-10-09-07
+355	Oligo-424	Domain-10-08-09	c.Domain-10-08-08	c.Domain-10-07-08	Domain-10-07-09
+356	Oligo-425	Domain-T8	c.Domain-10-08-10	c.Domain-10-09-10	Domain-T8
+357	Oligo-426	Domain-08-08-01	Domain-T8	Domain-T8	Domain-08-07-01
+358	Oligo-427	Domain-08-08-03	c.Domain-08-08-02	c.Domain-08-09-02	Domain-08-09-03
+359	Oligo-428	Domain-08-08-05	c.Domain-08-08-04	c.Domain-08-07-04	Domain-08-07-05
+360	Oligo-429	Domain-08-08-07	c.Domain-08-08-06	c.Domain-08-09-06	Domain-08-09-07
+361	Oligo-430	Domain-08-08-09	c.Domain-08-08-08	c.Domain-08-07-08	Domain-08-07-09
+362	Oligo-431	Domain-T8	c.Domain-08-08-10	c.Domain-08-09-10	Domain-T8
+363	Oligo-432	Domain-06-08-01	Domain-T8	Domain-T8	Domain-06-07-01
+364	Oligo-433	Domain-06-08-03	c.Domain-06-08-02	c.Domain-06-09-02	Domain-06-09-03
+365	Oligo-434	Domain-06-08-05	c.Domain-06-08-04	c.Domain-06-07-04	Domain-06-07-05
+366	Oligo-435	Domain-06-08-07	c.Domain-06-08-06	c.Domain-06-09-06	Domain-06-09-07
+367	Oligo-436	Domain-06-08-09	c.Domain-06-08-08	c.Domain-06-07-08	Domain-06-07-09
+368	Oligo-437	Domain-T8	c.Domain-06-08-10	c.Domain-06-09-10	Domain-T8
+369	Oligo-438	Domain-04-08-01	Domain-T8	Domain-T8	Domain-04-07-01
+370	Oligo-439	Domain-04-08-03	c.Domain-04-08-02	c.Domain-04-09-02	Domain-04-09-03
+371	Oligo-440	Domain-04-08-05	c.Domain-04-08-04	c.Domain-04-07-04	Domain-04-07-05
+372	Oligo-441	Domain-04-08-07	c.Domain-04-08-06	c.Domain-04-09-06	Domain-04-09-07
+373	Oligo-442	Domain-04-08-09	c.Domain-04-08-08	c.Domain-04-07-08	Domain-04-07-09
+374	Oligo-443	Domain-T8	c.Domain-04-08-10	c.Domain-04-09-10	Domain-T8
+375	Oligo-444	Domain-02-08-01	Domain-T8	Domain-T8	Domain-02-07-01
+376	Oligo-445	Domain-02-08-03	c.Domain-02-08-02	c.Domain-02-09-02	Domain-02-09-03
+377	Oligo-446	Domain-02-08-05	c.Domain-02-08-04	c.Domain-02-07-04	Domain-02-07-05
+378	Oligo-447	Domain-02-08-07	c.Domain-02-08-06	c.Domain-02-09-06	Domain-02-09-07
+379	Oligo-448	Domain-02-08-09	c.Domain-02-08-08	c.Domain-02-07-08	Domain-02-07-09
+380	Oligo-449	Domain-T8	c.Domain-02-08-10	c.Domain-02-09-10	Domain-T8
+381	Oligo-450	Domain-01-09-01	Domain-T8	Domain-T8	Domain-01-08-01
+382	Oligo-452	Domain-01-09-05	c.Domain-01-09-04	c.Domain-01-08-04	Domain-01-08-05
+383	Oligo-454	Domain-01-09-09	c.Domain-01-09-08	c.Domain-01-08-08	Domain-01-08-09
+384	Oligo-455	Domain-T8	c.Domain-01-09-10	c.Domain-01-10-10	Domain-T8
+385	Oligo-456	Domain-03-09-01	Domain-T8	Domain-T8	Domain-03-08-01
+386	Oligo-458	Domain-03-09-05	c.Domain-03-09-04	c.Domain-03-08-04	Domain-03-08-05
+387	Oligo-460	Domain-03-09-09	c.Domain-03-09-08	c.Domain-03-08-08	Domain-03-08-09
+388	Oligo-461	Domain-T8	c.Domain-03-09-10	c.Domain-03-10-10	Domain-T8
+389	Oligo-462	Domain-05-09-01	Domain-T8	Domain-T8	Domain-05-08-01
+390	Oligo-464	Domain-05-09-05	c.Domain-05-09-04	c.Domain-05-08-04	Domain-05-08-05
+391	Oligo-466	Domain-05-09-09	c.Domain-05-09-08	c.Domain-05-08-08	Domain-05-08-09
+392	Oligo-467	Domain-T8	c.Domain-05-09-10	c.Domain-05-10-10	Domain-T8
+393	Oligo-468	Domain-07-09-01	Domain-T8	Domain-T8	Domain-07-08-01
+394	Oligo-470	Domain-07-09-05	c.Domain-07-09-04	c.Domain-07-08-04	Domain-07-08-05
+395	Oligo-472	Domain-07-09-09	c.Domain-07-09-08	c.Domain-07-08-08	Domain-07-08-09
+396	Oligo-473	Domain-T8	c.Domain-07-09-10	c.Domain-07-10-10	Domain-T8
+397	Oligo-474	Domain-09-09-01	Domain-T8	Domain-T8	Domain-09-08-01
+398	Oligo-476	Domain-09-09-05	c.Domain-09-09-04	c.Domain-09-08-04	Domain-09-08-05
+399	Oligo-478	Domain-09-09-09	c.Domain-09-09-08	c.Domain-09-08-08	Domain-09-08-09
+400	Oligo-479	Domain-T8	c.Domain-09-09-10	c.Domain-09-10-10	Domain-T8
+401	Oligo-480	Domain-10-10-01	Domain-T8	Domain-T8	Domain-10-09-01
+402	Oligo-483	Domain-08-10-01	Domain-T8	Domain-T8	Domain-08-09-01
+403	Oligo-485	Domain-08-10-09	c.Domain-08-10-08	c.Domain-08-09-08	Domain-08-09-09
+404	Oligo-486	Domain-06-10-01	Domain-T8	Domain-T8	Domain-06-09-01
+405	Oligo-488	Domain-06-10-09	c.Domain-06-10-08	c.Domain-06-09-08	Domain-06-09-09
+406	Oligo-489	Domain-04-10-01	Domain-T8	Domain-T8	Domain-04-09-01
+407	Oligo-491	Domain-04-10-09	c.Domain-04-10-08	c.Domain-04-09-08	Domain-04-09-09
+408	Oligo-492	Domain-02-10-01	Domain-T8	Domain-T8	Domain-02-09-01
+409	Oligo-494	Domain-02-10-09	c.Domain-02-10-08	c.Domain-02-09-08	Domain-02-09-09
+410	Oligo-1305	c.Domain-01-01-03	Domain-01-01-04
+411	Oligo-1307	Domain-10-01-04	c.Domain-10-01-03
+412	Oligo-1309	c.Domain-10-02-01	Domain-10-02-02
+413	Oligo-1312	Domain-01-02-02	c.Domain-01-02-01
+414	Oligo-1319	c.Domain-10-04-01	Domain-10-04-02
+415	Oligo-1322	Domain-01-04-02	c.Domain-01-04-01
+416	Oligo-1329	c.Domain-10-06-01	Domain-10-06-02
+417	Oligo-1332	Domain-01-06-02	c.Domain-01-06-01
+418	Oligo-1339	c.Domain-10-08-01	Domain-10-08-02
+419	Oligo-1342	Domain-01-08-02	c.Domain-01-08-01
+420	Oligo-1349	c.Domain-10-10-01	Domain-10-10-02
+421	Oligo-1357	c.Domain-02-01-02	Domain-02-01-03
+422	Oligo-1361	c.Domain-04-01-02	Domain-04-01-03
+423	Oligo-1365	c.Domain-06-01-02	Domain-06-01-03
+424	Oligo-1369	c.Domain-08-01-02	Domain-08-01-03
+425	Oligo-1373	c.Domain-10-01-02	Domain-10-01-03
+426	Oligo-1375	Domain-10-10-03	c.Domain-10-10-02
+427	Oligo-1379	Domain-08-10-03	c.Domain-08-10-02
+428	Oligo-1383	Domain-06-10-03	c.Domain-06-10-02
+429	Oligo-1387	Domain-04-10-03	c.Domain-04-10-02
+430	Oligo-1391	Domain-02-10-03	c.Domain-02-10-02
+431	Oligo-1393	c.Domain-01-10-04	Domain-01-10-05
+432	Oligo-2207	Domain-02-01-02	c.Domain-02-01-01	Domain-T8	Domain-01-01-02
+433	Oligo-2221	Domain-T8	c.Domain-02-01-09	c.Domain-01-01-09	Domain-01-01-10
+434	Oligo-2227	Domain-04-01-02	c.Domain-04-01-01	Domain-T8	Domain-03-01-02
+435	Oligo-2241	Domain-T8	c.Domain-04-01-09	c.Domain-03-01-09	Domain-03-01-10
+436	Oligo-2247	Domain-06-01-02	c.Domain-06-01-01	Domain-T8	Domain-05-01-02
+437	Oligo-2261	Domain-T8	c.Domain-06-01-09	c.Domain-05-01-09	Domain-05-01-10
+438	Oligo-2267	Domain-08-01-02	c.Domain-08-01-01	Domain-T8	Domain-07-01-02
+439	Oligo-2281	Domain-T8	c.Domain-08-01-09	c.Domain-07-01-09	Domain-07-01-10
+440	Oligo-2287	Domain-10-01-02	c.Domain-10-01-01	Domain-T8	Domain-09-01-02
+441	Oligo-2293	Domain-T8	c.Domain-10-01-09	c.Domain-09-01-09	Domain-09-01-10
+442	Oligo-3018	Domain-09-10-02	Domain-T8	c.Domain-08-10-01	Domain-08-10-02
+443	Oligo-3036	Domain-09-10-10	c.Domain-09-10-09	c.Domain-08-10-09	Domain-T8
+444	Oligo-3038	Domain-07-10-02	Domain-T8	c.Domain-06-10-01	Domain-06-10-02
+445	Oligo-3056	Domain-07-10-10	c.Domain-07-10-09	c.Domain-06-10-09	Domain-T8
+446	Oligo-3058	Domain-05-10-02	Domain-T8	c.Domain-04-10-01	Domain-04-10-02
+447	Oligo-3076	Domain-05-10-10	c.Domain-05-10-09	c.Domain-04-10-09	Domain-T8
+448	Oligo-3078	Domain-03-10-02	Domain-T8	c.Domain-02-10-01	Domain-02-10-02
+449	Oligo-3096	Domain-03-10-10	c.Domain-03-10-09	c.Domain-02-10-09	Domain-T8
+450	Oligo-3707	Domain-01-09-03	c.Domain-01-09-02	Domain-T8	Domain-01-10-03
+451	Oligo-3789	Domain-T8	c.Domain-10-10-08	c.Domain-10-09-08	Domain-10-09-09
+452	Oligo-3826	Domain-02-01-06	c.Domain-02-01-05	c.Domain-01-01-05	Domain-01-01-06	c.Domain-01-01-07	Domain-01-01-08
+453	Oligo-3859	Domain-10-01-08	c.Domain-10-01-07	Domain-10-01-06	c.Domain-10-01-05	c.Domain-09-01-05	Domain-09-01-06
+454	Oligo-3861	Domain-09-02-04	c.Domain-09-02-03	c.Domain-10-02-03	Domain-10-02-04	c.Domain-10-02-05	Domain-10-02-06
+455	Oligo-3862	Domain-09-02-08	c.Domain-09-02-07	c.Domain-10-02-07	Domain-10-02-08	c.Domain-10-02-09	Domain-10-02-10
+456	Oligo-3894	Domain-01-02-06	c.Domain-01-02-05	Domain-01-02-04	c.Domain-01-02-03	c.Domain-02-02-03	Domain-02-02-04
+457	Oligo-3896	Domain-01-02-10	c.Domain-01-02-09	Domain-01-02-08	c.Domain-01-02-07	c.Domain-02-02-07	Domain-02-02-08
+458	Oligo-3897	Domain-02-03-02	c.Domain-02-03-01	c.Domain-01-03-01	Domain-01-03-02	c.Domain-01-03-03	Domain-01-03-04
+459	Oligo-3898	Domain-02-03-06	c.Domain-02-03-05	c.Domain-01-03-05	Domain-01-03-06	c.Domain-01-03-07	Domain-01-03-08
+460	Oligo-3929	Domain-10-03-04	c.Domain-10-03-03	Domain-10-03-02	c.Domain-10-03-01	c.Domain-09-03-01	Domain-09-03-02
+461	Oligo-3931	Domain-10-03-08	c.Domain-10-03-07	Domain-10-03-06	c.Domain-10-03-05	c.Domain-09-03-05	Domain-09-03-06
+462	Oligo-3933	Domain-09-04-04	c.Domain-09-04-03	c.Domain-10-04-03	Domain-10-04-04	c.Domain-10-04-05	Domain-10-04-06
+463	Oligo-3934	Domain-09-04-08	c.Domain-09-04-07	c.Domain-10-04-07	Domain-10-04-08	c.Domain-10-04-09	Domain-10-04-10
+464	Oligo-3966	Domain-01-04-06	c.Domain-01-04-05	Domain-01-04-04	c.Domain-01-04-03	c.Domain-02-04-03	Domain-02-04-04
+465	Oligo-3968	Domain-01-04-10	c.Domain-01-04-09	Domain-01-04-08	c.Domain-01-04-07	c.Domain-02-04-07	Domain-02-04-08
+466	Oligo-3969	Domain-02-05-02	c.Domain-02-05-01	c.Domain-01-05-01	Domain-01-05-02	c.Domain-01-05-03	Domain-01-05-04
+467	Oligo-3970	Domain-02-05-06	c.Domain-02-05-05	c.Domain-01-05-05	Domain-01-05-06	c.Domain-01-05-07	Domain-01-05-08
+468	Oligo-4001	Domain-10-05-04	c.Domain-10-05-03	Domain-10-05-02	c.Domain-10-05-01	c.Domain-09-05-01	Domain-09-05-02
+469	Oligo-4003	Domain-10-05-08	c.Domain-10-05-07	Domain-10-05-06	c.Domain-10-05-05	c.Domain-09-05-05	Domain-09-05-06
+470	Oligo-4005	Domain-09-06-04	c.Domain-09-06-03	c.Domain-10-06-03	Domain-10-06-04	c.Domain-10-06-05	Domain-10-06-06
+471	Oligo-4006	Domain-09-06-08	c.Domain-09-06-07	c.Domain-10-06-07	Domain-10-06-08	c.Domain-10-06-09	Domain-10-06-10
+472	Oligo-4038	Domain-01-06-06	c.Domain-01-06-05	Domain-01-06-04	c.Domain-01-06-03	c.Domain-02-06-03	Domain-02-06-04
+473	Oligo-4040	Domain-01-06-10	c.Domain-01-06-09	Domain-01-06-08	c.Domain-01-06-07	c.Domain-02-06-07	Domain-02-06-08
+474	Oligo-4041	Domain-02-07-02	c.Domain-02-07-01	c.Domain-01-07-01	Domain-01-07-02	c.Domain-01-07-03	Domain-01-07-04
+475	Oligo-4042	Domain-02-07-06	c.Domain-02-07-05	c.Domain-01-07-05	Domain-01-07-06	c.Domain-01-07-07	Domain-01-07-08
+476	Oligo-4073	Domain-10-07-04	c.Domain-10-07-03	Domain-10-07-02	c.Domain-10-07-01	c.Domain-09-07-01	Domain-09-07-02
+477	Oligo-4075	Domain-10-07-08	c.Domain-10-07-07	Domain-10-07-06	c.Domain-10-07-05	c.Domain-09-07-05	Domain-09-07-06
+478	Oligo-4077	Domain-09-08-04	c.Domain-09-08-03	c.Domain-10-08-03	Domain-10-08-04	c.Domain-10-08-05	Domain-10-08-06
+479	Oligo-4078	Domain-09-08-08	c.Domain-09-08-07	c.Domain-10-08-07	Domain-10-08-08	c.Domain-10-08-09	Domain-10-08-10
+480	Oligo-4110	Domain-01-08-06	c.Domain-01-08-05	Domain-01-08-04	c.Domain-01-08-03	c.Domain-02-08-03	Domain-02-08-04
+481	Oligo-4112	Domain-01-08-10	c.Domain-01-08-09	Domain-01-08-08	c.Domain-01-08-07	c.Domain-02-08-07	Domain-02-08-08
+482	Oligo-4113	Domain-02-09-02	c.Domain-02-09-01	c.Domain-01-09-01	Domain-01-09-02	c.Domain-01-09-03	Domain-01-09-04
+483	Oligo-4114	Domain-02-09-06	c.Domain-02-09-05	c.Domain-01-09-05	Domain-01-09-06	c.Domain-01-09-07	Domain-01-09-08
+484	Oligo-4145	Domain-10-09-04	c.Domain-10-09-03	Domain-10-09-02	c.Domain-10-09-01	c.Domain-09-09-01	Domain-09-09-02
+485	Oligo-4147	Domain-10-09-08	c.Domain-10-09-07	Domain-10-09-06	c.Domain-10-09-05	c.Domain-09-09-05	Domain-09-09-06
+486	Oligo-4149	Domain-09-10-04	c.Domain-09-10-03	c.Domain-10-10-03	Domain-10-10-04	c.Domain-10-10-05	Domain-10-10-06
+487	Oligo-4182	Domain-01-10-06	c.Domain-01-10-05	Domain-01-10-04	c.Domain-01-10-03	c.Domain-02-10-03	Domain-02-10-04
+488	Oligo-4184	Domain-01-10-10	c.Domain-01-10-09	Domain-01-10-08	c.Domain-01-10-07	c.Domain-02-10-07	Domain-02-10-08
+489	Oligo-4185	Domain-01-01-05	c.Domain-01-01-04	Domain-01-01-03	c.Domain-01-01-02	c.Domain-01-02-02	Domain-01-02-03
+490	Oligo-4187	Domain-01-01-09	c.Domain-01-01-08	Domain-01-01-07	c.Domain-01-01-06	c.Domain-01-02-06	Domain-01-02-07
+491	Oligo-4188	Domain-02-02-05	c.Domain-02-02-04	c.Domain-02-01-04	Domain-02-01-05	c.Domain-02-01-06	Domain-02-01-07
+492	Oligo-4189	Domain-03-01-05	c.Domain-03-01-04	Domain-03-01-03	c.Domain-03-01-02	c.Domain-03-02-02	Domain-03-02-03
+493	Oligo-4191	Domain-03-01-09	c.Domain-03-01-08	Domain-03-01-07	c.Domain-03-01-06	c.Domain-03-02-06	Domain-03-02-07
+494	Oligo-4192	Domain-04-02-05	c.Domain-04-02-04	c.Domain-04-01-04	Domain-04-01-05	c.Domain-04-01-06	Domain-04-01-07
+495	Oligo-4193	Domain-05-01-05	c.Domain-05-01-04	Domain-05-01-03	c.Domain-05-01-02	c.Domain-05-02-02	Domain-05-02-03
+496	Oligo-4195	Domain-05-01-09	c.Domain-05-01-08	Domain-05-01-07	c.Domain-05-01-06	c.Domain-05-02-06	Domain-05-02-07
+497	Oligo-4196	Domain-06-02-05	c.Domain-06-02-04	c.Domain-06-01-04	Domain-06-01-05	c.Domain-06-01-06	Domain-06-01-07
+498	Oligo-4197	Domain-07-01-05	c.Domain-07-01-04	Domain-07-01-03	c.Domain-07-01-02	c.Domain-07-02-02	Domain-07-02-03
+499	Oligo-4199	Domain-07-01-09	c.Domain-07-01-08	Domain-07-01-07	c.Domain-07-01-06	c.Domain-07-02-06	Domain-07-02-07
+500	Oligo-4200	Domain-08-02-05	c.Domain-08-02-04	c.Domain-08-01-04	Domain-08-01-05	c.Domain-08-01-06	Domain-08-01-07
+501	Oligo-4201	Domain-09-01-05	c.Domain-09-01-04	Domain-09-01-03	c.Domain-09-01-02	c.Domain-09-02-02	Domain-09-02-03
+502	Oligo-4203	Domain-09-01-09	c.Domain-09-01-08	Domain-09-01-07	c.Domain-09-01-06	c.Domain-09-02-06	Domain-09-02-07
+503	Oligo-4204	Domain-10-02-05	c.Domain-10-02-04	c.Domain-10-01-04	Domain-10-01-05	c.Domain-10-01-06	Domain-10-01-07
+504	Oligo-4431	Domain-10-10-07	c.Domain-10-10-06	Domain-10-10-05	c.Domain-10-10-04	c.Domain-10-09-04	Domain-10-09-05
+505	Oligo-4433	Domain-09-09-03	c.Domain-09-09-02	c.Domain-09-10-02	Domain-09-10-03	c.Domain-09-10-04	Domain-09-10-05
+506	Oligo-4434	Domain-09-09-07	c.Domain-09-09-06	c.Domain-09-10-06	Domain-09-10-07	c.Domain-09-10-08	Domain-09-10-09
+507	Oligo-4436	Domain-08-10-07	c.Domain-08-10-06	Domain-08-10-05	c.Domain-08-10-04	c.Domain-08-09-04	Domain-08-09-05
+508	Oligo-4438	Domain-07-09-03	c.Domain-07-09-02	c.Domain-07-10-02	Domain-07-10-03	c.Domain-07-10-04	Domain-07-10-05
+509	Oligo-4439	Domain-07-09-07	c.Domain-07-09-06	c.Domain-07-10-06	Domain-07-10-07	c.Domain-07-10-08	Domain-07-10-09
+510	Oligo-4441	Domain-06-10-07	c.Domain-06-10-06	Domain-06-10-05	c.Domain-06-10-04	c.Domain-06-09-04	Domain-06-09-05
+511	Oligo-4443	Domain-05-09-03	c.Domain-05-09-02	c.Domain-05-10-02	Domain-05-10-03	c.Domain-05-10-04	Domain-05-10-05
+512	Oligo-4444	Domain-05-09-07	c.Domain-05-09-06	c.Domain-05-10-06	Domain-05-10-07	c.Domain-05-10-08	Domain-05-10-09
+513	Oligo-4446	Domain-04-10-07	c.Domain-04-10-06	Domain-04-10-05	c.Domain-04-10-04	c.Domain-04-09-04	Domain-04-09-05
+514	Oligo-4448	Domain-03-09-03	c.Domain-03-09-02	c.Domain-03-10-02	Domain-03-10-03	c.Domain-03-10-04	Domain-03-10-05
+515	Oligo-4449	Domain-03-09-07	c.Domain-03-09-06	c.Domain-03-10-06	Domain-03-10-07	c.Domain-03-10-08	Domain-03-10-09
+516	Oligo-4451	Domain-02-10-07	c.Domain-02-10-06	Domain-02-10-05	c.Domain-02-10-04	c.Domain-02-09-04	Domain-02-09-05
+517	Oligo-4454	Domain-01-09-07	c.Domain-01-09-06	c.Domain-01-10-06	Domain-01-10-07	c.Domain-01-10-08	Domain-01-10-09

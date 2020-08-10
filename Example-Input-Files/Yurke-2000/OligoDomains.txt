@@ -1,0 +1,5 @@
+1	Oligo-A A1 A2 A3 
+2	Oligo-B c.A1 B2
+3	Oligo-C C1 c.A3
+4	Oligo-F c.B2 c.C1 F3
+5	Oligo-Fbar c.F3 C1 B2

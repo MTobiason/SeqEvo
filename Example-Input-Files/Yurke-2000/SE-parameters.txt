@@ -1,0 +1,12 @@
+// SeqEvo parameters file - MT 2020-08-09
+
+cpl = 10000	
+nl = 64		// integer > 0 :: Number of 1st generation Mothers to spawn from generation 0.
+
+IntraOligoW = 100
+IntraOligoSLC = 2 	// integer >= 1 :: Structures within an oligo with length greather than or equal to this SLC contribute to a design's score.
+InterOligoSLC = 4	// integer >= 1 :: Structures between 2 oligos with length greather than or equal to this SLC contribute to a design's score.
+
+ODSFilePath = SE-out-DomainSequences.txt
+OOSFilePath = SE-out-OligoSequences.txt	
+OSPFilePath = SE-out-StructureProfiles.txt 

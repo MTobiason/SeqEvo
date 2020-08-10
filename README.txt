@@ -1,31 +1,31 @@
-*******************************
-SeqEvo version 1.8 : 2020-08-05
-*******************************
+***********************************
+SeqEvo and DevPro Computer Programs
+    version 1.8 : 2020-08-09
+***********************************
 
-SequenceEvolver (SeqEvo) is a program written to produce a sequence level design for a given network configuration. 
-Network configuration is specified by an input file containing domain information, and an input file containing strand information.
-Parameters affecting how the program will run are specified by the user in the input file. 
+These versions of SeqEvo and DevPro are provided for archival purposes and are no longer actively maintained.
+Use of newer versions is recomended.
 
-The default file path for the parameters file is "input.txt"
-The default file path for the domain information is "in.domains.txt"
-The default file path for the strand information is "in.strands.txt"
-
-A different filepath for the parameters file name can be provided by calling the file with the option <-i> followed by the filename. For example the command to run SeqEvo.jar using the "newInput.txt" input file would be : java -jar SeqEvo.jar -i "newInput.txt"
-A different filepath for the domain or strand information can be specified in the parameters file.
-
+The main purpose of the DeviceProfiler (DevPro) program is to calculate the fitness of an existing set of DNA oligonucleotides (oligos).
+The main purpose of the SequenceEvolver (SeqEvo) program is to generate fit sets of DNA oligos.
 
 *******************
 System Requirements
 *******************
 
-SeqEvo requires a recent version of Java to be installed ( version 1.6 or newer recommended ).
+These programs require Java (https://www.java.com) to be installed. Version 8 or newer is recommended.
 
-******************
-Running SeqEvo.jar
-******************
+********************
+Running the programs
+********************
 
-To run the SeqEvo program, open a command line in the folder containing the SeqEvo.jar file and excecute the command <java -jar SeqEvo2.jar> excluding the <>.
-SeqEvo will require a Parameters file (default: input.txt), domains file (default: in.domains.txt), and sequence file (defualt: in.strands.txt) to run.
+To run the programs, open a command line and excecute the command <java -jar *program*> excluding the <>. For example, to run the SeqEvo program, navigate to the direcotry containing SeqEvo.jar and use the command <java -jar SeqEvo.jar>.
 
-If the program runs properly, there should be a text output to the command line, and several output files produced. By default, all these files begin with the phrase "out.", but new names or paths can be specified for them using the parameters file.
-Depending on the network size and parameters specified, program execution can take anywhere from a few seconds second to several days. It is recomended that the total number of generations (cpg and cpl variables) be set low (1 or 10), and then increased as necessary.
+For input, the programs require three files.
+
+1) A "Domain Sequences" file. (DomainSequences.txt by default)
+2) A "Oligo Domains" file. (OligoDomains.txt by default)
+3) A parameters file. (SE-parameters.txt or DP-parameters.txt by default)
+
+Upon completion, the programs will output one or more files. These output files can be controlled using the parameters file.
+

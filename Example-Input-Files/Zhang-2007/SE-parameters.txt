@@ -1,0 +1,14 @@
+// Example SeqEvo parameter file (Zhang et al 2007 - Autocatalytic Network) - MT 2020-08-09
+
+cpl = 2500
+nl = 64
+
+IntraOligoSLC = 2 	
+InterOligoSLC = 2	
+IntraOligoW = 100
+InterOligoW = 1	
+
+ODSFilePath = SE-out-DomainSequences.txt	// Default: "SE-out-DomainSequences.txt". File to create which will contain the output domain sequences
+OODFilePath = SE-out-OligoDomains.txt	// Default: "disabled". File to create which will contain the output strand information
+OOSFilePath = SE-out-OligoSequences.txt	// Default: "SE-out-OligoSequences.txt". File to create which will contain just the strand and domain sequence information.
+OSPFilePath = SE-out-StructureProfiles.txt // Default: "disabled". File to create which will contain the # of unique interference structures found in the best/final design.

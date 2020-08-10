@@ -1,0 +1,10 @@
+1	A1x	c.SK2	c.a	c.c2 	c.c1	c.SK1	c.CA	
+2	fA2au	c2	b	a	SK2	TC	
+3	fA3au	o	c.b	T2	a	
+4	fA4au	c1	c2	c.o	d2	SK3					
+5	B1x	CA	SK1	c1	c2	a		
+6	fB2au	c.TC	c.SK2	c.a	c.b	c.c2	
+7	fB3au	CA	SK1	c1	c1	b	c.o	
+8	fB4au	d1s	T2	o	c.c2	c.c1	c.SK1					
+9	dye	CT	d1s	d2				
+10	quencher	c.SK3	c.d2	c.d1s	c.CT			

@@ -1,9 +1,0 @@
-//	Structure for each line:
-//	Number	-tab-	Name	-tab-	"Recipe"
-//	Strand names will be strings, but are not allowed to contain spaces. Strand names must start with a letter.
-// "Recipe" will be a space separated list of domains which compose a given strand. All recipes should be entered 5' to 3'. The notation "c." can be used to represent the compliment of a given domain.	
-1	Strand-A A1 A2 A3 
-2	Strand-B c.A1 B2
-3	Strand-C C1 c.A3
-4	Strand-F c.B2 c.C1 F3
-5	Strand-Fbar c.F3 C1 B2

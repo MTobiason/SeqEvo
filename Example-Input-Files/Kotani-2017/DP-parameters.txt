@@ -1,0 +1,8 @@
+//Sample input file - MT 2020-08-09
+
+IDSFilePath = SE-out-DomainSequences.txt	
+IODFilePath = OligoDomains.txt	
+
+IntraOligoSLC = 3 	// integer >= 1 :: Structures within an oligo with length greather than or equal to this SLC contribute to a design's score.
+InterOligoSLC = 4	// integer >= 1 :: Structures between 2 oligos with length greather than or equal to this SLC contribute to a design's score.
+IntraOligoW = 1000000 // integer > 0 :: weighting factor for structures which a given oligo my form with itself

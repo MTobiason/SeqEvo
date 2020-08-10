@@ -1,0 +1,13 @@
+// SeqEvo parameters file - MT 2020-08-09
+
+cpl = 25000
+nl = 64
+
+IntraOligoSLC = 2
+InterOligoSLC = 2
+IntraOligoW = 10000 // integer > 0 :: weighting factor for structures which a given oligo my form with itself
+InterOligoW = 1	// integer > 0 :: weighting factor for structures formed by two oligos
+
+ODSFilePath = SE-out-DomainSequences.txt
+OOSFilePath = SE-out-OligoSequences.txt	
+OSPFilePath = SE-out-StructureProfiles.txt 
