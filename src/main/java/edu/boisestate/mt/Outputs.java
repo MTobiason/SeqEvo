@@ -109,9 +109,13 @@ public class Outputs
       System.out.println("--------------------");
 	  System.out.println("Fitness Score Values");
 	  System.out.println("--------------------");
-      System.out.println("Oligo fitness score (O): " + IG.getSFS());
-      System.out.println("Network fitness score (N): " + IG.getNFS());
-      System.out.println("Weighted fitness score (W): " + IG.getTFS());
+	  System.out.println("Network fitness score (N): " + IG.getNFS().add(IG.getNFSBaseline()));
+	  System.out.println("Oligo fitness score (O): " + IG.getSFS().add(IG.getSFSBaseline()));      
+      System.out.println("Weighted fitness score (W): " + IG.getTFS().add(IG.getTFSBaseline()));
+      System.out.println("Network fitness score above baseline (Delta-N): " + IG.getNFS());
+	  System.out.println("Oligo fitness score above baseline (Delta-O): " + IG.getSFS());
+      System.out.println("Weighted fitness score above baseline (Delta-W): " + IG.getTFS());
+	  System.out.println("Sequence Symmetry Criterion: " + IG.getSSValue());
 	  System.out.println("--------------------");
       System.out.println();
    }
@@ -246,18 +250,26 @@ public class Outputs
 	  PW.println("--------------------");
 	  PW.println("Fitness Score Values");
 	  PW.println("--------------------");
-      PW.println("Oligo fitness score (O): " + IG.getSFS());
-      PW.println("Network fitness score (N): " + IG.getNFS());
-      PW.println("Weighted fitness score (W): " + IG.getTFS());
+	  PW.println("Network fitness score (N): " + IG.getNFS().add(IG.getNFSBaseline()));
+	  PW.println("Oligo fitness score (O): " + IG.getSFS().add(IG.getSFSBaseline()));
+      PW.println("Weighted fitness score (W): " + IG.getTFS().add(IG.getTFSBaseline()));
+      PW.println("Network fitness score above baseline (Delta-N): " + IG.getNFS());
+	  PW.println("Oligo fitness score above baseline (Delta-O): " + IG.getSFS());
+      PW.println("Weighted fitness score above baseline (Delta-W): " + IG.getTFS());
+	  PW.println("Sequence Symmetry Criterion: " + IG.getSSValue());
 	  PW.println("--------------------");
       PW.println();
    }
    
    public static void exportUnformatedScores( PrintWriter PW, Generation IG ) throws Exception // PW: Print-Writer, IG: Incoming-Generation
    {
-	  PW.println("Oligo fitness score (O), " + IG.getSFS());
-      PW.println("Network fitness score (N), " + IG.getNFS());
-      PW.println("Weighted fitness score (W), " + IG.getTFS());
+	  PW.println("Network fitness score (N): " + IG.getNFS().add(IG.getNFSBaseline()));
+	  PW.println("Oligo fitness score (O): " + IG.getSFS().add(IG.getSFSBaseline()));
+      PW.println("Weighted fitness score (W): " + IG.getTFS().add(IG.getTFSBaseline()));
+	  PW.println("Network fitness score above baseline (Delta-N), " + IG.getNFS());
+	  PW.println("Oligo fitness score above baseline (Delta-O), " + IG.getSFS());
+      PW.println("Weighted fitness score above baseline (Delta-W), " + IG.getTFS());
+	  PW.println("Sequence Symmetry Criterion: " + IG.getSSValue());
    }
      
    // **************************************************************

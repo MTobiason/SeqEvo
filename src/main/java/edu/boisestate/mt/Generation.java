@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 import java.util.List;
 import java.util.Collection;
 import java.util.Map;
+import java.util.SortedMap;
 import java.util.TreeMap;
 import java.util.HashMap;
 import java.util.concurrent.ConcurrentHashMap;
@@ -47,6 +48,14 @@ public class Generation
    private boolean nfsUpToDate = false;
    private BigInteger tfs = BigInteger.valueOf(0);; // Total-Fitness-Score
    private boolean tfsUpToDate = false;
+   
+   private BigInteger sfsBaseline = BigInteger.valueOf(0);
+   private boolean sfsBaselineUpToDate = false;
+   private BigInteger nfsBaseline = BigInteger.valueOf(0);
+   private boolean nfsBaselineUpToDate = false;
+   private BigInteger tfsBaseline = BigInteger.valueOf(0);
+   private boolean tfsBaselineUpToDate = false;
+   
    static public String dt[] ; // Domain-Type
    
    
@@ -179,7 +188,7 @@ public class Generation
       copyEncodedStrandSequences(IncomingMother.getESS(),mess);
       //createEncodedStrandSequences();
       
-      MTout.log("Creating RPS hash of daughter");
+      //MTout.log("Creating RPS hash of daughter");
       
       //intraScores = new ConcurrentHashMap<referencePosition, Long>(getIntraScores(IncomingMother));
       //interScores = new ConcurrentHashMap<referencePosition, Long>(getInterScores(IncomingMother));
@@ -187,7 +196,7 @@ public class Generation
       //interDTRPScores= new ConcurrentHashMap<Integer,Long>(IncomingMother.getInterDTRPScores());
    }
    
-      // **********************************************
+   // **********************************************
    // Method for cloning another generation
    // **********************************************
 
@@ -209,6 +218,13 @@ public class Generation
       nfsUpToDate = true;
       setTFS( IncomingMother.getTFS());
       tfsUpToDate = true;
+	  
+	  sfsBaseline = IncomingMother.sfsBaseline;
+      sfsBaselineUpToDate = IncomingMother.sfsBaselineUpToDate;
+	  nfsBaseline = IncomingMother.nfsBaseline;
+      nfsBaselineUpToDate = IncomingMother.nfsBaselineUpToDate;
+	  tfsBaseline = IncomingMother.tfsBaseline;
+      tfsBaselineUpToDate = IncomingMother.tfsBaselineUpToDate;
       
       MTout.log("Copying intra scores from mother to daughter");
       //intraScores.clear();
@@ -2132,9 +2148,14 @@ public class Generation
       return tempOL;
    }
    
-   public Map<Integer,Integer> getInterUniqueOccurrences()
+   public Integer getSSValue()
    {
-      Map<Integer,Integer> tempOL = 
+	   return getInterInterferenceUniqueOccurrences().lastKey();
+   }
+   
+   public SortedMap<Integer,Integer> getInterUniqueOccurrences()
+   {
+      SortedMap<Integer,Integer> tempOL = 
          getInterAlignments().parallelStream()
          .map( (e) -> e.getUniqueOccurrences() )
          .collect( 
@@ -2303,6 +2324,46 @@ public class Generation
          .reduce( (a,b)-> a.add(b) )
          .get();
       sfsUpToDate = true;
+   }
+   
+   public BigInteger getSFSBaseline()
+   {
+      //sfs = intraScores.values().parallelStream().mapToLong(i->i).sum();
+		if(!sfsBaselineUpToDate)
+		{
+			MTout.log("Calculating Baseline SFS from intra RPs");
+			sfsBaseline = intraRPs.parallelStream()
+				.map(i->referencePosition.getBaselineScore(i))
+				.reduce( (a,b)-> a.add(b) )
+				.get();
+			sfsBaselineUpToDate = true;
+		}
+		return sfsBaseline;
+   }
+   
+   public BigInteger getNFSBaseline()
+   {
+		if(!nfsBaselineUpToDate)
+		{
+			MTout.log("Calculating Baseline NFS from intra RPs");
+			nfsBaseline = interRPs.parallelStream()
+				.map(i->referencePosition.getBaselineScore(i))
+				.reduce( (a,b)-> a.add(b) )
+				.get();
+			nfsBaselineUpToDate = true;
+		}
+		return nfsBaseline;
+   }
+   
+   public BigInteger getTFSBaseline()
+   {
+      //sfs = intraScores.values().parallelStream().mapToLong(i->i).sum();
+		if (!tfsBaselineUpToDate)
+		{
+			tfsBaseline = (getSFSBaseline().multiply(IntraOligoW)).add(getNFSBaseline().multiply(InterOligoW));
+			tfsBaselineUpToDate = true;
+		}
+		return tfsBaseline;
    }
    
    private long scoreIntraComplementLength ( int IL )

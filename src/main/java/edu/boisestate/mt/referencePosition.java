@@ -48,10 +48,10 @@ public class referencePosition
    {
       //generate contiguous bases for an intermolecular reference position
       // record S1, S2, S1B1?, record isIntramolecular?
-      
-      S1 = IS1; 
+
+		S1 = IS1; 
 		S2 = IS2;
-      RPI = IRPI;
+		RPI = IRPI;
       
       isIntramolecular = false; // Incoming-Is-Intramolecular   
 
@@ -569,7 +569,7 @@ public class referencePosition
       return tempScore;
    }
    
-   private static BigInteger getBaselineScore( referencePosition IRP)
+   protected static BigInteger getBaselineScore( referencePosition IRP)
    {
       return IRP.baselineScore;
    }
