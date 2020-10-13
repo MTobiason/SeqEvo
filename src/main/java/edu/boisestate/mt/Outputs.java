@@ -338,6 +338,6 @@ public class Outputs
          PW.println("-----------------------------------------------------");
          IG.getInterInterferenceCompleteOccurrences().entrySet().stream().forEach( e -> PW.println(e.getKey()+", "+e.getValue()));
          PW.println("-----------------------------------------------------");
-		 PW.close();
+		 PW.println();
    }
 }
