@@ -711,27 +711,7 @@ public class DevPro
       Outputs.exportIGI( RPW, Network );
 	  RPW.println("***************");
 	  RPW.println();
-      
-      RPW.println("***************************************");     
-      RPW.println("Inadvertent simple secondary structures");
-      RPW.println("***************************************"); 
-      RPW.println();
-	  RPW.println("--------------------------------------------------------");
-      RPW.println("Inadvertent intra-oligo simple secondary structures");
-      RPW.println("--------------------------------------------------------");
-      RPW.println("Structure size (base-pairs), Count (Number of Structures)");
-	  RPW.println("--------------------------------------------------------");
-      Network.getIntraInterferenceCompleteOccurrences().entrySet().stream().forEach( e -> RPW.println(e.getKey()+", "+e.getValue()));
-      RPW.println("--------------------------------------------------------");
-	  RPW.println();
 	  
-      RPW.println("--------------------------------------------------------");
-      RPW.println("Inadvertent inter-oligo simple secondary structures");
-      RPW.println("--------------------------------------------------------");
-      RPW.println("Structure size (base-pairs), Count (Number of Structures)");
-	  RPW.println("--------------------------------------------------------");
-      Network.getInterInterferenceCompleteOccurrences().entrySet().stream().forEach( e -> RPW.println(e.getKey()+", "+e.getValue()));
-      RPW.println("--------------------------------------------------------");
       RPW.close();
 	  
 	  if (ScoresFilePath != "disabled")

@@ -308,6 +308,7 @@ public class Outputs
       PW.println("------------------------------------------------------------------");
       PW.println();
 	   
+	  exportStructureProfiles(PW, IG);	  
       exportScores( PW, IG);
    }
    
@@ -317,5 +318,26 @@ public class Outputs
       IG.decodeDomainSequences();
       IG.decodeStrandSequences();
       exportSS( PW, IG);
+   }
+   
+   public static void exportStructureProfiles (PrintWriter PW, Generation IG)
+   {
+	     PW.println("-----------------------------------------------------");
+         PW.println("Intra-Oligo Simple Secondary Structures (Inadvertent)");
+         PW.println("-----------------------------------------------------");
+		 PW.println("Structure Size (Base-Pairs), Number of Structures");
+         PW.println("-----------------------------------------------------");
+         IG.getIntraInterferenceCompleteOccurrences().entrySet().stream().forEach( e -> PW.println(e.getKey()+", "+e.getValue()));
+         PW.println("-----------------------------------------------------");
+         PW.println();
+
+         PW.println("-----------------------------------------------------");
+         PW.println("Inter-Oligo Simple Secondary Structures (Inadvertent)");
+         PW.println("-----------------------------------------------------");
+		 PW.println("Structure Size (Base-Pairs), Number of Structures");
+         PW.println("-----------------------------------------------------");
+         IG.getInterInterferenceCompleteOccurrences().entrySet().stream().forEach( e -> PW.println(e.getKey()+", "+e.getValue()));
+         PW.println("-----------------------------------------------------");
+		 PW.close();
    }
 }
