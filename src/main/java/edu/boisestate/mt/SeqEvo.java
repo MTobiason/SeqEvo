@@ -421,7 +421,7 @@ public class SeqEvo
       PW.println("Scoring Parameters");
       PW.println("------------------");      
       PW.println("IntraOligoSLC: " + Generation.getIntraSLC());
-      PW.println("InterOligoSLC: " + Generation.getIntraSLC());
+      PW.println("InterOligoSLC: " + Generation.getInterSLC());
       PW.println("IntraOligoW: " + Generation.getIntraW());
       PW.println("InterOligoW: " + Generation.getInterW());
       PW.println("AASLC: " + Generation.getAASLC());
